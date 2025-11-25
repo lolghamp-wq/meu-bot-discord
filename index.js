@@ -1,78 +1,59 @@
+require("dotenv").config();
 const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
 const fs = require("fs");
 const csv = require("csv-parser");
-require("dotenv").config();
 
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent
-  ]
+  ],
 });
 
 let pokedex = [];
 
-fs.createReadStream("./pokedex.csv")
+fs.createReadStream("pokedex.csv")
   .pipe(csv())
-  .on("data", row => {
-    pokedex.push({
-      name: row.name,
-      dex_number: row.dex_number,
-      type: row.type,
-      spawn_biome: row.spawn_biome,
-      sprite: row.sprite
-    });
-  })
-  .on("end", () => {
-    console.log("CSV carregado!");
-  });
+  .on("data", (row) => pokedex.push(row))
+  .on("end", () => console.log("Pokédex carregada!"));
 
-client.once("ready", () => {
-  console.log(`Bot logado como: ${client.user.tag}`);
+client.on("ready", () => {
+  console.log(`Bot logado como ${client.user.tag}`);
 });
 
+client.on("messageCreate", async (msg) => {
+  if (!msg.content.startsWith("!pkm")) return;
 
-client.on("messageCreate", async (message) => {
+  const query = msg.content.split(" ")[1];
+  if (!query) return msg.reply("Digite o nome do Pokémon!");
 
-  if (!message.content.startsWith("!pkm")) return;
+  const pkm = pokedex.find(p =>
+    p.spawn_id?.toLowerCase() === query.toLowerCase() ||
+    p.name?.toLowerCase() === query.toLowerCase()
+  );
+
+  if (!pkm) return msg.reply("Pokémon não encontrado!");
 
   try {
-
-    const args = message.content.split(" ");
-    const nome = args[1]?.toLowerCase();
-
-    if(!nome) return message.reply("Digite: `!pkm nome`");
-
-    const pokemon = pokedex.find(
-      p => p.name.toLowerCase() === nome
-    );
-
-    if(!pokemon)
-      return message.reply("Pokémon não encontrado!");
-
-    
     const embed = new EmbedBuilder()
       .setTitle("📘 Dados do Pokémon")
       .addFields(
-        { name: "Nome", value: pokemon.name },
-        { name: "Nº Pokédex", value: `${pokemon.dex_number}` },
-        { name: "Tipo", value: pokemon.type },
-        { name: "Bioma", value: pokemon.spawn_biome }
+        { name: "Nome:", value: pkm.name || "???" },
+        { name: "N° Pokédex:", value: pkm.dex_number || "???" },
+        { name: "Tipo:", value: pkm.type || "???" },
+        { name: "Bioma:", value: pkm.spawn_biome || "???" }
       );
 
-    if (pokemon.sprite && pokemon.sprite.trim() !== "") {
-      embed.setImage(pokemon.sprite);
-    }
+    if (pkm.sprite)
+      embed.setThumbnail(pkm.sprite);
 
-    await message.reply({ embeds: [embed] });
+    await msg.reply({ embeds: [embed] });
 
   } catch (err) {
-    console.log(err);
-    message.reply("Erro ao enviar dados!");
+    console.log("ERRO AO MANDAR EMBED:", err);
+    msg.reply("Erro ao enviar dados!");
   }
-
 });
-
 
 client.login(process.env.TOKEN);
