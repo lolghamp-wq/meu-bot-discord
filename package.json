@@ -1,17 +1,14 @@
 {
   "name": "bot-pokedex",
   "version": "1.0.0",
-  "description": "Bot Discord com dados da Pokedex",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "engines": {
-    "node": "20.x"
-  },
   "dependencies": {
-    "discord.js": "^14.15.2",
-    "csv-parse": "^5.5.0",
-    "dotenv": "^16.4.1"
+    "discord.js": "^14.14.1",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.3.1"
   }
 }
