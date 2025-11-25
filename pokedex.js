@@ -8,8 +8,8 @@ const records = parse(csvData, {
   skip_empty_lines: true,
 });
 
-function normalize(texto) {
-  return texto
+function normalize(text) {
+  return text
     .toString()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
@@ -20,7 +20,7 @@ function normalize(texto) {
 const map = new Map();
 
 for (const r of records) {
-  map.set(normalize(r.nome), r);
+  map.set(normalize(r.name), r);
 }
 
 function responderPokemon(nome) {
@@ -32,10 +32,10 @@ function responderPokemon(nome) {
 
   return (
     `📘 **Dados do Pokémon**\n\n` +
-    `**Nome:** ${row.nome}\n` +
-    `**Nº Pokédex:** ${row.numero}\n` +
-    `**Tipo:** ${row.tipo}\n` +
-    `**Bioma:** ${row.bioma}\n`
+    `**Nome:** ${row.name}\n` +
+    `**Nº Pokédex:** ${row.dex_number}\n` +
+    `**Tipo:** ${row.types}\n` +
+    `**Bioma:** ${row.spawn_biome}\n`
   );
 }
 
