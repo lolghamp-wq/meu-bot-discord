@@ -2,7 +2,12 @@ require("dotenv").config();
 const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
 const fs = require("fs");
 const csv = require("csv-parser");
-const http = require("http");
+const express = require("express");
+
+// servidor web para manter o Render ativo
+const app = express();
+app.get("/", (req, res) => res.send("Bot está rodando!"));
+app.listen(3000, () => console.log("Servidor web ativo na porta 3000"));
 
 const client = new Client({
   intents: [
@@ -20,7 +25,7 @@ fs.createReadStream("pokedex.csv")
     pokedex.push(row);
   })
   .on("end", () => {
-    console.log("📘 Pokédex carregada!");
+    console.log("Pokédex carregada!");
   });
 
 client.on("messageCreate", async (msg) => {
@@ -28,19 +33,17 @@ client.on("messageCreate", async (msg) => {
 
   const name = msg.content.split(" ")[1];
 
-  if (!name)
-    return msg.reply("Digite o nome do Pokémon!");
+  if (!name) return msg.reply("Digite o nome do Pokémon!");
 
   const pkm = pokedex.find(p =>
     p.spawn_id?.toLowerCase() === name.toLowerCase() ||
     p.name?.toLowerCase() === name.toLowerCase()
   );
 
-  if (!pkm)
-    return msg.reply("Pokémon não encontrado!");
+  if (!pkm) return msg.reply("Pokemon não encontrado!");
 
   const sprite = pkm.sprite || null;
-  const dex = pkm.dex_number || "???";
+  const dex  = pkm.dex_number || "???";
   const type = pkm.types || "???";
   const biome = pkm.spawn_biome || "???";
 
@@ -66,13 +69,7 @@ client.on("messageCreate", async (msg) => {
 });
 
 client.once("ready", () => {
-  console.log(`🤖 Bot logado como ${client.user.tag}`);
+  console.log("Bot pronto!");
 });
-
-// 🔥 Mantém o Render acordado
-http.createServer((req, res) => {
-  res.write("Bot online!");
-  res.end();
-}).listen(process.env.PORT || 3000);
 
 client.login(process.env.TOKEN);
