@@ -3,9 +3,10 @@ const { SlashCommandBuilder } = require("discord.js");
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("ping")
-    .setDescription("Mostra se o bot está online"),
+    .setDescription("Retorna o ping do bot"),
 
   async execute(interaction) {
-    await interaction.reply("🏓 Pong!");
+    await interaction.deferReply(); // EVITA O ERRO
+    await interaction.editReply("🏓 Pong!");
   }
 };
