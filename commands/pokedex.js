@@ -12,15 +12,16 @@ module.exports = {
     ),
 
   async execute(interaction) {
-    await interaction.deferReply(); // <<< ESSENCIAL
+    await interaction.deferReply();
 
     const id = interaction.options.getInteger("numero");
 
+    // Lê CSV
     const raw = fs.readFileSync("./pokedex1.0.csv", "utf8");
     const linhas = raw.split(/\r?\n/);
 
+    // Pega cabeçalho
     const header = linhas[0].split(/,|;|\t/);
-
     const idxSprite    = header.indexOf("sprite");
     const idxDexNumber = header.indexOf("dex_number");
     const idxName      = header.indexOf("name");
@@ -42,13 +43,18 @@ module.exports = {
     }
 
     if (!encontrado) {
-      return interaction.editReply("❌ Pokémon não encontrado."); 
+      return interaction.editReply("❌ Pokémon não encontrado.");
     }
 
-    const sprite = encontrado[idxSprite];
-    const name   = encontrado[idxName].trim();
-    const type   = encontrado[idxType].trim();
-    const biome  = encontrado[idxBiome].trim();
+    let sprite = encontrado[idxSprite].trim();
+
+    // ===== CORREÇÃO AUTOMÁTICA ↓↓↓ =====
+    sprite = sprite.replace("raw.gith1.pngubusercontent.com", "raw.githubusercontent.com");
+    // ===================================
+
+    const name  = encontrado[idxName].trim();
+    const type  = encontrado[idxType].trim();
+    const biome = encontrado[idxBiome].trim();
 
     const embed = new EmbedBuilder()
       .setColor("Aqua")
@@ -57,9 +63,8 @@ module.exports = {
       .addFields(
         { name: "Tipo", value: type, inline: true },
         { name: "Bioma de Spawn", value: biome || "Desconhecido", inline: true }
-      )
-      .setFooter({ text: "CobbleGhost Pokédex" });
+      );
 
-    await interaction.editReply({ embeds: [embed] });
+    return interaction.editReply({ embeds: [embed] });
   }
 };
