@@ -4,33 +4,64 @@ const fs = require("fs");
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("pokedex")
-    .setDescription("Consulta informações de um Pokémon")
+    .setDescription("Consulta informações de um Pokémon pelo número da Pokédex")
     .addIntegerOption(option =>
-      option.setName("id")
-      .setDescription("Número do Pokémon (1 a 1025)")
-      .setRequired(true)
+      option.setName("numero")
+        .setDescription("Número da Pokédex (dex_number)")
+        .setRequired(true)
     ),
 
   async execute(interaction) {
-    const id = interaction.options.getInteger("id");
+    const id = interaction.options.getInteger("numero");
 
-    const csv = fs.readFileSync("./pokedex1.0.csv", "utf8").split("\n");
+    // Carrega o CSV completo
+    const raw = fs.readFileSync("./pokedex1.0.csv", "utf8");
 
-    const linha = csv.find(l => l.startsWith(`${id},`));
+    // Quebra em linhas
+    const linhas = raw.split(/\r?\n/);
 
-    if (!linha) {
+    // Identifica o cabeçalho
+    const header = linhas[0].split(/,|;|\t/);
+
+    const idxSprite      = header.indexOf("sprite");
+    const idxDexNumber   = header.indexOf("dex_number");
+    const idxName        = header.indexOf("name");
+    const idxType        = header.indexOf("type");
+    const idxBiome       = header.indexOf("spawn_biome");
+
+    // Busca o Pokémon pela coluna dex_number
+    let encontrado = null;
+
+    for (let i = 1; i < linhas.length; i++) {
+      const linha = linhas[i].trim();
+      if (!linha) continue;
+
+      const cols = linha.split(/,|;|\t/);
+
+      if (cols[idxDexNumber] == id) {
+        encontrado = cols;
+        break;
+      }
+    }
+
+    if (!encontrado) {
       return interaction.reply("❌ Pokémon não encontrado.");
     }
 
-    const [numero, nome, tipo] = linha.split(",");
+    const sprite = encontrado[idxSprite];
+    const name   = encontrado[idxName].trim();
+    const type   = encontrado[idxType].trim();
+    const biome  = encontrado[idxBiome].trim();
 
     const embed = new EmbedBuilder()
-      .setTitle(`#${numero} - ${nome}`)
+      .setColor("Aqua")
+      .setTitle(`#${id} - ${name}`)
+      .setThumbnail(sprite)
       .addFields(
-        { name: "Tipo", value: tipo }
+        { name: "Tipo", value: type, inline: true },
+        { name: "Bioma de Spawn", value: biome || "Desconhecido", inline: true }
       )
-      .setThumbnail(`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${numero}.png`)
-      .setColor("Aqua");
+      .setFooter({ text: "CobbleGhost Pokédex" });
 
     await interaction.reply({ embeds: [embed] });
   }
