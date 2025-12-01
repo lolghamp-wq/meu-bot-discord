@@ -22,12 +22,13 @@ module.exports = {
     const numero = interaction.options.getInteger("numero");
     const nomeBusca = interaction.options.getString("nome");
 
-    // Lê CSV
-    const raw = fs.readFileSync("./pokedex1.0.csv", "utf8");
+    // LER CSV EM "latin1" PARA CORRIGIR ACENTOS
+    const raw = fs.readFileSync("./pokedex1.0.csv", "latin1");
     const linhas = raw.split(/\r?\n/);
 
     // Cabeçalho
     const header = linhas[0].split(/,|;|\t/);
+
     const idxDexNumber = header.indexOf("dex_number");
     const idxName      = header.indexOf("name");
     const idxType      = header.indexOf("type");
@@ -35,7 +36,7 @@ module.exports = {
 
     let encontrado = null;
 
-    // ===== MODO 1: BUSCA PELO NÚMERO =====
+    // ---------- MODO 1: PESQUISA POR NÚMERO ----------
     if (numero !== null) {
       for (let i = 1; i < linhas.length; i++) {
         const cols = linhas[i].split(/,|;|\t/);
@@ -50,12 +51,15 @@ module.exports = {
       }
     }
 
-    // ===== MODO 2: BUSCA PELO NOME =====
+    // ---------- MODO 2: PESQUISA POR NOME ----------
     else if (nomeBusca !== null) {
-      const nomeLower = nomeBusca.toLowerCase();
+      const nomeLower = nomeBusca.trim().toLowerCase();
 
       for (let i = 1; i < linhas.length; i++) {
         const cols = linhas[i].split(/,|;|\t/);
+
+        if (!cols[idxName]) continue;
+
         const nomeCsv = cols[idxName].trim().toLowerCase();
 
         if (nomeCsv.includes(nomeLower)) {
@@ -69,21 +73,21 @@ module.exports = {
       }
     }
 
-    // Nenhuma opção preenchida
+    // Nenhuma opção marcada
     else {
       return interaction.editReply("❌ Você precisa usar **numero** ou **nome**.");
     }
 
-    // Extração dos dados
+    // ---------- DADOS DO POKÉMON ----------
     const id    = encontrado[idxDexNumber].trim();
     const name  = encontrado[idxName].trim();
     const type  = encontrado[idxType].trim();
     const biome = encontrado[idxBiome].trim();
 
-    // Sprite oficial
+    // Sprite oficial da PokéAPI
     const sprite = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
-    // Embed estiloso
+    // ---------- EMBED ----------
     const embed = new EmbedBuilder()
       .setColor("Aqua")
       .setTitle(`#${id} - ${name}`)
