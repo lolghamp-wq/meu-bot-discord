@@ -1,75 +1,64 @@
 require("dotenv").config();
-const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
-const fs = require("fs");
-const csv = require("csv-parser");
-const express = require("express");
+const { Client, GatewayIntentBits, Collection, REST, Routes } = require("discord.js");
+const fs = require("node:fs");
+const path = require("node:path");
 
-// servidor web para manter o Render ativo
-const app = express();
-app.get("/", (req, res) => res.send("Bot está rodando!"));
-app.listen(3000, () => console.log("Servidor web ativo na porta 3000"));
-
+// Inicializa o bot
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent
-  ],
+  ]
 });
 
-let pokedex = [];
+client.commands = new Collection();
 
-fs.createReadStream("pokedex.csv")
-  .pipe(csv())
-  .on("data", (row) => {
-    pokedex.push(row);
-  })
-  .on("end", () => {
-    console.log("Pokédex carregada!");
-  });
+// Carrega comandos da pasta /commands
+const commandsPath = path.join(__dirname, "commands");
+const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith(".js"));
 
-client.on("messageCreate", async (msg) => {
-  if (!msg.content.startsWith("!pkm")) return;
+const commandsArray = [];
+for (const file of commandFiles) {
+  const command = require(`./commands/${file}`);
+  client.commands.set(command.data.name, command);
+  commandsArray.push(command.data.toJSON());
+}
 
-  const name = msg.content.split(" ")[1];
+// Registra slash commands
+const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
 
-  if (!name) return msg.reply("Digite o nome do Pokémon!");
+(async () => {
+  try {
+    console.log("🔄 Atualizando comandos...");
+    await rest.put(
+      Routes.applicationGuildCommands(process.env.CLIENT_ID, process.env.GUILD_ID),
+      { body: commandsArray }
+    );
+    console.log("✅ Comandos registrados!");
+  } catch (error) {
+    console.error(error);
+  }
+})();
 
-  const pkm = pokedex.find(p =>
-    p.spawn_id?.toLowerCase() === name.toLowerCase() ||
-    p.name?.toLowerCase() === name.toLowerCase()
-  );
+// Listener dos comandos
+client.on("interactionCreate", async interaction => {
+  if (!interaction.isChatInputCommand()) return;
 
-  if (!pkm) return msg.reply("Pokemon não encontrado!");
-
-  const sprite = pkm.sprite || null;
-  const dex  = pkm.dex_number || "???";
-  const type = pkm.types || "???";
-  const biome = pkm.spawn_biome || "???";
+  const command = client.commands.get(interaction.commandName);
+  if (!command) return;
 
   try {
-    const emb = new EmbedBuilder()
-      .setTitle("📘 Dados do Pokémon")
-      .addFields(
-        { name: "Nome:", value: pkm.name || "???" },
-        { name: "N° Pokédex:", value: String(dex) },
-        { name: "Tipo:", value: type },
-        { name: "Bioma:", value: biome },
-      );
-
-    if (sprite)
-      emb.setThumbnail(sprite);
-
-    await msg.reply({ embeds: [emb] });
-
-  } catch (e) {
-    console.log("ERRO AO ENVIAR:", e);
-    msg.reply("Erro ao enviar dados!");
+    await command.execute(interaction);
+  } catch (error) {
+    console.error(error);
+    await interaction.reply({ content: "❌ Erro ao executar o comando.", ephemeral: true });
   }
 });
 
 client.once("ready", () => {
-  console.log("Bot pronto!");
+  console.log(`🤖 Bot online como ${client.user.tag}`);
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.DISCORD_TOKEN);
+
