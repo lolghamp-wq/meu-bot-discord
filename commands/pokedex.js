@@ -12,24 +12,21 @@ module.exports = {
     ),
 
   async execute(interaction) {
+    await interaction.deferReply(); // <<< ESSENCIAL
+
     const id = interaction.options.getInteger("numero");
 
-    // Carrega o CSV completo
     const raw = fs.readFileSync("./pokedex1.0.csv", "utf8");
-
-    // Quebra em linhas
     const linhas = raw.split(/\r?\n/);
 
-    // Identifica o cabeçalho
     const header = linhas[0].split(/,|;|\t/);
 
-    const idxSprite      = header.indexOf("sprite");
-    const idxDexNumber   = header.indexOf("dex_number");
-    const idxName        = header.indexOf("name");
-    const idxType        = header.indexOf("type");
-    const idxBiome       = header.indexOf("spawn_biome");
+    const idxSprite    = header.indexOf("sprite");
+    const idxDexNumber = header.indexOf("dex_number");
+    const idxName      = header.indexOf("name");
+    const idxType      = header.indexOf("type");
+    const idxBiome     = header.indexOf("spawn_biome");
 
-    // Busca o Pokémon pela coluna dex_number
     let encontrado = null;
 
     for (let i = 1; i < linhas.length; i++) {
@@ -45,7 +42,7 @@ module.exports = {
     }
 
     if (!encontrado) {
-      return interaction.reply("❌ Pokémon não encontrado.");
+      return interaction.editReply("❌ Pokémon não encontrado."); 
     }
 
     const sprite = encontrado[idxSprite];
@@ -63,6 +60,6 @@ module.exports = {
       )
       .setFooter({ text: "CobbleGhost Pokédex" });
 
-    await interaction.reply({ embeds: [embed] });
+    await interaction.editReply({ embeds: [embed] });
   }
 };
