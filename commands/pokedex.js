@@ -1,80 +1,7 @@
 const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 const fs = require("fs");
+const path = require("path");
 
-// -----------------------------
-// MAPA: Tipo PT → Tipo EN
-// -----------------------------
-const typeMap = {
-  "Normal": "Normal",
-  "Fogo": "Fire",
-  "Água": "Water",
-  "Grama": "Grass",
-  "Elétrico": "Electric",
-  "Gelo": "Ice",
-  "Lutador": "Fighting",
-  "Lutadora": "Fighting",
-  "Voador": "Flying",
-  "Veneno": "Poison",
-  "Terra": "Ground",
-  "Pedra": "Rock",
-  "Psíquico": "Psychic",
-  "Inseto": "Bug",
-  "Fantasma": "Ghost",
-  "Metálico": "Steel",
-  "Aço": "Steel",
-  "Dragão": "Dragon",
-  "Sombrio": "Dark",
-  "Trevas": "Dark",
-  "Fada": "Fairy"
-};
-
-// -----------------------------
-// ÍCONES OFICIAIS DOS TIPOS
-// -----------------------------
-const typeIcons = {
-  Normal:   "https://play.pokemonshowdown.com/sprites/types/Normal.png",
-  Fire:     "https://play.pokemonshowdown.com/sprites/types/Fire.png",
-  Water:    "https://play.pokemonshowdown.com/sprites/types/Water.png",
-  Electric: "https://play.pokemonshowdown.com/sprites/types/Electric.png",
-  Grass:    "https://play.pokemonshowdown.com/sprites/types/Grass.png",
-  Ice:      "https://play.pokemonshowdown.com/sprites/types/Ice.png",
-  Fighting: "https://play.pokemonshowdown.com/sprites/types/Fighting.png",
-  Poison:   "https://play.pokemonshowdown.com/sprites/types/Poison.png",
-  Ground:   "https://play.pokemonshowdown.com/sprites/types/Ground.png",
-  Flying:   "https://play.pokemonshowdown.com/sprites/types/Flying.png",
-  Psychic:  "https://play.pokemonshowdown.com/sprites/types/Psychic.png",
-  Bug:      "https://play.pokemonshowdown.com/sprites/types/Bug.png",
-  Rock:     "https://play.pokemonshowdown.com/sprites/types/Rock.png",
-  Ghost:    "https://play.pokemonshowdown.com/sprites/types/Ghost.png",
-  Dragon:   "https://play.pokemonshowdown.com/sprites/types/Dragon.png",
-  Dark:     "https://play.pokemonshowdown.com/sprites/types/Dark.png",
-  Steel:    "https://play.pokemonshowdown.com/sprites/types/Steel.png",
-  Fairy:    "https://play.pokemonshowdown.com/sprites/types/Fairy.png"
-};
-
-// -----------------------------
-// Função que formata os tipos com ícones
-// -----------------------------
-function gerarTiposFormatados(tipoString) {
-  if (!tipoString) return "Desconhecido";
-
-  // Divide "Fogo/Dragão", remove espaços
-  const tiposPt = tipoString.split(/\/|\\/).map(t => t.trim());
-
-  const formatado = tiposPt.map(tp => {
-    const en = typeMap[tp]; // PT → EN
-    if (!en) return tp; // caso não mapeado
-
-    const icon = typeIcons[en];
-    return `[‎](${icon}) **${tp}**`; // o [ ] faz o Discord renderizar o ícone pequenininho
-  });
-
-  return formatado.join("\n");
-}
-
-// -----------------------------
-// COMANDO PRINCIPAL
-// -----------------------------
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("pokedex")
@@ -96,20 +23,20 @@ module.exports = {
     const numero = interaction.options.getInteger("numero");
     const nomeBusca = interaction.options.getString("nome");
 
-    // Ler CSV com acentos corretos
+    // LER CSV EM latin1 (corrige acentos)
     const raw = fs.readFileSync("./pokedex1.0.csv", "latin1");
     const linhas = raw.split(/\r?\n/);
 
     const header = linhas[0].split(/,|;|\t/);
 
     const idxDexNumber = header.indexOf("dex_number");
-    const idxName      = header.indexOf("name");
-    const idxType      = header.indexOf("type");
-    const idxBiome     = header.indexOf("spawn_biome");
+    const idxName = header.indexOf("name");
+    const idxType = header.indexOf("type");
+    const idxBiome = header.indexOf("spawn_biome");
 
     let encontrado = null;
 
-    // Pesquisa por número
+    // ----- BUSCA POR NÚMERO -----
     if (numero !== null) {
       for (let i = 1; i < linhas.length; i++) {
         const cols = linhas[i].split(/,|;|\t/);
@@ -121,10 +48,9 @@ module.exports = {
       if (!encontrado) return interaction.editReply("❌ Pokémon não encontrado pelo número.");
     }
 
-    // Pesquisa por nome
+    // ----- BUSCA POR NOME -----
     else if (nomeBusca !== null) {
       const nomeLower = nomeBusca.trim().toLowerCase();
-
       for (let i = 1; i < linhas.length; i++) {
         const cols = linhas[i].split(/,|;|\t/);
         if (!cols[idxName]) continue;
@@ -135,31 +61,64 @@ module.exports = {
           break;
         }
       }
-
       if (!encontrado) return interaction.editReply("❌ Pokémon não encontrado pelo nome.");
     }
 
-    else {
-      return interaction.editReply("❌ Você precisa usar **numero** ou **nome**.");
-    }
+    else return interaction.editReply("❌ Você precisa usar **numero** ou **nome**.");
 
-    // Dados
-    const id    = encontrado[idxDexNumber].trim();
-    const name  = encontrado[idxName].trim();
-    const type  = encontrado[idxType].trim();
-    const biome = encontrado[idxBiome].trim();
+    // ====== PEGAR DADOS ======
+    const id = encontrado[idxDexNumber].trim();
+    const name = encontrado[idxName].trim();
+    const biome = encontrado[idxBiome].trim() || "não spawna";
 
-    // Sprite oficial
+    // ====== TRATAR TIPOS ======
+    const tiposBrutos = encontrado[idxType].trim(); // ex: "Fogo/Água"
+    const tipos = tiposBrutos.split("/").map(t => t.trim().toLowerCase());
+
+    // ====== MAPA DE TIPO -> ARQUIVO PNG ======
+    const mapIcons = {
+      "inseto": "bug.png",
+      "sombrio": "dark.png",
+      "dragão": "dragon.png",
+      "elétrico": "electric.png",
+      "fada": "fairy.png",
+      "lutador": "fighting.png",
+      "fogo": "fire.png",
+      "voador": "flying.png",
+      "fantasma": "ghost.png",
+      "planta": "grass.png",
+      "terra": "ground.png",
+      "terrestre": "ground.png",
+      "gelo": "ice.png",
+      "normal": "normal.png",
+      "venenoso": "poison.png",
+      "psíquico": "psychic.png",
+      "pedra": "rock.png",
+      "aço": "steel.png",
+      "água": "water.png"
+    };
+
+    // ====== GERAR TEXTO DOS TIPOS ======
+    const tipoFormatado = tipos
+      .map(t => {
+        const file = mapIcons[t];
+        if (!file) return `❓ ${t}`;
+        const url = `https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/${file}`;
+        return `![${t}](${url}) **${t.charAt(0).toUpperCase() + t.slice(1)}**`;
+      })
+      .join(" | ");
+
+    // URL DO SPRITE OFICIAL
     const sprite = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
-    // ---------- EMBED ----------
+    // ===== EMBED FINAL =====
     const embed = new EmbedBuilder()
       .setColor("Aqua")
       .setTitle(`#${id} - ${name}`)
       .setThumbnail(sprite)
       .addFields(
-        { name: "Tipo", value: gerarTiposFormatados(type), inline: true },
-        { name: "Bioma de Spawn", value: biome || "Desconhecido", inline: true }
+        { name: "Tipo", value: tipoFormatado, inline: false },
+        { name: "Bioma de Spawn", value: biome, inline: false }
       )
       .setFooter({ text: "CobbleGhost Pokédex" });
 
