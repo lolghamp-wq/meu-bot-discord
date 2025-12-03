@@ -1,102 +1,92 @@
-const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 const fs = require("fs");
+const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
+
+// Lê CSV sem parse complicado — seu CSV funciona com UTF-8 normal
+function readCSV(path) {
+    const raw = fs.readFileSync(path, "utf8");
+    const linhas = raw.split("\n").map(l => l.trim()).filter(l => l.length > 0);
+
+    const header = linhas[0].split(";").map(h => h.trim());
+    const rows = [];
+
+    for (let i = 1; i < linhas.length; i++) {
+        const cols = linhas[i].split(";").map(c => c.trim());
+        const obj = {};
+        header.forEach((h, idx) => obj[h] = cols[idx]);
+        rows.push(obj);
+    }
+
+    return rows;
+}
+
+const pokedex = readCSV("./pokedex1.1.csv");
+
+// Emojis
+const TYPE_EMOJIS = {
+    "grama": "<:grass:1445236750988611655>",
+    "venenoso": "<:poison:1445236883079565413>",
+    "fogo": "<:fire:1445236710408454346>",
+    "água": "<:water:1445238162690408509>",
+    "agua": "<:water:1445238162690408509>",
+    "inseto": "<:bug:1445236474898288745>",
+    "dragão": "<:dragon:1445236597158313984>",
+    "dragao": "<:dragon:1445236597158313984>",
+    "lutador": "<:fighting:1445236652434784336>",
+    "voador": "<:flying:1445236723981226074>",
+    "fantasma": "<:ghost:1445236735574540298>",
+    "pedra": "<:rock:1445236925014343901>"
+};
+
+// pega emojis de "Grama / Venenoso"
+function getIcons(typeField) {
+    if (!typeField) return "";
+
+    const parts = typeField.split("/").map(t => t.trim().toLowerCase());
+
+    const icons = parts.map(t => TYPE_EMOJIS[t] || "").join(" ");
+    return icons;
+}
 
 module.exports = {
-  data: new SlashCommandBuilder()
-    .setName("pokedex")
-    .setDescription("Consulta um Pokémon")
-    .addIntegerOption(opt =>
-      opt.setName("numero")
-      .setDescription("Número da Pokédex")
-      .setRequired(true)
-    ),
+    data: new SlashCommandBuilder()
+        .setName("pokedex")
+        .setDescription("Consulta um Pokémon")
+        .addIntegerOption(o =>
+            o.setName("numero").setDescription("Número da Pokédex"))
+        .addStringOption(o =>
+            o.setName("nome").setDescription("Nome do Pokémon")),
 
-  async execute(interaction) {
-    await interaction.deferReply();
+    async execute(interaction) {
+        await interaction.deferReply();
 
-    // Lê o CSV exatamente como o bot antigo fazia
-    const raw = fs.readFileSync("./pokedex1.1.csv", "utf8")
-      .replace(/\r/g, ""); 
+        const numero = interaction.options.getInteger("numero");
+        const nome = interaction.options.getString("nome");
 
-    const lines = raw.split("\n");
-    const header = lines[0].split(";");
+        let found = null;
 
-    // Índices das colunas
-    const IDX_SPRITE = header.indexOf("sprite");
-    const IDX_NUM = header.indexOf("nº");
-    const IDX_SPAWN = header.indexOf("spawn_biome");
-    const IDX_DEX = header.indexOf("dex_number");
-    const IDX_NAMETYPE = header.indexOf("name:type");
-
-    const numero = interaction.options.getInteger("numero");
-
-    let found = null;
-
-    for (let i = 1; i < lines.length; i++) {
-      const cols = lines[i].split(";");
-
-      const dexNumber = Number(cols[IDX_DEX]);
-
-      if (dexNumber === numero) {
-        found = cols;
-        break;
-      }
-    }
-
-    if (!found) {
-      return interaction.editReply("❌ Pokémon não encontrado.");
-    }
-
-    // Dados do Pokémon
-    const sprite = found[IDX_SPRITE];
-    const spawn = found[IDX_SPAWN];
-    const nomeTipo = found[IDX_NAMETYPE];
-
-    const [name, type1raw, type2raw] = nomeTipo.split("/");
-
-    // Emojis → EXATAMENTE os que você usava!
-    const TYPE = {
-      "Lutador": "<:fighting:1445236652434784336>",
-      "Voador": "<:flying:1445236723981226074>",
-      "Dragão": "<:dragon:1445236597158313984>",
-      "Fogo": "<:fire:1445236710408454346>",
-      "Água": "<:water:1445238162690408509>",
-      "Planta": "<:grass:1445236750988611655>",
-      "Normal": "<:normal:1445236814142115963>",
-      "Elétrico": "<:electric:1445236615407599644>",
-      "Sombrio": "<:dark:1445236564429901935>",
-      "Terrestre": "<:ground:1445236765874065631>",
-      "Gelo": "<:ice:1445236799747391602>",
-      "Pedra": "<:rock:1445236925014343901>",
-      "Veneno": "<:poison:1445236883079565413>",
-      "Fantasma": "<:ghost:1445236735574540298>",
-      "Psíquico": "<:psychic:1445236903350763551>",
-      "Inseto": "<:bug:1445236474898288745>",
-      "Aço": "<:steel:1445236950289219707>",
-      "Fada": "<:fairy:1445236630771339284>"
-    };
-
-    const type1 = TYPE[type1raw.trim()] || type1raw;
-    const type2 = type2raw ? TYPE[type2raw.trim()] || type2raw : null;
-
-    const embed = new EmbedBuilder()
-      .setColor("#00ffee")
-      .setTitle(`#${numero} - ${name}`)
-      .setThumbnail(sprite)
-      .addFields(
-        {
-          name: "Tipo",
-          value: type2 ?
-            `${type1} ${type1raw} | ${type2} ${type2raw}` :
-            `${type1} ${type1raw}`
-        },
-        {
-          name: "Bioma de Spawn",
-          value: spawn || "não spawna"
+        if (numero) {
+            found = pokedex.find(p => Number(p.dex_number) === numero);
+        } else if (nome) {
+            const n = nome.toLowerCase();
+            found = pokedex.find(p => p.name.toLowerCase().includes(n));
         }
-      )
-      .setFooter({ text: "CobbleGhost Pokédex" });
 
-    interaction.editReply({ embeds: [embed] });
-  }
+        if (!found) {
+            return interaction.editReply("❌ Pokémon não encontrado.");
+        }
+
+        const icons = getIcons(found.type);
+
+        const embed = new EmbedBuilder()
+            .setColor("Aqua")
+            .setTitle(`#${found.dex_number} - ${found.name}`)
+            .setThumbnail(found.sprite)
+            .addFields(
+                { name: "Tipo", value: `${icons} ${found.type}` },
+                { name: "Bioma de Spawn", value: found.spawn_biome }
+            )
+            .setFooter({ text: "CobbleGhost Pokédex" });
+
+        await interaction.editReply({ embeds: [embed] });
+    }
 };
