@@ -1,115 +1,131 @@
-const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 const fs = require("fs");
+const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 
-// 🔥 Seus emojis personalizados DEFINITIVOS
+// Emojis de tipos
 const TYPE_EMOJIS = {
-    "lutador": "<:fighting:1445236652434784336>",
-    "voador": "<:flying:1445236723981226074>",
-    "fogo": "<:fire:1445236710408454346>",
-    "água": "<:water:1445238162690408509>",
-    "agua": "<:water:1445238162690408509>",
-    "planta": "<:grass:1445236750988611655>",
-    "inseto": "<:bug:1445236474898288745>",
-    "dragão": "<:dragon:1445236597158313984>",
-    "dragao": "<:dragon:1445236597158313984>",
-    "psíquico": "<:psychic:1445236903350763551>",
-    "psiquico": "<:psychic:1445236903350763551>",
-    "pedra": "<:rock:1445236925014343901>",
-    "terra": "<:ground:1445236765874065631>",
-    "gelo": "<:ice:1445236799747391602>",
-    "fantasma": "<:ghost:1445236735574540298>",
-    "normal": "<:normal:1445236814142115963>",
-    "aço": "<:steel:1445236950289219707>",
-    "aco": "<:steel:1445236950289219707>",
-    "venenoso": "<:poison:1445236883079565413>"
+  bug: "<:bug:1445236474898288745>",
+  dragon: "<:dragon:1445236597158313984>",
+  fairy: "<:fairy:1445236630771339284>",
+  fire: "<:fire:1445236710408454346>",
+  ghost: "<:ghost:1445236735574540298>",
+  rock: "<:rock:1445236925014343901>",
+  dark: "<:dark:1445236564429901935>",
+  electric: "<:electric:1445236615407599644>",
+  fighting: "<:fighting:1445236652434784336>",
+  flying: "<:flying:1445236723981226074>",
+  grass: "<:grass:1445236750988611655>",
+  ground: "<:ground:1445236765874065631>",
+  ice: "<:ice:1445236799747391602>",
+  normal: "<:normal:1445236814142115963>",
+  poison: "<:poison:1445236883079565413>",
+  psychic: "<:psychic:1445236903350763551>",
+  steel: "<:steel:1445236950289219707>",
+  water: "<:water:1445238162690408509>"
 };
 
-function getEmoji(type) {
-    if (!type) return "";
-    const t = type.trim().toLowerCase();
-    return TYPE_EMOJIS[t] || "";
+// Tradução tipos
+const TYPE_MAP = {
+  "dragao": "dragon",
+  "dragão": "dragon",
+  "fogo": "fire",
+  "voador": "flying",
+  "lutador": "fighting",
+  "fantasma": "ghost",
+  "agua": "water",
+  "água": "water",
+  "psiquico": "psychic",
+  "psíquico": "psychic",
+  "terra": "ground",
+  "pedra": "rock",
+  "planta": "grass",
+  "gelo": "ice",
+  "normal": "normal",
+  "inseto": "bug",
+  "venenoso": "poison",
+  "metal": "steel",
+  "fada": "fairy",
+  "sombrio": "dark"
+};
+
+// Lê o CSV
+function loadCSV() {
+  let raw = fs.readFileSync("./pokedex1.1.csv", "utf8");
+  raw = raw.replace(/^\uFEFF/, ""); // remove BOM
+
+  const lines = raw.split("\n").map(l => l.trim()).filter(Boolean);
+
+  // pulando o cabeçalho
+  const rows = lines.slice(1).map(line => {
+    const [sprite, num, biome, dex, nameType] = line.split(";");
+
+    let [name, types] = nameType.split(":");
+    const [t1, t2] = types ? types.split("/") : ["", ""];
+
+    return {
+      sprite: sprite.trim(),
+      num: Number(num.trim()),
+      biome: biome.trim(),
+      dex: Number(dex.trim()),
+      name: name.trim(),
+      type1: t1?.trim().toLowerCase(),
+      type2: t2?.trim().toLowerCase()
+    };
+  });
+
+  return rows;
+}
+
+const rows = loadCSV();
+
+// Emoji converter
+function emoji(type) {
+  if (!type) return "";
+  const norm = type.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const key = TYPE_MAP[norm] || norm;
+  return TYPE_EMOJIS[key] || "";
 }
 
 module.exports = {
-    data: new SlashCommandBuilder()
-        .setName("pokedex")
-        .setDescription("Consulta informações de um Pokémon")
-        .addIntegerOption(o =>
-            o.setName("numero").setDescription("Número da Pokédex")
-        )
-        .addStringOption(o =>
-            o.setName("nome").setDescription("Nome do Pokémon")
-        ),
+  data: new SlashCommandBuilder()
+    .setName("pokedex")
+    .setDescription("Consulta um Pokémon")
+    .addIntegerOption(opt =>
+      opt.setName("numero").setDescription("Número da Pokédex").setRequired(false))
+    .addStringOption(opt =>
+      opt.setName("nome").setDescription("Nome do Pokémon").setRequired(false)),
 
-    async execute(interaction) {
-        await interaction.deferReply();
+  async execute(interaction) {
+    await interaction.deferReply();
 
-        // 🔥 Usa agora pokedex1.1.csv
-        const raw = fs.readFileSync("./pokedex1.1.csv", "utf8");
-        const linhas = raw.split(/\r?\n/);
+    const numero = interaction.options.getInteger("numero");
+    const nome = interaction.options.getString("nome");
 
-        const header = linhas[0].split(",");
-        const dexI = header.indexOf("dex_number");
-        const nameI = header.indexOf("name");
-        const typeI = header.indexOf("type");
-        const biomeI = header.indexOf("spawn_biome");
+    let pkm = null;
 
-        const numero = interaction.options.getInteger("numero");
-        const nomeBusca = interaction.options.getString("nome");
-
-        let found = null;
-
-        for (let i = 1; i < linhas.length; i++) {
-            const cols = linhas[i].split(",");
-
-            if (numero !== null && cols[dexI] == numero) {
-                found = cols;
-                break;
-            }
-
-            if (nomeBusca) {
-                const nomeCsv = cols[nameI].toLowerCase();
-                if (nomeCsv.includes(nomeBusca.toLowerCase())) {
-                    found = cols;
-                    break;
-                }
-            }
-        }
-
-        if (!found) {
-            return interaction.editReply("❌ Pokémon não encontrado.");
-        }
-
-        const id = found[dexI];
-        const name = found[nameI];
-        const type = found[typeI];
-        const biome = found[biomeI];
-
-        // 🔥 Suporta tipo1 / tipo2 separados por "|"
-        let [t1, t2] = type.split("|").map(t => t.trim());
-
-        const e1 = getEmoji(t1);
-        const e2 = getEmoji(t2);
-
-        const sprite =
-            `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
-
-        const embed = new EmbedBuilder()
-            .setColor("Aqua")
-            .setTitle(`#${id} – ${name}`)
-            .setThumbnail(sprite)
-            .addFields(
-                {
-                    name: "Tipo",
-                    value: `${e1} ${t1}${t2 ? ` | ${e2} ${t2}` : ""}`
-                },
-                {
-                    name: "Bioma de Spawn",
-                    value: biome || "desconhecido"
-                }
-            )
-            .setFooter({ text: "CobbleGhost Pokédex" });
-
-        return interaction.editReply({ embeds: [embed] });
+    if (numero != null) {
+      pkm = rows.find(r => r.dex === numero || r.num === numero);
+    } else if (nome) {
+      const n = nome.toLowerCase();
+      pkm = rows.find(r => r.name.toLowerCase().includes(n));
     }
+
+    if (!pkm) {
+      return interaction.editReply("❌ Pokémon não encontrado.");
+    }
+
+    const e1 = emoji(pkm.type1);
+    const e2 = emoji(pkm.type2);
+
+    const embed = new EmbedBuilder()
+      .setColor("Aqua")
+      .setTitle(`#${pkm.dex} - ${pkm.name}`)
+      .setThumbnail(pkm.sprite)
+      .addFields(
+        { name: "Tipo", value: `${e1} ${pkm.type1} ${pkm.type2 ? `| ${e2} ${pkm.type2}` : ""}` },
+        { name: "Bioma de Spawn", value: pkm.biome || "Desconhecido" }
+      )
+      .setFooter({ text: "CobbleGhost Pokédex" });
+
+    await interaction.editReply({ embeds: [embed] });
+  }
 };
