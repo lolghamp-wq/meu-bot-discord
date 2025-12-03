@@ -6,10 +6,11 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "lolg",
+  "author": "lolghan",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^14.15.3",
-    "csv-parse": "^5.5.0"
+    "csv-parse": "^5.0.0",
+    "dotenv": "^16.3.1"
   }
 }
