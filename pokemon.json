@@ -1,0 +1,2538 @@
+{
+  "format_version":"1.17.0",
+    "minecraft:spawn_rules":{
+      "description":{
+        "identifier":"serp:despawn",
+        "population_control":"animal"
+      },
+      "conditions":[
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p1"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p1","spawn_chance":5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p921"}
+      ],
+      "minecraft:delay_filter":{"min":3,"max":12,"identifier":"pokemon:p921","spawn_chance":90},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+               "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p633"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p633","spawn_chance":50},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"extreme_hills"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p66666"}
+      ],
+      "minecraft:delay_filter":{"min":900,"max":3000,"identifier":"pokemon:p6666","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p243"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p243","spawn_chance":0.01},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"savanna"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p244"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p244","spawn_chance":1},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"extreme_hills"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p245"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":34000,"identifier":"pokemon:p245","spawn_chance":1},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"beach"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p810"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p810","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p813"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p813","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+                "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p816"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p816","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"swamp"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p650"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p650","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p653"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p653","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p495"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p495","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+                "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p501"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p501","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"beach"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p132"}
+      ],
+      "minecraft:delay_filter":{"min":900,"max":4440,"identifier":"pokemon:p132","spawn_chance":5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"swamp"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p776"}
+      ],
+      "minecraft:delay_filter":{"min":2000,"max":6400,"identifier":"pokemon:p776","spawn_chance":4},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"mesa"}
+      },
+      {
+       
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p767"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p767","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"beach"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":2},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p761"}
+      ],
+      "minecraft:delay_filter":{"min":5,"max":10,"identifier":"pokemon:p761","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":3},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p764"}
+      ],
+      "minecraft:delay_filter":{"min":5,"max":10,"identifier":"pokemon:p764","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":5},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p742"}
+      ],
+      "minecraft:delay_filter":{"min":10,"max":20,"identifier":"pokemon:p742","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+                 "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p744"}
+      ],
+      "minecraft:delay_filter":{"min":10,"max":20,"identifier":"pokemon:p744","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p722"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p722","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p725"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p725","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"mesa"}
+      },
+      {
+            
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p728"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p728","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"beach"}
+      },
+      {
+
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":4},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p753"}
+      ],
+      "minecraft:delay_filter":{"min":10,"max":24,"identifier":"pokemon:p753","spawn_chance":70},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"savanna"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":2},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p757"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":5,"identifier":"pokemon:p757","spawn_chance":70},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"savanna"}
+      },
+      {
+        "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":4},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p755"}
+      ],
+      "minecraft:delay_filter":{"min":5,"max":9,"identifier":"pokemon:p755","spawn_chance":90},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"savanna"}
+      },
+      {
+            
+                "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+    "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p747"}
+      ],
+      "minecraft:delay_filter":{"min":15,"max":29,"identifier":"pokemon:p747","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"beach"}
+      },
+      {
+               "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":3},
+    "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p751"}
+      ],
+      "minecraft:delay_filter":{"min":15,"max":29,"identifier":"pokemon:p751","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"beach"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":4},
+    "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p749"}
+      ],
+      "minecraft:delay_filter":{"min":15,"max":29,"identifier":"pokemon:p749","spawn_chance":70},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p935"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p935","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass_block"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p491"}
+      ],
+      "minecraft:delay_filter":{"min":164,"max":1290,"identifier":"pokemon:p491","spawn_chance":0.02},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"roofed"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass_block"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p800"}
+      ],
+      "minecraft:delay_filter":{"min":222,"max":1290,"identifier":"pokemon:p800","spawn_chance":0.03},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"roofed"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass_block"],
+      "minecraft:permute_type":[
+        {"entity_type":"pokemon:p590"}
+      ],
+      "minecraft:delay_filter":{"min":222,"max":300,"spawn_chance":20},
+      "minecraft:biome_filter":{
+        "any_of":[
+          {"test":"has_biome_tag","value":"roofed"}
+        ]
+      }
+      },
+      {
+
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p785"}
+      ],
+      "minecraft:delay_filter":{"min":499,"max":1800,"identifier":"pokemon:p785","spawn_chance":0.01},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"roofed"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p786"}
+      ],
+      "minecraft:delay_filter":{"min":422,"max":1800,"identifier":"pokemon:p786","spawn_chance":0.01},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"roofed"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p787"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p787","spawn_chance":0.01},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p789"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p789","spawn_chance":0.01},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+                  "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p803"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p803","spawn_chance":0.01},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p805"}
+      ],
+      "minecraft:delay_filter":{"min":222,"max":300,"identifier":"pokemon:p805","spawn_chance":0.01},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p806"}
+      ],
+      "minecraft:delay_filter":{"min":222,"max":300,"identifier":"pokemon:p806","spawn_chance":0.01},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+           
+               "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p793"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p793","spawn_chance":7},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p794"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p794","spawn_chance":7},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p795"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p795","spawn_chance":7},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+           "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p796"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p796","spawn_chance":7},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p798"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p798","spawn_chance":7},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p386"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p386","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p1007"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p1007","spawn_chance":0.1},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+               "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p1007"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p1021","spawn_chance":0.1},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+                           "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p1008"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p1008","spawn_chance":0.1},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+                               "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p1009"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p1009","spawn_chance":0.1},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+           "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p797"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p797","spawn_chance":0.3},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p799"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p799","spawn_chance":7},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"the_end"}
+      },
+      {
+        
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+    
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p788"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p788","spawn_chance":0.1},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"ocean"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+  {"entity_type":"pokemon:p4"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p4","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"mesa"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+  {"entity_type":"pokemon:p498"}
+      ],
+      "minecraft:delay_filter":{"min":5000,"max":10000,"identifier":"pokemon:p498","spawn_chance":5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"mesa"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+  {"entity_type":"pokemon:p371"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p371","spawn_chance":30},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"mesa"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p7"}
+      ],
+      "minecraft:delay_filter":{"min":3222,"max":6422,"identifier":"pokemon:p7","spawn_chance":5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"beach"}
+      },
+      {
+    
+        
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":70,"entity_type":"pokemon:p63"},
+{"weight":30,"entity_type":"pokemon:p11"},
+{"weight":60,"entity_type":"pokemon:p10"}
+
+      ],
+      "minecraft:delay_filter":{"min":1003,"max":9006,"identifier":"pokemon:p63","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p14"},
+{"weight":70,"entity_type":"pokemon:p13"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p13","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+            
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p15"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p15","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"flower_forest"}
+      },
+      {
+
+
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":10,"entity_type":"pokemon:p18"},
+{"weight":30,"entity_type":"pokemon:p17"},
+{"weight":60,"entity_type":"pokemon:p16"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p16","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","operator":"!=","value":"ocean"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":10,"entity_type":"pokemon:p18"},
+{"weight":30,"entity_type":"pokemon:p17"},
+{"weight":60,"entity_type":"pokemon:p333"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p333","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","operator":"!=","value":"ocean"}
+      },
+      {
+               "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":10,"entity_type":"pokemon:p733"},
+{"weight":30,"entity_type":"pokemon:p732"},
+{"weight":60,"entity_type":"pokemon:p731"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p731","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","operator":"!=","value":"ocean"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p20"},
+{"weight":70,"entity_type":"pokemon:p19"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p19","spawn_chance":100},
+      "minecraft:biome_filter":{"test":"has_biome_tag","operator":"!=","value":"ocean"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p21"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p21","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","operator":"!=","value":"oocean"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p22"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p22","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"extreme_hills"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p24"},
+{"weight":70,"entity_type":"pokemon:p23"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p23","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"swamp"}
+      },
+      {
+                "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":2},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":40,"entity_type":"pokemon:p656"},
+{"weight":2,"entity_type":"pokemon:p657"}
+      ],
+      "minecraft:delay_filter":{"min":36,"max":90,"identifier":"pokemon:p656","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"swamp"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p25"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p25","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+                  "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p877"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p877","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p877"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p877","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"roofed"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p877"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p877","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"savanna"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p28"},
+{"weight":70,"entity_type":"pokemon:p27"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p28","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"desert"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p636"},
+{"weight":70,"entity_type":"pokemon:p551"}
+      ],
+      "minecraft:delay_filter":{"min":332,"max":994,"identifier":"pokemon:p636","spawn_chance":5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"desert"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p30"},
+{"weight":70,"entity_type":"pokemon:p29"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p29","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p33"},
+{"weight":70,"entity_type":"pokemon:p32"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p32","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+    
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p37"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p37","spawn_chance":80},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"roofed"},{"test":"has_biome_tag","value":"forest"}]
+        }
+      },
+      {
+               "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p891"}
+      ],
+      "minecraft:delay_filter":{"min":7000,"max":12000,"identifier":"pokemon:p891","spawn_chance":3},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"roofed"},{"test":"has_biome_tag","value":"forest"}]
+        }
+      },
+      {
+               "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p717"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p717","spawn_chance":0.1},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"roofed"},{"test":"has_biome_tag","value":"forest"}]
+        }
+      },
+      {
+       "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p570"}
+      ],
+      "minecraft:delay_filter":{"min":60,"max":320,"identifier":"pokemon:p570","spawn_chance":11},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"roofed"},{"test":"has_biome_tag","value":"roofed"}]
+        }
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p5700"}
+      ],
+      "minecraft:delay_filter":{"min":2260,"max":3200,"identifier":"pokemon:p5700","spawn_chance":5},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"roofed"},{"test":"has_biome_tag","value":"pale_garden"}]
+      }
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p39"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p39","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p718"}
+      ],
+      "minecraft:delay_filter":{"min":200,"max":400,"identifier":"pokemon:p718","spawn_chance":30},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+               "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p383"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p383","spawn_chance":0.5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"desert"}
+      },
+      {
+                   "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p1004"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p1004","spawn_chance":0.5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"desert"}
+      },
+      {
+      "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1,"underground":10},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p42"},
+{"weight":70,"entity_type":"pokemon:p41"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p41","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:dirt"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p44"},
+{"weight":70,"entity_type":"pokemon:p43"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p43","spawn_chance":80},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"birch"},{"test":"has_biome_tag","value":"forest"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":20,"entity_type":"pokemon:p47"},
+{"weight":70,"entity_type":"pokemon:p46"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p46","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"mooshroom_island"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p49"},
+{"weight":70,"entity_type":"pokemon:p48"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p48","spawn_chance":80},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"roofed"},{"test":"has_biome_tag","value":"forest"}]}
+      },
+      {
+      "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1,"underground":10},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p51"},
+{"weight":70,"entity_type":"pokemon:p50"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p50","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":20,"entity_type":"pokemon:p53"},
+{"weight":80,"entity_type":"pokemon:p52"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p52","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":20,"entity_type":"pokemon:p359"},
+{"weight":80,"entity_type":"pokemon:p52"}
+      ],
+      "minecraft:delay_filter":{"min":444,"max":998,"identifier":"pokemon:p359","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underwater":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":20,"entity_type":"pokemon:p55"},
+{"weight":80,"entity_type":"pokemon:p54"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p54","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"river"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p57"},
+{"weight":70,"entity_type":"pokemon:p56"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p701","spawn_chance":100},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"savanna"},{"test":"has_biome_tag","value":"mesa"}]}
+      },
+      {
+                "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":90,"entity_type":"pokemon:p701"},
+{"weight":70,"entity_type":"pokemon:p56"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p56","spawn_chance":100},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"savanna"},{"test":"has_biome_tag","value":"mesa"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p58"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p58","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":5},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p63"}
+      ],
+      "minecraft:delay_filter":{"min":5554,"max":9916,"identifier":"pokemon:p63","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underwater":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p61"},
+{"weight":70,"entity_type":"pokemon:p60"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p60","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"river"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underwater":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":10,"entity_type":"pokemon:p382"},
+{"weight":100,"entity_type":"pokemon:p60"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p60","spawn_chance":0.5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"river"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":2},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p66"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p66","spawn_chance":100},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p246"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p246","spawn_chance":1},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p714"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p714","spawn_chance":20},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"deep_dark"}
+      },
+      {
+                 "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p486"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p486","spawn_chance":5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"deep_dark"}
+      },
+      {
+               "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p74"}
+      ],
+      "minecraft:delay_filter":{"min":12,"max":20,"identifier":"pokemon:p74","spawn_chance":100},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"deep_dark"}
+      },
+      {
+                   "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p140"}
+      ],
+      "minecraft:delay_filter":{"min":12,"max":20,"identifier":"pokemon:p74","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"deep_dark"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p859"}
+      ],
+      "minecraft:delay_filter":{"min":12,"max":20,"identifier":"pokemon:p859","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"deep_dark"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p75"}
+      ],
+      "minecraft:delay_filter":{"min":12,"max":24,"identifier":"pokemon:p75","spawn_chance":100},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"deep_dark"}
+      },
+      {
+                 "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p610"}
+      ],
+      "minecraft:delay_filter":{"min":212,"max":924,"identifier":"pokemon:p75","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"deep_dark"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p610"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p610","spawn_chance":5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p782"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p782","spawn_chance":5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+                  "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p780"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p780","spawn_chance":30},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p624"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p624","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter":{"min":60,"max":70},
+      "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+        {"entity_type":"pokemon:p739"}
+      ],
+      "minecraft:delay_filter":{"min":500,"max":776,"spawn_chance":20},
+      "minecraft:biome_filter":{
+        "any_of":[
+          {"test":"has_biome_tag","value":"beach"}
+        ]
+      }
+      },
+      {
+
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":2},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p70"},
+{"weight":70,"entity_type":"pokemon:p69"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p69","spawn_chance":100},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underwater":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p73"},
+{"weight":70,"entity_type":"pokemon:p72"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p72","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"ocean"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":2},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p75"},
+{"weight":70,"entity_type":"pokemon:p74"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":2,"identifier":"pokemon:p74","spawn_chance":100},
+      "minecraft:biome_filter":{"test":"is_altitude","operator":">=","value":90}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":4},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p774"},
+{"weight":70,"entity_type":"pokemon:p775"}
+      ],
+      "minecraft:delay_filter":{"min":15,"max":50,"identifier":"pokemon:p774","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"is_altitude","operator":">=","value":90}
+      },
+      {
+      "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1,"underground":10},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p74"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p74","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+               "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1,"underground":10},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p304"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p304","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+              "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p307"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p307","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"extreme_hills"}
+      },
+      {
+                      "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1,"underground":10},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p529"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p529","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p78"},
+{"weight":70,"entity_type":"pokemon:p77"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p77","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"mesa"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underwater":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p80"},
+{"weight":70,"entity_type":"pokemon:p79"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p79","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"beach"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p81"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p81","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:brightness_filter":{"max":7,"min":0},"adjust_for_weather":false,
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p83"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p83","spawn_chance":20},
+      "minecraft:biome_filter":{"test":"has_biome_tag","operator":"!=","value":"ocean"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p85"},
+{"weight":70,"entity_type":"pokemon:p84"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p84","spawn_chance":60},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"savanna"},{"test":"has_biome_tag","value":"mesa"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underwater":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p87"},
+{"weight":70,"entity_type":"pokemon:p86"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p86","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"ocean"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underwater":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p90"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p90","spawn_chance":60},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"beach"},{"test":"has_biome_tag","value":"ocean"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underground":{},
+      "minecraft:brightness_filter":{"max":7,"min":0},"adjust_for_weather":true,
+      "minecraft:density_limit":{"surface":1,"underground":10},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p93"},
+{"weight":70,"entity_type":"pokemon:p92"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p92","spawn_chance":80},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"monster"},{"test":"has_biome_tag","value":"nether"}]}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underground":{},
+      "minecraft:brightness_filter":{"max":7,"min":0},"adjust_for_weather":true,
+      "minecraft:density_limit":{"surface":1,"underground":10},
+      "minecraft:permute_type":[
+{"weight":50,"entity_type":"pokemon:p93"},
+{"weight":50,"entity_type":"pokemon:p607"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p607","spawn_chance":60},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"monster"},{"test":"has_biome_tag","value":"plains"}]}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underground":{},
+      "minecraft:brightness_filter":{"max":7,"min":0},"adjust_for_weather":true,
+      "minecraft:density_limit":{"surface":1,"underground":10},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p821"},
+{"weight":70,"entity_type":"pokemon:p822"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p92","spawn_chance":80},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"monster"},{"test":"has_biome_tag","value":"nether"}]}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underground":{},
+      "minecraft:brightness_filter":{"max":7,"min":0},"adjust_for_weather":true,
+      "minecraft:density_limit":{"surface":3,"underground":10},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p769"},
+{"weight":70,"entity_type":"pokemon:p770"}
+      ],
+      "minecraft:delay_filter":{"min":22,"max":50,"identifier":"pokemon:p769","spawn_chance":30},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"monster"},{"test":"has_biome_tag","value":"nether"}]}
+      },
+      {
+      "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1,"underground":10},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p95"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p95","spawn_chance":20},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p97"},
+{"weight":70,"entity_type":"pokemon:p96"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p96","spawn_chance":80},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"roofed"},{"test":"has_biome_tag","value":"forest"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p102"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p102","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"jungle"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p145"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p145","spawn_chance":0.01},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p207"}
+      ],
+      "minecraft:delay_filter":{"min":12,"max":24,"identifier":"pokemon:p207","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p105"},
+{"weight":70,"entity_type":"pokemon:p104"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p104","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"savanna"}
+      },
+      {
+ "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:grass"],
+   
+      
+      "minecraft:delay_filter":{"min":242,"max":258,"identifier":"pokemon:p807","spawn_chance":5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"savanna"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p108"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p108","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"cherry_grove"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underwater":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p109"},
+{"weight":70,"entity_type":"pokemon:p110"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p109","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"mesa"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p112"},
+{"weight":70,"entity_type":"pokemon:p111"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p111","spawn_chance":40},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"mesa"},{"test":"has_biome_tag","value":"savanna"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p113"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p113","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"savanna"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p115"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p115","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"savanna"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underwater":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p119"},
+{"weight":70,"entity_type":"pokemon:p118"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p118","spawn_chance":60},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"ocean"},{"test":"has_biome_tag","value":"river"}]}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underwater":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p771"},
+{"weight":70,"entity_type":"pokemon:p118"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p118","spawn_chance":60},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"ocean"},{"test":"has_biome_tag","value":"river"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p123"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p123","spawn_chance":40},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"plains"},{"test":"has_biome_tag","value":"mutated"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p128"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p128","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"savanna"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underwater":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":20,"entity_type":"pokemon:p130"},
+{"weight":100,"entity_type":"pokemon:p129"},
+{"weight":40,"entity_type":"pokemon:p746"},
+{"weight":40,"entity_type":"pokemon:p779"}
+      ],
+      "minecraft:delay_filter":{"min":444,"max":998,"identifier":"pokemon:p129","spawn_chance":60},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"ocean"},{"test":"has_biome_tag","value":"river"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underwater":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p131"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p131","spawn_chance":20},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"ocean"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p133"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p133","spawn_chance":20},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p143"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p143","spawn_chance":20},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p765"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p765","spawn_chance":20},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":3},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p766"}
+      ],
+      "minecraft:delay_filter":{"min":6,"max":3,"identifier":"pokemon:p766","spawn_chance":90},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":3},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p759"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p759","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p737"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p737","spawn_chance":50},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p734"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p734","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p148"},
+{"weight":70,"entity_type":"pokemon:p147"}
+      ],
+      "minecraft:delay_filter":{"min":932,"max":3000,"identifier":"pokemon:p147","spawn_chance":3},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"savanna"},{"test":"has_biome_tag","value":"mesa"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p152"}
+      ],
+      "minecraft:delay_filter":{"min":2000,"max":6400,"identifier":"pokemon:p152","spawn_chance":5},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"forest"},{"test":"has_biome_tag","value":"flower_forest"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p155"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p155","spawn_chance":10},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"mesa"},{"test":"has_biome_tag","value":"desert"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p158"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p158","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"river"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p162"},
+{"weight":70,"entity_type":"pokemon:p161"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p161","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:brightness_filter":{"min":0,"max":7},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p164"},
+{"weight":70,"entity_type":"pokemon:p163"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p163","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p166"},
+{"weight":70,"entity_type":"pokemon:p165"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p166","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:brightness_filter":{"min":0,"max":7},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p168"},
+{"weight":70,"entity_type":"pokemon:p167"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p168","spawn_chance":80},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"forest"},{"test":"has_biome_tag","value":"monster"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":10,"entity_type":"pokemon:p181"},
+{"weight":30,"entity_type":"pokemon:p180"},
+{"weight":60,"entity_type":"pokemon:p179"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p181","spawn_chance":80},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"taiga"},{"test":"has_biome_tag","value":"plains"}]}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":10,"entity_type":"pokemon:p181"},
+{"weight":70,"entity_type":"pokemon:p216"},
+{"weight":60,"entity_type":"pokemon:p179"}
+      ],
+      "minecraft:delay_filter":{"min":442,"max":994,"identifier":"pokemon:p216","spawn_chance":50},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"taiga"},{"test":"has_biome_tag","value":"plains"}]}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":10,"entity_type":"pokemon:p644"},
+{"weight":30,"entity_type":"pokemon:p643"},
+{"weight":100,"entity_type":"pokemon:p179"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p644","spawn_chance":1},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"taiga"},{"test":"has_biome_tag","value":"plains"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"serp:sudowoodo_tree"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"serp:sudowoodo_tree","spawn_chance":20},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":10,"entity_type":"pokemon:p189"},
+{"weight":30,"entity_type":"pokemon:p188"},
+{"weight":60,"entity_type":"pokemon:p187"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p187","spawn_chance":40},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"plains"},{"test":"has_biome_tag","value":"mutated"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:brightness_filter":{"min":0,"max":7,"adjust_for_weather":false},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p200"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p200","spawn_chance":80},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"monster"},{"test":"has_biome_tag","value":"nether"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p203"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p203","spawn_chance":60},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"jungle"},{"test":"has_biome_tag","value":"savanna"}]}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p674"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p674","spawn_chance":60},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"jungle"},{"test":"has_biome_tag","value":"savanna"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p204"},
+{"weight":70,"entity_type":"pokemon:p205"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p204","spawn_chance":40},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"roofed"},{"test":"has_biome_tag","value":"forest"}]}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p216"},
+{"weight":70,"entity_type":"pokemon:p205"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p216","spawn_chance":40},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"roofed"},{"test":"has_biome_tag","value":"forest"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p206"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p206","spawn_chance":20},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"monster"},{"all_of":[{"test":"has_biome_tag","value":"roofed"},{"test":"has_biome_tag","value":"forest"}]}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p214"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p214","spawn_chance":20},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+        "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p225"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p225","spawn_chance":60},
+      "minecraft:biome_filter":{"any_of":[{"all_of":[{"test":"has_biome_tag","value":"frozen"},{"test":"has_biome_tag","value":"ocean"}]},{"test":"has_biome_tag","value":"ice_plains"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:pale_moss"],
+      "minecraft:brightness_filter":{"min":0,"max":7,"adjust_for_weather":false},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p679"}
+      ],
+      "minecraft:delay_filter":{"min":24,"max":32,"identifier":"pokemon:p679","spawn_chance":55},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"pale_garden"}]}
+      },
+      {
+   "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:pale_moss"],
+      "minecraft:brightness_filter":{"min":0,"max":7,"adjust_for_weather":false},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p1001"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p1001","spawn_chance":5},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"pale_garden"}]}
+      },
+      {
+              "minecraft:delay_filter":{"min":123,"max":438,"identifier":"pokemon:p996","spawn_chance":50},
+      "minecraft:biome_filter":{"any_of":[{"all_of":[{"test":"has_biome_tag","value":"frozen"},{"test":"has_biome_tag","value":"ocean"}]},{"test":"has_biome_tag","value":"ice_plains"}]}
+      },
+      {
+             "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p144","spawn_chance":0.01},
+      "minecraft:biome_filter":{"any_of":[{"all_of":[{"test":"has_biome_tag","value":"frozen"},{"test":"has_biome_tag","value":"snowy_tundra"}]},{"test":"has_biome_tag","value":"ice_plains"}]}
+      },
+      {
+              "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p1002","spawn_chance":0.1},
+      "minecraft:biome_filter":{"any_of":[{"all_of":[{"test":"has_biome_tag","value":"frozen"},{"test":"has_biome_tag","value":"snowy_tundra"}]},{"test":"has_biome_tag","value":"ice_plains"}]}
+      },
+      {
+                  "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+        {"entity_type":"pokemon:p215"}
+      ],
+      "minecraft:delay_filter":{"min":80,"max":250,"spawn_chance":30},
+      "minecraft:biome_filter":{
+        "any_of":[
+          {"test":"has_biome_tag","value":"frozen"},
+          {"test":"has_biome_tag","value":"snowy"}
+        ]
+      }
+      },
+      {
+
+                "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+        {"entity_type":"pokemon:p215"}
+      ],
+      "minecraft:delay_filter":{"min":80,"max":250,"pawn_chance":30},
+      "minecraft:biome_filter":{
+        "any_of":[
+          {"test":"has_biome_tag","value":"mountain"}
+        ]
+      }
+      },
+      {
+            
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+        {"entity_type":"pokemon:p999"}
+      ],
+      "minecraft:delay_filter":{"min":580,"max":1950,"spawn_chance":8},
+      "minecraft:biome_filter":{
+        "any_of":[
+          {"test":"has_biome_tag","value":"mountain"}
+        ]
+      },
+      "minecraft:structure_filter":{
+        "any_of":[
+          {"test":"has_structure","value":"ruined_portal"},
+          {"test":"has_structure","value":"desert_pyramid"},
+          {"test":"has_structure","value":"jungle_temple"},
+          {"test":"has_structure","value":"ocean_ruins"},
+          {"test":"has_structure","value":"mineshaft"},
+          {"test":"has_structure","value":"village"}
+        ]
+      }
+      },
+      {
+
+
+
+             "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p146","spawn_chance":0.01},
+      "minecraft:biome_filter":{"any_of":[{"all_of":[{"test":"has_biome_tag","value":"mesa"},{"test":"has_biome_tag","value":"desert"}]},{"test":"has_biome_tag","value":"savanna"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p234"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p234","spawn_chance":80},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"ice_plains"}]}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p484"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p484","spawn_chance":0.3},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"the_end"}]}
+      },
+      {
+       
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p483"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p483","spawn_chance":0.3},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"the_end"}]}
+      },
+      {
+               "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p487"}
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p487","spawn_chance":0.3},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"the_end"}]}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+        {"entity_type":"pokemon:p63"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"spawn_chance":20},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"the_end"}]}
+      },
+      {
+
+                     "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":2},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p774"}
+      ],
+      "minecraft:delay_filter":{"min":10,"max":92,"identifier":"pokemon:p774","spawn_chance":100},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"the_end"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:end_stone"],
+      "minecraft:permute_type":[
+        {"entity_type":"pokemon:p374"}
+      ],
+      "minecraft:delay_filter":{"min":4000,"max":13000,"spawn_chance":1},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"the_end"}]}
+      },
+      {
+
+            
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p241"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p241","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p252"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p252","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"jungle"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p924"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p924","spawn_chance":50},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"jungle"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p255"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p255","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"mesa"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p258"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p258","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"swamp"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p690"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p690","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"swamp"}
+      },
+      {
+                "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p704"}
+      ],
+      "minecraft:delay_filter":{"min":3000,"max":7000,"identifier":"pokemon:p704","spawn_chance":1},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"swamp"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p194"}
+      ],
+      "minecraft:delay_filter":{"min":5,"max":9,"identifier":"pokemon:p194","spawn_chance":70},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"swamp"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":[
+        "minecraft:mud",
+        "minecraft:muddy_mangrove_roots",
+        "minecraft:mangrove_roots",
+        "minecraft:sand"
+      ],
+      "minecraft:permute_type":[
+        {"entity_type":"pokemon:p1944"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p1944","spawn_chance":10},
+      "minecraft:biome_filter":{
+        "any_of":[
+          {"test":"has_biome_tag","value":"mangrove_swamp"},
+          {"test":"has_biome_tag","value":"ocean"}
+        ]
+      }
+      },
+      {
+
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p909"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p909","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"swamp"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p258"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p258","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"swamp"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p848"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p848","spawn_chance":5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"swamp"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p262"},
+{"weight":70,"entity_type":"pokemon:p261"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p261","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p264"},
+{"weight":70,"entity_type":"pokemon:p263"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p263","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":15,"entity_type":"pokemon:p269"},
+{"weight":15,"entity_type":"pokemon:p268"},
+{"weight":20,"entity_type":"pokemon:p267"},
+{"weight":20,"entity_type":"pokemon:p266"},
+{"weight":30,"entity_type":"pokemon:p265"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p265","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p271"},
+{"weight":70,"entity_type":"pokemon:p270"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p270","spawn_chance":80},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"swamp"},{"test":"has_biome_tag","value":"river"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p274"},
+{"weight":70,"entity_type":"pokemon:p273"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p273","spawn_chance":80},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"roofed"},{"test":"has_biome_tag","value":"forest"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p277"},
+{"weight":70,"entity_type":"pokemon:p276"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p276","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","operator":"!=","value":"ocean"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p281"},
+{"weight":70,"entity_type":"pokemon:p280"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p280","spawn_chance":40},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"cherry_grove"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p957"},
+{"weight":70,"entity_type":"pokemon:p958"}
+      ],
+      "minecraft:delay_filter":{"min":600,"max":1916,"identifier":"pokemon:p957","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"cherry_grove"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p285"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p285","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"jungle"}
+      },
+      {
+      "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1,"underground":10},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p302"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p302","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+             "minecraft:spawns_underground":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p303"}
+      ],
+      "minecraft:delay_filter":{"min":552,"max":1114,"identifier":"pokemon:p303","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p309"}
+      ],
+      "minecraft:delay_filter":{"min":8,"max":16,"identifier":"pokemon:p309","spawn_chance":70},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"plains"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p329"},
+{"weight":70,"entity_type":"pokemon:p328"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p328","spawn_chance":10},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"mesa"},{"test":"has_biome_tag","value":"desert"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:spawns_underground":{},
+      "minecraft:brightness_filter":{"max":7,"min":0},"adjust_for_weather":true,
+      "minecraft:density_limit":{"surface":1,"underground":10},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p354"},
+{"weight":70,"entity_type":"pokemon:p353"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p353","spawn_chance":80},
+      "minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","value":"monster"},{"test":"has_biome_tag","value":"nether"}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p372"},
+{"weight":70,"entity_type":"pokemon:p371"}
+      ],
+      "minecraft:delay_filter":{"min":6996,"max":12232,"identifier":"pokemon:p371","spawn_chance":1},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+          
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+
+
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p1003","spawn_chance":0.5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"extreme_hills"}
+      },
+      {
+             "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:height_filter": {"min":128,"max":196},
+      "minecraft:spawns_on_block_filter":["minecraft:stone"],
+      "minecraft:permute_type":[
+
+
+      ],
+      "minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p1003","spawn_chance":0.5},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"extreme_hills"}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+"minecraft:density_limit":{"surface":1},
+"minecraft:height_filter":{"min":128,"max":196},
+"minecraft:spawns_on_block_filter":["minecraft:moss_block"],
+"minecraft:permute_type":[
+
+],
+"minecraft:delay_filter":{"min":12000,"max":24000,"identifier":"pokemon:p1017","spawn_chance":7},
+"minecraft:biome_filter":{"test":"has_biome_tag","value":"lush_caves"}
+},
+{
+              "minecraft:spawns_on_surface":{},
+"minecraft:density_limit":{"surface":1},
+"minecraft:height_filter":{"min":128,"max":196},
+"minecraft:spawns_on_block_filter":["minecraft:moss_block"],
+"minecraft:permute_type":[
+
+],
+"minecraft:delay_filter":{"min":1200,"max":9400,"identifier":"pokemon:p704","spawn_chance":1},
+"minecraft:biome_filter":{"test":"has_biome_tag","value":"lush_caves"}
+},
+{
+
+            
+  
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p387"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p387","spawn_chance":10},
+      "minecraft:biome_filter":{"all_of":[{"test":"has_biome_tag","value":"roofed"},{"test":"has_biome_tag","value":"forest"}]}
+      },
+      {
+            "minecraft:spawns_on_surface":{},
+"minecraft:density_limit":{"surface":1},
+"minecraft:height_filter":{"min":128,"max":196},
+"minecraft:spawns_on_block_filter":["minecraft:stone"],
+"minecraft:permute_type":[
+
+],
+"minecraft:delay_filter":{"min":120,"max":24000,"identifier":"pokemon:p384","spawn_chance":0.5},
+"minecraft:biome_filter":{"test":"has_biome_tag","value":"lush_caves"}
+},
+{
+
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p390"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p390","spawn_chance":10},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"mesa"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p393"}
+      ],
+      "minecraft:delay_filter":{"min":32,"max":64,"identifier":"pokemon:p393","spawn_chance":10},
+      "minecraft:biome_filter":{"any_of":[{"all_of":[{"test":"has_biome_tag","value":"frozen"},{"test":"has_biome_tag","value":"ocean"}]},{"all_of":[{"test":"has_biome_tag","value":"frozen"},{"test":"has_biome_tag","operator":"!=","value":"ocean"}]}]}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":10,"entity_type":"pokemon:p398"},
+{"weight":30,"entity_type":"pokemon:p397"},
+{"weight":60,"entity_type":"pokemon:p396"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p396","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","operator":"!=","value":"ocean"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p400"},
+{"weight":70,"entity_type":"pokemon:p399"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p399","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass"],
+      "minecraft:permute_type":[
+{"entity_type":"pokemon:p417"}
+      ],
+      "minecraft:delay_filter":{"min":2,"max":4,"identifier":"pokemon:p417","spawn_chance":80},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"forest"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:grass","minecraft:sand","minecraft:snow_layer"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p432"},
+{"weight":70,"entity_type":"pokemon:p431"}
+      ],
+      "minecraft:delay_filter":{"min":4,"max":8,"identifier":"pokemon:p431","spawn_chance":60},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"monster"}
+      },
+      {
+              "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p859"},
+{"weight":70,"entity_type":"pokemon:p860"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p885","spawn_chance":20},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"pale_garden"}
+      }, 
+       { 
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:spawns_on_block_filter":["minecraft:sand"],
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p443"},
+{"weight":70,"entity_type":"pokemon:p444"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p443","spawn_chance":20},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"desert"}
+      },
+      {
+      "minecraft:spawns_on_surface":{},
+      "minecraft:density_limit":{"surface":1},
+      "minecraft:permute_type":[
+{"weight":30,"entity_type":"pokemon:p886"},
+{"weight":70,"entity_type":"pokemon:p885"}
+      ],
+      "minecraft:delay_filter":{"min":16,"max":32,"identifier":"pokemon:p885","spawn_chance":20},
+      "minecraft:biome_filter":{"test":"has_biome_tag","value":"pale_garden"}
+      }
+    ]
+  }
+}
