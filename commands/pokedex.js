@@ -3,9 +3,9 @@ const path = require("path");
 const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 
 const CSV_PATH = path.join(__dirname, "..", "pokedex1.1.csv");
-const SPAWN_JSON_PATH = path.join(__dirname, "..", "pokemon.json");
+const JSON_PATH = path.join(__dirname, "..", "pokemon.json");
 
-// ---------------- CSV ----------------
+// ================= CSV =================
 function readCSV() {
   const raw = fs.readFileSync(CSV_PATH, "utf8");
   const linhas = raw.split("\n").map(l => l.trim()).filter(Boolean);
@@ -16,52 +16,52 @@ function readCSV() {
   for (let i = 1; i < linhas.length; i++) {
     const cols = linhas[i].split(";").map(c => c.trim());
     const obj = {};
-    header.forEach((h, idx) => obj[h] = cols[idx] || "");
+    header.forEach((h, idx) => obj[h] = cols[idx]);
     rows.push(obj);
   }
-
   return rows;
 }
 
 const pokedex = readCSV();
 
-// ---------------- SPAWN JSON ----------------
-const spawnData = JSON.parse(fs.readFileSync(SPAWN_JSON_PATH, "utf8"));
+// ================= JSON SPAWN =================
+const spawns = JSON.parse(fs.readFileSync(JSON_PATH, "utf8"));
 
 function extractBiome(filter) {
   if (!filter) return null;
 
   if (filter.value) return filter.value;
 
-  if (filter.any_of) {
-    return filter.any_of.map(f => extractBiome(f)).filter(Boolean).join(", ");
+  if (Array.isArray(filter.any_of)) {
+    return filter.any_of.map(f => extractBiome(f)).filter(Boolean).join(" OU ");
   }
 
-  if (filter.all_of) {
+  if (Array.isArray(filter.all_of)) {
     return filter.all_of.map(f => extractBiome(f)).filter(Boolean).join(" + ");
   }
+
+  if (filter.test && filter.value) return filter.value;
 
   return null;
 }
 
 function acharBiome(id) {
-  const conditions = spawnData["minecraft:spawn_rules"].conditions;
+  const conditions = spawns["minecraft:spawn_rules"].conditions;
 
   for (const c of conditions) {
-    const tipos = c["minecraft:permute_type"];
-    if (!tipos) continue;
+    if (!c["minecraft:permute_type"]) continue;
 
-    for (const t of tipos) {
+    for (const t of c["minecraft:permute_type"]) {
       if (t.entity_type === `pokemon:p${id}`) {
-        return extractBiome(c["minecraft:biome_filter"]);
+        const biome = extractBiome(c["minecraft:biome_filter"]);
+        return biome || "não spawna";
       }
     }
   }
-
-  return null;
+  return "não spawna";
 }
 
-// ---------------- EMOJIS ----------------
+// ================= EMOJIS =================
 const TYPE_EMOJIS = {
   "grama": "<:grass:1445236750988611655>",
   "venenoso": "<:poison:1445236883079565413>",
@@ -83,22 +83,15 @@ const TYPE_EMOJIS = {
   "terrestre": "<:ground:1445236765874065631>"
 };
 
-function normalize(s) {
-  return s.toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
+function iconsFromType(type) {
+  if (!type) return "";
+  return type.split("/").map(t => {
+    const key = t.trim().toLowerCase();
+    return TYPE_EMOJIS[key] || "";
+  }).join(" ");
 }
 
-function getTypeIcons(typeField) {
-  if (!typeField) return "";
-
-  return typeField
-    .split(/[\/|,]/)
-    .map(t => TYPE_EMOJIS[normalize(t.trim())] || "")
-    .join(" ");
-}
-
-// ---------------- COMMAND ----------------
+// ================= COMANDO =================
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("pokedex")
@@ -112,26 +105,26 @@ module.exports = {
     const numero = interaction.options.getInteger("numero");
     const nome = interaction.options.getString("nome");
 
-    let found;
+    let found = null;
 
     if (numero) {
       found = pokedex.find(p => Number(p.dex_number) === numero);
     } else if (nome) {
       found = pokedex.find(p => p.name.toLowerCase().includes(nome.toLowerCase()));
-    } else {
-      return interaction.editReply("❌ Use número ou nome.");
     }
 
     if (!found) return interaction.editReply("❌ Pokémon não encontrado.");
 
-    const biome = acharBiome(found.dex_number) || "não spawna";
+    const id = found.dex_number;
+    const biome = acharBiome(id);
+    const icons = iconsFromType(found.type);
 
     const embed = new EmbedBuilder()
       .setColor("Aqua")
-      .setTitle(`#${found.dex_number} - ${found.name}`)
+      .setTitle(`#${id} - ${found.name}`)
       .setThumbnail(found.sprite)
       .addFields(
-        { name: "Tipo", value: `${getTypeIcons(found.type)} ${found.type}` },
+        { name: "Tipo", value: `${icons} ${found.type}` },
         { name: "Bioma de Spawn", value: biome }
       )
       .setFooter({ text: "CobbleGhost Pokédex" });
