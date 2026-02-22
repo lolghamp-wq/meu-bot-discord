@@ -29,42 +29,45 @@ const pokedex = readCSV();
 const spawns = JSON.parse(fs.readFileSync(JSON_PATH, "utf8"));
 
 function extractBiome(filter) {
-  if (!filter) return null;
+  if (!filter) return [];
 
-  if (filter.value) return filter.value;
+  if (filter.value) return [filter.value];
+
+  let result = [];
 
   if (Array.isArray(filter.any_of)) {
-    return filter.any_of
-      .map(f => extractBiome(f))
-      .filter(Boolean)
-      .join(" OU ");
+    for (const f of filter.any_of) {
+      result = result.concat(extractBiome(f));
+    }
   }
 
   if (Array.isArray(filter.all_of)) {
-    return filter.all_of
-      .map(f => extractBiome(f))
-      .filter(Boolean)
-      .join(" + ");
+    for (const f of filter.all_of) {
+      result = result.concat(extractBiome(f));
+    }
   }
 
-  return null;
+  return result;
 }
 
 function acharBiome(id) {
-  const conditions = spawns["minecraft:spawn_rules"].conditions;
+  const conditions = spawns["minecraft:spawn_rules"]?.conditions || [];
 
   for (const c of conditions) {
     if (!c["minecraft:permute_type"]) continue;
 
     for (const t of c["minecraft:permute_type"]) {
+      if (!t.entity_type) continue;
+
       if (t.entity_type === `pokemon:p${id}`) {
-        const biome = extractBiome(c["minecraft:biome_filter"]);
-        return biome || "não spawna";
+        const biomes = extractBiome(c["minecraft:biome_filter"]);
+        if (biomes.length === 0) return "Desconhecido";
+        return [...new Set(biomes)].join(" OU ");
       }
     }
   }
 
-  return "não spawna";
+  return "Não spawna";
 }
 
 // ================= EMOJIS =================
@@ -89,18 +92,41 @@ const TYPE_EMOJIS = {
   terrestre: "<:ground:1445236765874065631>"
 };
 
+const TYPE_COLORS = {
+  fogo: "#FF6A00",
+  agua: "#0099FF",
+  grama: "#00C853",
+  eletrico: "#FFD600",
+  lutador: "#D32F2F",
+  dragao: "#7C4DFF",
+  gelo: "#00E5FF",
+  normal: "#BDBDBD",
+  sombrio: "#424242",
+  fada: "#FF80AB",
+  psiquico: "#E040FB",
+  terrestre: "#8D6E63",
+  pedra: "#795548",
+  aco: "#90A4AE",
+  venenoso: "#AA00FF",
+  fantasma: "#5C6BC0",
+  voador: "#81D4FA",
+  inseto: "#AEEA00"
+};
+
+function normalize(text) {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+}
+
 function iconsFromType(type) {
   if (!type) return "";
 
   return type
     .split(/[\/|,]/)
-    .map(t =>
-      t
-        .toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .trim()
-    )
+    .map(t => normalize(t))
     .map(key => TYPE_EMOJIS[key] || "")
     .join(" ");
 }
@@ -141,15 +167,22 @@ module.exports = {
     const biome = acharBiome(id);
     const icons = iconsFromType(found.type);
 
+    const mainType = normalize(found.type.split("/")[0]);
+    const embedColor = TYPE_COLORS[mainType] || "#00E5FF";
+
     const embed = new EmbedBuilder()
-      .setColor("Aqua")
-      .setTitle(`#${id} - ${found.name}`)
-      .setThumbnail(found.sprite)
+      .setColor(embedColor)
+      .setTitle(`📖 #${id} • ${found.name}`)
+      .setDescription(`**Tipo:** ${icons} ${found.type}`)
       .addFields(
-        { name: "Tipo", value: `${icons} ${found.type}` },
-        { name: "Bioma de Spawn", value: biome }
+        { name: "🌍 Bioma de Spawn", value: `\`${biome}\`` }
       )
-      .setFooter({ text: "CobbleGhost Pokédex" });
+      .setImage(found.sprite)
+      .setFooter({
+        text: "CobbleGhost Pokédex • Sistema Oficial",
+        iconURL: found.sprite
+      })
+      .setTimestamp();
 
     await interaction.editReply({ embeds: [embed] });
   }
