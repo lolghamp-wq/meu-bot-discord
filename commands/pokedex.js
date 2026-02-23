@@ -5,27 +5,31 @@ const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 const CSV_PATH = path.join(__dirname, "..", "pokedex1.1.csv");
 const JSON_PATH = path.join(__dirname, "..", "pokemon.json");
 
-// ================= CSV =================
+// ================= FUNÇÃO DE NORMALIZAÇÃO =================
 function normalizeText(text) {
   return text
     .normalize("NFD")                 // separa os acentos
     .replace(/[\u0300-\u036f]/g, "") // remove os acentos
+    .toLowerCase()                    // transforma em minúsculo
     .trim();
 }
 
+// ================= LEITURA CSV =================
 function readCSV() {
   const raw = fs.readFileSync(CSV_PATH, "utf8");
   const linhas = raw.split("\n").map(l => l.trim()).filter(Boolean);
 
   // normaliza os headers
-  const header = linhas[0].split(";").map(h => normalizeText(h).toLowerCase());
+  const header = linhas[0].split(";").map(h => normalizeText(h));
 
   const rows = [];
 
   for (let i = 1; i < linhas.length; i++) {
-    const cols = linhas[i].split(";").map(c => normalizeText(c));
+    const cols = linhas[i].split(";").map(c => c.trim());
     const obj = {};
-    header.forEach((h, idx) => obj[h] = cols[idx] || "");
+    header.forEach((h, idx) => {
+      obj[h] = cols[idx] || "";
+    });
     rows.push(obj);
   }
 
@@ -122,11 +126,12 @@ const TYPE_COLORS = {
   inseto: "#AEEA00"
 };
 
+// ================= FUNÇÕES =================
 function iconsFromType(type) {
   if (!type) return "";
   return type
     .split(/[\/|,]/)
-    .map(t => normalizeText(t.toLowerCase()))
+    .map(t => normalizeText(t))
     .map(key => TYPE_EMOJIS[key] || "")
     .join(" ");
 }
@@ -161,8 +166,8 @@ module.exports = {
     if (numero) {
       found = pokedex.find(p => Number(p.dex_number) === numero);
     } else if (nome) {
-      const nomeNormalized = normalizeText(nome).toLowerCase();
-      found = pokedex.find(p => normalizeText(p.name).toLowerCase().includes(nomeNormalized));
+      const nomeNormalized = normalizeText(nome);
+      found = pokedex.find(p => normalizeText(p.name).includes(nomeNormalized));
     }
 
     if (!found) {
@@ -188,7 +193,7 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setColor(embedColor)
       .setTitle(`📖 #${id} • ${found.name}`)
-      .setDescription(`**Tipo:** ${icons} ${found.type}`)
+      .setDescription(`**Tipo:** ${icons} ${found.type}`) // mostra com acentos do CSV
       .addFields(
         { name: "🌍 Bioma de Spawn", value: `\`${biome}\`` },
 
