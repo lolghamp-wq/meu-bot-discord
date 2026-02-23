@@ -131,6 +131,13 @@ function iconsFromType(type) {
     .join(" ");
 }
 
+function bar(value) {
+  const max = 200;
+  const size = 8;
+  const filled = Math.round((Number(value) / max) * size);
+  return "█".repeat(filled) + "░".repeat(size - filled);
+}
+
 // ================= COMANDO =================
 module.exports = {
   data: new SlashCommandBuilder()
@@ -170,12 +177,31 @@ module.exports = {
     const mainType = normalize(found.type.split("/")[0]);
     const embedColor = TYPE_COLORS[mainType] || "#00E5FF";
 
+    // ===== STATS =====
+    const hp  = Number(found.HP || 0);
+    const atk = Number(found.attack || 0);
+    const def = Number(found.defense || 0);
+    const spa = Number(found.special_attack || 0);
+    const spd = Number(found.special_defense || 0);
+    const spe = Number(found.speed || 0);
+    const total = Number(found.total || (hp + atk + def + spa + spd + spe));
+
     const embed = new EmbedBuilder()
       .setColor(embedColor)
       .setTitle(`📖 #${id} • ${found.name}`)
       .setDescription(`**Tipo:** ${icons} ${found.type}`)
       .addFields(
-        { name: "🌍 Bioma de Spawn", value: `\`${biome}\`` }
+        { name: "🌍 Bioma de Spawn", value: `\`${biome}\`` },
+
+        { name: "❤️ HP", value: `${bar(hp)} ${hp}`, inline: true },
+        { name: "⚔️ ATK", value: `${bar(atk)} ${atk}`, inline: true },
+        { name: "🛡️ DEF", value: `${bar(def)} ${def}`, inline: true },
+
+        { name: "✨ SPA", value: `${bar(spa)} ${spa}`, inline: true },
+        { name: "🔮 SPD", value: `${bar(spd)} ${spd}`, inline: true },
+        { name: "⚡ SPE", value: `${bar(spe)} ${spe}`, inline: true },
+
+        { name: "📊 TOTAL", value: `**${total}**`, inline: false }
       )
       .setImage(found.sprite)
       .setFooter({
