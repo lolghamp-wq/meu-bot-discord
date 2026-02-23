@@ -1,0 +1,1026 @@
+﻿ï»¿sprite;nÃÂº;spawn_biome;dex_number;;name;type;HP;attack;defense;special_attack;special_defense;speed;total
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png;p1;forest;1;;Bulbasaur; Grama / Venenoso;45;49;49;65;65;45;318
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png;p2;nÃÂ£o spawna;2;;Ivysaur; Grama / Venenoso;60;62;63;80;80;60;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png;p3;nÃÂ£o spawna;3;;Venusaur; Grama / Venenoso;80;82;83;100;100;80;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png;p4;mesa;4;;Charmander; Fogo;39;52;43;60;50;65;309
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png;p5;nÃÂ£o spawna;5;;Charmeleon; Fogo;58;64;58;80;65;80;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png;p6;nÃÂ£o spawna;6;;Charizard; Fogo / Voador;78;84;78;109;85;100;534
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png;p7;beach;7;;Squirtle; Ãgua;44;48;65;60;54;43;314
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png;p8;nÃÂ£o spawna;8;;Wartortle; Ãgua;59;63;80;65;80;58;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png;p9;nÃÂ£o spawna;9;;Blastoise; Ãgua;79;83;100;85;105;78;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png;p10;forest;10;;Caterpie; Inseto;45;30;35;20;20;45;195
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png;p11;forest;11;;Metapod; Inseto;50;20;55;25;25;30;205
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png;p12;nÃÂ£o spawna;12;;Butterfree; Inseto / Voador;60;45;50;90;80;70;395
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png;p13;forest;13;;Weedle; Inseto / Venenoso;40;35;30;20;20;50;195
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png;p14;forest;14;;Kakuna; Inseto / Venenoso;45;25;50;25;25;35;205
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png;p15;flower_forest;15;;Beedrill; Inseto / Venenoso;65;90;40;40;80;75;390
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png;p16;ocean;16;;Pidgey; Normal / Voador;40;45;40;35;35;56;251
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png;p17;ocean;17;;Pidgeotto; Normal / Voador;63;60;55;50;50;71;349
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png;p18;ocean;18;;Pidgeot; Normal / Voador;83;80;75;70;70;91;469
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png;p19;ocean;19;;Rattata; Normal;30;56;35;25;35;72;253
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png;p20;ocean;20;;Raticate; Normal;55;81;60;50;70;97;413
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png;p21;oocean;21;;Spearow; Normal / Voador;40;60;30;31;31;70;262
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png;p22;extreme_hills;22;;Fearow; Normal / Voador;65;90;65;61;61;100;442
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png;p23;swamp;23;;Ekans; Venenoso;30;60;44;40;54;55;283
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png;p24;swamp;24;;Arbok; V Venenoso;60;95;69;65;79;80;448
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png;p25;forest;25;;Pikachu; ElÃ©trico;35;55;40;50;50;90;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png;p26;nÃÂ£o spawna;26;;Raichu; ElÃ©trico;60;90;55;90;80;110;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png;p27;desert;27;;Sandshrew; Terrestre;50;75;85;20;30;40;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png;p28;desert;28;;Sandslash; Terrestre;75;100;110;65;45;55;450
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png;p29;forest;29;;Nidoran; Venenoso;55;47;52;40;40;41;275
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png;p30;forest;30;;Nidorina; Venenoso;70;62;67;55;55;56;365
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png;p31;nÃÂ£o spawna;31;;Nidoqueen; Venenoso / Terrestre;90;92;87;75;85;76;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png;p32;forest;32;;Nidoran; Venenoso;55;47;52;40;40;41;275
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png;p33;forest;33;;Nidorino; Venenoso;61;72;57;55;55;65;365
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png;p34;nÃÂ£o spawna;34;;Nidoking; Venenoso / Terrestre;81;102;77;85;75;85;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png;p35;extreme_hills;35;;Clefairy; Fada;70;45;48;60;65;35;323
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png;p36;extreme_hills;36;;Clefable; Fada;95;70;73;95;90;60;483
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png;p37;roofed;37;;Vulpix; Fogo;38;41;40;50;65;65;299
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png;p38;nÃÂ£o spawna;38;;Ninetales; Fogo;73;76;75;81;100;100;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png;p39;monster;39;;Jigglypuff; Normal / Fada;115;45;20;45;25;20;270
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png;p40;nÃÂ£o spawna;40;;Wigglytuff; Normal / Fada;140;70;45;85;50;45;435
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png;p41;monster;41;;Zubat; Venenoso / Voador;40;45;35;30;40;55;245
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png;p42;monster;42;;Golbat; Venenoso / Voador;75;80;70;65;75;90;455
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png;p43;birch;43;;Oddish; Grama / Venenoso;45;50;55;75;65;30;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png;p44;birch;44;;Gloom; Grama / Venenoso;60;65;70;85;75;40;395
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png;p45;nÃÂ£o spawna;45;;Vileplume; Grama / Venenoso;75;80;85;110;90;50;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png;p46;mooshroom_island;46;;Paras; Inseto / Grama;35;70;55;45;55;25;285
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png;p47;mooshroom_island;47;;Parasect; Inseto / Grama;60;95;80;60;80;30;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png;p48;roofed;48;;Venonat; Inseto / Venenoso;60;55;50;40;55;45;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png;p49;roofed;49;;Venomoth; Inseto / Venenoso;70;65;60;90;75;90;450
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png;p50;monster;50;;Diglett; Terrestre;10;55;25;35;45;95;265
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png;p51;monster;51;;Dugtrio; Terrestre;35;100;50;50;70;120;425
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png;p52;plains;52;;Meowth; Normal;40;45;35;40;40;90;290
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png;p53;plains;53;;Persian; Normal;65;70;60;65;65;115;440
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png;p54;river;54;;Psyduck; Ãgua;50;52;48;65;50;55;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png;p55;river;55;;Golduck; Ãgua;80;82;78;95;80;85;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png;p56;savanna;56;;Mankey; Lutador;40;80;35;35;45;70;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png;p57;savanna;57;;Primeape; Lutador;65;105;60;60;70;95;455
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png;p58;plains;58;;Growlithe; Fogo;55;70;45;70;50;60;350
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png;p59;nÃÂ£o spawna;59;;Arcanine; Fogo;90;110;80;100;80;95;555
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png;p60;river;60;;Poliwag; Ãgua;40;50;40;40;40;90;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png;p61;river;61;;Poliwhirl; Ãgua;65;65;65;50;50;90;385
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png;p62;nÃÂ£o spawna;62;;Poliwrath; Ãgua / Lutador;90;95;95;70;90;70;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png;p63;forest;63;;Abra; PsÃ­quico;25;20;15;105;55;90;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png;p64;nÃÂ£o spawna;64;;Kadabra; PsÃ­quico;40;35;30;120;70;105;400
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png;p65;nÃÂ£o spawna;65;;Alakazam; PsÃ­quico;55;50;45;135;95;120;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png;p66;monster;66;;Machop; Lutador;70;80;50;35;35;35;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png;p67;nÃÂ£o spawna;67;;Machoke; Lutador;80;100;70;50;60;45;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png;p68;nÃÂ£o spawna;68;;Machamp; Lutador;90;130;80;65;85;55;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png;p69;forest;69;;Bellsprout; Grama / Venenoso;50;75;35;70;30;40;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png;p70;forest;70;;Weepinbell; Grama / Venenoso;65;90;50;85;45;55;390
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png;p71;taiga+jungle;71;;Victreebel; Grama / Venenoso;80;105;65;100;70;70;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png;p72;ocean;72;;Tentacool; Ãgua / Venenoso;40;40;35;50;100;70;335
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png;p73;ocean;73;;Tentacruel; Ãgua / Venenoso;80;70;65;80;120;100;515
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png;p74;deep_dark;74;;Geodude; Pedra / Terrestre;40;80;100;30;30;20;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png;p75;deep_dark;75;;Graveler; Pedra / Terrestre;55;95;115;45;45;35;390
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png;p76;caves;76;;Golem; Pedra / Terrestre;80;120;130;55;65;45;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png;p77;mesa;77;;Ponyta; Fogo;50;85;55;65;65;90;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png;p78;mesa;78;;Rapidash; Fogo;65;100;70;105;80;80;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png;p79;beach;79;;Slowpoke; Ãgua / PsÃ­quico;90;65;65;40;40;15;315
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png;p80;beach;80;;Slowbro; Ãgua / PsÃ­quico;95;75;110;100;80;30;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png;p81;monster;81;;Magnemite; ElÃ©trico / AÃ§o;25;35;70;95;55;45;325
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png;p82;nÃÂ£o spawna;82;;Magneton; ElÃ©trico / AÃ§o;50;60;95;120;70;70;465
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png;p83;ocean;83;;Farfetchd; Normal / Voador;52;90;55;58;62;60;377
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png;p84;savanna;84;;Doduo; Normal / Voador;35;85;45;35;35;75;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png;p85;savanna;85;;Dodrio; Normal / Voador;60;110;70;60;60;110;470
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png;p86;ocean;86;;Seel; Ãgua;65;45;55;45;70;45;325
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png;p87;ocean;87;;Dewgong; Ãgua / Gelo;90;70;80;70;95;70;475
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png;p88;swamp;88;;Grimer; Venenoso;80;80;50;40;50;25;325
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png;p89;nÃÂ£o spawna;89;;Muk; Venenoso;105;105;75;65;100;50;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png;p90;beach;90;;Shellder; Ãgua;30;65;100;45;25;40;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png;p91;nÃÂ£o spawna;91;;Cloyster; Ãgua / Gelo;50;95;180;85;45;70;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png;p92;monster;92;;Gastly; Fantasma / Venenoso;30;35;30;100;35;80;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png;p93;monster;93;;Haunter; Fantasma / Venenoso;45;50;45;115;55;95;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png;p94;nÃÂ£o spawna;94;;Gengar; Fantasma / Venenoso;60;65;60;130;75;110;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png;p95;monster;95;;Onix; Pedra / Terrestre;35;45;160;30;45;70;385
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png;p96;roofed;96;;Drowzee; PsÃ­quico;60;48;45;43;90;42;328
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png;p97;roofed;97;;Hypno; PsÃ­quico;85;73;70;73;115;67;483
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png;p98;sea;98;;Krabby; Ãgua;30;105;90;25;25;50;325
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png;p99;sea;99;;Kingler; Ãgua;55;130;115;50;50;75;475
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png;p100;forest;100;;Voltorb; ElÃ©trico;40;30;50;55;55;100;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png;p101;nÃÂ£o spawna;101;;Electrode; ElÃ©trico;60;50;70;80;80;150;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png;p102;jungle;102;;Exeggcute; Grama / PsÃ­quico;60;40;80;60;45;40;325
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png;p103;nÃÂ£o spawna;103;;Exeggutor; Grama / PsÃ­quico;95;95;85;125;75;55;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png;p104;savanna;104;;Cubone; Terrestre;50;50;95;40;50;35;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png;p105;savanna;105;;Marowak; Terrestre;60;80;110;50;80;45;425
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png;p106;savanna;106;;Hitmonlee; Lutador;50;120;53;35;110;87;455
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png;p107;savanna;107;;Hitmonchan; Lutador;50;105;79;35;110;76;455
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png;p108;cherry_grove;108;;Lickitung; Normal;90;55;75;60;75;30;385
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png;p109;mesa;109;;Koffing; Venenoso;40;65;95;60;45;35;340
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png;p110;mesa;110;;Weezing; Venenoso;65;90;120;85;70;60;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png;p111;mesa;111;;Rhyhorn; Terrestre / Pedra;80;85;95;30;30;25;345
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png;p112;mesa;112;;Rhydon; Terrestre / Pedra;105;130;120;45;45;40;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png;p113;savanna;113;;Chansey; Normal;250;5;5;35;105;50;450
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png;p114;jungle;114;;Tangela; Grama;65;55;115;100;40;60;435
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png;p115;savanna;115;;Kangaskhan; Normal;105;95;80;40;80;90;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png;p116;ocean+river;116;;Horsea; Ãgua;30;40;70;70;25;60;295
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png;p117;ocean+river;117;;Seadra; Ãgua;55;65;95;95;45;85;440
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png;p118;ocean;118;;Goldeen; Ãgua;45;67;60;35;50;63;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png;p119;ocean;119;;Seaking; Ãgua;80;92;65;65;80;68;450
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png;p120;ocean+river;120;;Staryu; Ãgua;30;45;55;70;55;85;340
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png;p121;nÃÂ£o spawna;121;;Starmie; Ãgua / PsÃ­quico;60;75;85;100;85;115;520
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png;p122;nÃÂ£o spawna;122;;Mr. Mime; PsÃ­quico / Fada;40;45;65;100;120;90;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png;p123;plains;123;;Scyther; Inseto / Voador;70;110;80;55;80;105;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png;p124;nÃÂ£o spawna;124;;Jynx; Gelo / PsÃ­quico;65;50;35;115;95;95;455
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png;p125;nÃÂ£o spawna;125;;Electabuzz; ElÃ©trico;65;83;57;95;85;105;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png;p126;nÃÂ£o spawna;126;;Magmar; Fogo;65;95;57;100;85;93;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png;p127;taiga;127;;Pinsir; Inseto;65;125;100;55;70;85;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png;p128;savanna;128;;Tauros; Normal;75;100;95;40;70;110;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png;p129;ocean;129;;Magikarp; Ãgua;20;10;55;15;20;80;200
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png;p130;ocean;130;;Gyarados; Ãgua / Voador;95;125;79;60;100;81;540
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png;p131;ocean;131;;Lapras; Ãgua / Gelo;130;85;80;85;95;60;535
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png;p132;swamp;132;;Ditto; Normal;48;48;48;48;48;48;288
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png;p133;plains;133;;Eevee; Normal;55;55;50;45;65;55;325
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png;p134;nÃÂ£o spawna;134;;Vaporeon; Ãgua;130;65;60;110;95;65;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png;p135;nÃÂ£o spawna;135;;Jolteon; ElÃ©trico;65;65;60;110;95;130;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png;p136;nÃÂ£o spawna;136;;Flareon; Fogo;65;130;60;95;110;65;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png;p137;side quest laboratory;137;;Porygon; Normal;65;60;70;85;75;40;395
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png;p138;fossil;138;;Omanyte; Pedra / Ãgua;35;40;100;90;55;35;355
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png;p139;nÃÂ£o spawna;139;;Omastar; Pedra / Ãgua;70;60;125;115;70;55;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png;p140;deep_dark;140;;Kabuto; Pedra / Ãgua;30;80;90;55;45;55;355
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png;p141;fossil;141;;Kabutops; Pedra / Ãgua;60;115;105;65;70;80;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png;p142;nÃÂ£o spawna;142;;Aerodactyl; Pedra / Voador;80;105;65;60;75;130;515
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png;p143;plains;143;;Snorlax; Normal;160;110;65;65;110;30;540
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png;p144;nÃÂ£o spawna;144;;Articuno; Gelo / Voador;90;85;100;95;125;85;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png;p145;plains;145;;Zapdos; ElÃ©trico / Voador;90;90;85;125;90;100;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png;p146;mesa;146;;Moltres; Fogo / Voador;90;100;90;125;85;90;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png;p147;savanna;147;;Dratini; DragÃ£o;41;64;45;50;50;50;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png;p148;savanna;148;;Dragonair; DragÃ£o;61;84;65;70;70;70;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png;p149;nÃÂ£o spawna;149;;Dragonite; DragÃ£o / Voador;91;134;95;100;100;80;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png;p150;nÃÂ£o spawna;150;;Mewtwo; PsÃ­quico;106;110;90;154;90;130;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png;p151;nÃÂ£o spawna;151;;Mew; PsÃ­quico;100;100;100;100;100;100;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png;p152;forest;152;;Chikorita; Grama;45;49;65;49;65;45;318
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png;p153;jungle;153;;Bayleef; Grama;60;62;80;63;80;69;414
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/154.png;p154;nÃÂ£o spawna;154;;Meganium; Grama;80;80;100;80;83;100;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png;p155;mesa;155;;Cyndaquil; Fogo;39;52;43;60;50;65;309
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png;p156;mesa;156;;Quilava; Fogo;58;64;58;80;65;80;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png;p157;nÃÂ£o spawna;157;;Typhlosion; Fogo;78;84;78;109;85;100;534
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png;p158;river;158;;Totodile; Ãgua;50;65;64;44;48;43;314
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png;p159;beach;159;;Croconaw; Ãgua;65;80;80;59;63;58;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png;p160;nÃÂ£o spawna;160;;Feraligatr; Ãgua;85;105;100;79;83;78;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/161.png;p161;monster;161;;Sentret; Normal;35;46;34;35;45;20;215
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png;p162;monster;162;;Furret; Normal;85;76;64;45;55;90;415
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/163.png;p163;monster;163;;Hoothoot; Normal / Voador;60;30;30;36;56;50;262
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/164.png;p164;monster;164;;Noctowl; Normal / Voador;100;50;50;86;96;70;452
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png;p165;forest;165;;Ledyba; Inseto / Voador;40;20;30;40;80;55;265
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png;p166;forest;166;;Ledian; Inseto / Voador;55;35;50;55;110;85;390
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png;p167;forest;167;;Spinarak; Inseto / Venenoso;40;60;40;40;40;30;250
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png;p168;forest;168;;Ariados; Inseto / Venenoso;70;90;70;60;70;40;400
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png;p169;nÃÂ£o spawna;169;;Crobat; Venenoso / Voador;85;90;80;70;80;130;535
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/170.png;p170;nÃÂ£o spawna;170;;Chinchou; Ãgua / ElÃ©trico;75;38;38;56;56;67;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/171.png;p171;nÃÂ£o spawna;171;;Lanturn; Ãgua / ElÃ©trico;125;58;58;76;76;67;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png;p172;nÃÂ£o spawna;172;;Pichu; ElÃ©trico;20;40;15;35;35;60;205
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/173.png;p173;nÃÂ£o spawna;173;;Cleffa; Fada;50;25;28;45;55;15;218
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png;p174;nÃÂ£o spawna;174;;Igglybuff; Normal / Fada;90;30;15;40;20;15;210
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png;p175;egg;175;;Togepi; Fada;35;20;65;40;65;20;245
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/176.png;p176;nÃÂ£o spawna;176;;Togetic; Fada / Voador;55;40;85;80;105;40;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/177.png;p177;nÃÂ£o spawna;177;;Natu; PsÃ­quico / Voador;40;50;45;70;45;70;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/178.png;p178;nÃÂ£o spawna;178;;Xatu; PsÃ­quico / Voador;65;75;70;95;70;95;470
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/179.png;p179;taiga;179;;Mareep; ElÃ©trico;55;40;40;65;45;35;280
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png;p180;taiga;180;;Flaaffy; ElÃ©trico;70;55;55;80;60;45;365
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png;p181;taiga;181;;Ampharos; ElÃ©trico;90;75;85;115;90;55;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png;p182;nÃÂ£o spawna;182;;Bellossom; Grama;75;80;95;90;100;50;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png;p183;nÃÂ£o spawna;183;;Marill; Ãgua / Fada;70;20;50;20;50;40;250
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png;p184;nÃÂ£o spawna;184;;Azumarill; Ãgua / Fada;100;50;80;60;80;50;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png;p185;plains;185;;Sudowoodo; Pedra;70;100;115;30;65;30;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png;p186;nÃÂ£o spawna;186;;Politoed; Ãgua;90;75;75;90;100;70;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png;p187;plains;187;;Hoppip; Grama / Voador;35;35;40;35;55;50;250
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png;p188;plains;188;;Skiploom; Grama / Voador;55;45;50;45;65;80;340
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/189.png;p189;plains;189;;Jumpluff; Grama / Voador;75;55;70;55;95;110;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/190.png;p190;nÃÂ£o spawna;190;;Aipom; Normal;55;70;55;40;55;85;360
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/191.png;p191;nÃÂ£o spawna;191;;Sunkern; Grama;30;30;30;30;30;30;180
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png;p192;nÃÂ£o spawna;192;;Sunflora; Grama;75;75;55;105;85;30;425
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/193.png;p193;nÃÂ£o spawna;193;;Yanma; Inseto / Voador;65;65;45;75;45;95;390
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png;p194;swamp;194;;Wooper; Ãgua / Terrestre;55;45;45;25;25;15;210
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png;p195;nÃÂ£o spawna;195;;Quagsire; Ãgua / Terrestre;95;85;85;65;65;35;430
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png;p196;nÃÂ£o spawna;196;;Espeon; PsÃ­quico;65;65;60;130;95;110;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png;p197;nÃÂ£o spawna;197;;Umbreon; Sombrio;95;65;110;60;130;65;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png;p198;nÃÂ£o spawna;198;;Murkrow; Sombrio / Voador;60;85;42;85;42;91;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png;p199;nÃÂ£o spawna;199;;Slowking; Ãgua / PsÃ­quico;95;75;80;100;110;30;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png;p200;monster;200;;Misdreavus; Fantasma;60;60;60;85;85;85;435
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png;p201;nÃÂ£o spawna;201;;Unown; PsÃ­quico;48;72;48;72;48;48;336
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png;p202;nÃÂ£o spawna;202;;Wobbuffet; PsÃ­quico;190;33;58;33;58;33;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png;p203;jungle;203;;Girafarig; Normal / PsÃ­quico;70;80;65;90;65;85;455
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png;p204;roofed;204;;Pineco; Inseto;50;65;90;35;35;15;290
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png;p205;roofed;205;;Forretress; Inseto / AÃ§o;75;90;140;60;60;40;465
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png;p206;monster;206;;Dunsparce; Normal;100;70;70;65;65;45;415
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/207.png;p207;plains;207;;Gligar; Terrestre / Voador;65;75;105;35;65;85;430
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/208.png;p208;nÃÂ£o spawna;208;;Steelix; AÃ§o / Terrestre;75;85;200;55;65;30;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png;p209;nÃÂ£o spawna;209;;Snubbull; Fada;60;80;50;40;40;30;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png;p210;nÃÂ£o spawna;210;;Granbull; Fada;90;120;75;60;60;45;450
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png;p211;nÃÂ£o spawna;211;;Qwilfish; Ãgua / Venenoso;65;95;85;55;55;85;440
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png;p212;nÃÂ£o spawna;212;;Scizor; Inseto / AÃ§o;70;130;100;55;80;65;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png;p213;nÃÂ£o spawna;213;;Shuckle; Inseto / Pedra;20;10;230;10;230;5;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png;p214;forest;214;;Heracross; Inseto / Lutador;80;125;75;40;95;85;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png;p215;frozen;215;;Sneasel; Sombrio / Gelo;55;95;55;35;75;115;430
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/216.png;p216;taiga;216;;Teddiursa; Normal;60;80;50;50;50;40;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/217.png;p217;nÃÂ£o spawna;217;;Ursaring; Normal;90;130;75;75;75;55;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/218.png;p218;nÃÂ£o spawna;218;;Slugma; Fogo;40;40;40;70;40;20;250
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png;p219;nÃÂ£o spawna;219;;Magcargo; Fogo / Pedra;60;50;120;90;80;30;430
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png;p220;nÃÂ£o spawna;220;;Swinub; Gelo / Terrestre;50;50;40;30;30;50;250
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png;p221;nÃÂ£o spawna;221;;Piloswine; Gelo / Terrestre;100;100;80;60;60;50;450
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png;p222;nÃÂ£o spawna;222;;Corsola; Ãgua / Pedra;65;55;95;65;95;35;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/223.png;p223;nÃÂ£o spawna;223;;Remoraid; Ãgua;35;65;35;65;35;65;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/224.png;p224;nÃÂ£o spawna;224;;Octillery; Ãgua;75;105;75;105;75;45;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png;p225;ice_plains;225;;Delibird; Gelo / Voador;45;55;45;65;45;75;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/226.png;p226;nÃÂ£o spawna;226;;Mantine; Ãgua / Voador;85;40;70;80;140;70;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png;p227;nÃÂ£o spawna;227;;Skarmory; AÃ§o / Voador;65;80;140;40;70;70;465
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/228.png;p228;nÃÂ£o spawna;228;;Houndour; Sombrio / Fogo;45;60;30;80;50;65;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/229.png;p229;nÃÂ£o spawna;229;;Houndoom; Sombrio / Fogo;75;90;50;110;80;95;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png;p230;nÃÂ£o spawna;230;;Kingdra; Ãgua / DragÃ£o;75;95;95;95;95;85;540
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/231.png;p231;nÃÂ£o spawna;231;;Phanpy; Terrestre;90;60;60;40;40;40;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png;p232;nÃÂ£o spawna;232;;Donphan; Terrestre;90;120;120;60;60;50;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png;p233;nÃÂ£o spawna;233;;Porygon2; Normal;85;80;90;105;95;60;515
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png;p234;ice_plains;234;;Stantler; Normal;73;95;62;85;65;85;465
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png;p235;nÃÂ£o spawna;235;;Smeargle; Normal;55;20;35;20;45;75;250
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/236.png;p236;savanna;236;;Tyrogue; Lutador;35;35;35;35;35;35;210
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png;p237;savanna;237;;Hitmontop; Lutador;50;95;95;35;110;70;455
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/238.png;p238;cherry_grove;238;;Smoochum; Gelo / PsÃ­quico;45;30;15;85;65;65;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png;p239;nÃÂ£o spawna;239;;Elekid; ElÃ©trico;45;63;37;65;55;95;360
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png;p240;mesa+desert;240;;Magby; Fogo;45;75;37;70;55;83;365
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/241.png;p241;plains;241;;Miltank; Normal;95;80;105;40;70;100;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png;p242;nÃÂ£o spawna;242;;Blissey; Normal;255;10;10;75;135;55;540
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png;p243;savanna;243;;Raikou; ElÃ©trico;90;85;75;115;100;115;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png;p244;extreme_hills;244;;Entei; Fogo;115;115;85;90;75;100;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png;p245;beach;245;;Suicune; Ãgua;100;75;115;90;115;85;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png;p246;monster;246;;Larvitar; Pedra / Terrestre;50;64;50;45;50;41;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png;p247;nÃÂ£o spawna;247;;Pupitar; Pedra / Terrestre;70;84;70;65;70;51;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png;p248;nÃÂ£o spawna;248;;Tyranitar; Pedra / Sombrio;100;134;110;95;100;61;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png;p249;nÃÂ£o spawna;249;;Lugia; PsÃ­quico / Voador;106;90;130;90;154;110;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png;p250;nÃÂ£o spawna;250;;Ho-oh; Fogo / Voador;106;130;90;110;154;90;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png;p251;nÃÂ£o spawna;251;;Celebi; PsÃ­quico / Grama;100;100;100;100;100;100;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png;p252;jungle;252;;Treecko; Grama;40;45;35;65;55;70;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/253.png;p253;forest;253;;Grovyle; Grama;50;65;45;85;65;95;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/254.png;p254;forest;254;;Sceptile; Grama;70;85;65;105;85;120;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png;p255;mesa;255;;Torchic; Fogo;45;60;40;70;50;45;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/256.png;p256;nÃÂ£o spawna;256;;Combusken; Fogo / Lutador;60;85;60;85;60;55;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/257.png;p257;nÃÂ£o spawna;257;;Blaziken; Fogo / Lutador;80;120;70;110;70;80;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png;p258;swamp;258;;Mudkip; Ãgua;50;70;50;50;50;40;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/259.png;p259;nÃÂ£o spawna;259;;Marshtomp; Ãgua / Terrestre;70;85;70;60;70;50;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png;p260;nÃÂ£o spawna;260;;Swampert; Ãgua / Terrestre;100;110;90;85;90;60;535
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/261.png;p261;monster;261;;Poochyena; Sombrio;35;55;35;30;30;35;220
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/262.png;p262;monster;262;;Mightyena; Sombrio;70;90;70;60;60;70;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/263.png;p263;monster;263;;Zigzagoon; Normal;38;30;41;30;41;60;240
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/264.png;p264;monster;264;;Linoone; Normal;78;70;61;50;61;100;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/265.png;p265;forest;265;;Wurmple; Inseto;45;45;35;20;30;20;195
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/266.png;p266;forest;266;;Silcoon; Inseto;50;35;55;25;25;15;205
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/267.png;p267;forest;267;;Beautifly; Inseto / Voador;60;70;50;100;50;65;395
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/268.png;p268;forest;268;;Cascoon; Inseto;50;35;55;25;25;15;205
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/269.png;p269;forest;269;;Dustox; Inseto / Venenoso;60;50;70;50;90;65;385
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/270.png;p270;swamp;270;;Lotad; Ãgua / Grama;40;30;30;40;50;30;220
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/271.png;p271;swamp;271;;Lombre; Ãgua / Grama;60;50;50;60;70;50;340
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/272.png;p272;nÃÂ£o spawna;272;;Ludicolo; Ãgua / Grama;80;70;70;90;100;70;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/273.png;p273;roofed;273;;Seedot; Grama;40;40;50;30;30;30;220
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/274.png;p274;roofed;274;;Nuzleaf; Grama / Sombrio;70;70;40;60;40;60;340
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/275.png;p275;nÃÂ£o spawna;275;;Shiftry; Grama / Sombrio;90;100;60;90;60;80;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/276.png;p276;ocean;276;;Taillow; Normal / Voador;40;55;30;30;30;85;270
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/277.png;p277;ocean;277;;Swellow; Normal / Voador;60;85;60;75;50;125;455
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/278.png;p278;nÃÂ£o spawna;278;;Wingull; Ãgua / Voador;40;30;30;55;30;85;270
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png;p279;nÃÂ£o spawna;279;;Pelipper; Ãgua / Voador;60;50;100;95;70;65;440
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/280.png;p280;cherry_grove;280;;Ralts; PsÃ­quico / Fada;28;25;25;45;35;40;198
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/281.png;p281;cherry_grove;281;;Kirlia; PsÃ­quico / Fada;38;35;35;65;55;50;278
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png;p282;nÃÂ£o spawna;282;;Gardevoir; PsÃ­quico / Fada;68;65;65;125;115;80;518
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/283.png;p283;nÃÂ£o spawna;283;;Surskit; Inseto / Ãgua;40;30;32;50;52;65;269
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/284.png;p284;nÃÂ£o spawna;284;;Masquerain; Inseto / Voador;70;60;62;100;82;80;454
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/285.png;p285;jungle;285;;Shroomish; Grama;60;40;60;40;60;35;295
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/286.png;p286;forest;286;;Breloom; Grama / Lutador;60;130;80;60;60;70;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/287.png;p287;nÃÂ£o spawna;287;;Slakoth; Normal;60;60;60;35;35;30;280
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/288.png;p288;nÃÂ£o spawna;288;;Vigoroth; Normal;80;80;80;55;55;90;440
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/289.png;p289;nÃÂ£o spawna;289;;Slaking; Normal;150;160;100;95;65;100;670
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/290.png;p290;nÃÂ£o spawna;290;;Nincada; Inseto / Terrestre;31;45;90;30;30;40;266
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/291.png;p291;nÃÂ£o spawna;291;;Ninjask; Inseto / Voador;61;90;45;50;50;160;456
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/292.png;p292;nÃÂ£o spawna;292;;Shedinja; Inseto / Fantasma;1;90;45;30;30;40;236
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/293.png;p293;nÃÂ£o spawna;293;;Whismur; Normal;64;51;23;51;23;28;240
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/294.png;p294;nÃÂ£o spawna;294;;Loudred; Normal;84;71;43;71;43;48;360
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/295.png;p295;nÃÂ£o spawna;295;;Exploud; Normal;104;91;63;91;73;68;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/296.png;p296;nÃÂ£o spawna;296;;Makuhita; Lutador;72;60;30;20;30;25;237
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/297.png;p297;nÃÂ£o spawna;297;;Hariyama; Lutador;144;120;60;40;60;50;474
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/298.png;p298;river;298;;Azurill; Normal / Fada;50;20;40;20;40;20;190
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/299.png;p299;nÃÂ£o spawna;299;;Nosepass; Pedra;30;45;135;45;90;30;375
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/300.png;p300;nÃÂ£o spawna;300;;Skitty; Normal;50;45;45;35;35;50;260
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/301.png;p301;nÃÂ£o spawna;301;;Delcatty; Normal;70;65;65;55;55;90;400
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png;p302;monster;302;;Sableye; Sombrio / Fantasma;50;75;75;65;65;50;380
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/303.png;p303;monster;303;;Mawile; AÃ§o / Fada;50;85;85;55;55;50;380
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png;p304;monster;304;;Aron; AÃ§o / Pedra;50;70;100;40;40;30;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/305.png;p305;nÃÂ£o spawna;305;;Lairon; AÃ§o / Pedra;60;90;140;50;50;40;430
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/306.png;p306;nÃÂ£o spawna;306;;Aggron; AÃ§o / Pedra;70;110;180;60;60;50;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/307.png;p307;extreme_hills;307;;Meditite; Lutador / PsÃ­quico;30;40;55;40;55;60;280
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/308.png;p308;extreme_hills;308;;Medicham; Lutador / PsÃ­quico;60;60;75;60;75;80;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/309.png;p309;plains;309;;Electrike; ElÃ©trico;40;45;40;65;40;65;295
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/310.png;p310;nÃÂ£o spawna;310;;Manectric; ElÃ©trico;70;75;60;105;60;105;475
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/311.png;p311;nÃÂ£o spawna;311;;Plusle; ElÃ©trico;60;50;40;85;75;95;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/312.png;p312;nÃÂ£o spawna;312;;Minun; ElÃ©trico;60;40;50;75;85;95;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/313.png;p313;nÃÂ£o spawna;313;;Volbeat; Inseto;65;73;75;47;85;85;430
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/314.png;p314;nÃÂ£o spawna;314;;Illumise; Inseto;65;47;75;73;85;85;430
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/315.png;p315;nÃÂ£o spawna;315;;Roselia; Grama / Venenoso;50;60;45;100;80;65;400
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/316.png;p316;nÃÂ£o spawna;316;;Gulpin; Venenoso;70;43;53;43;53;40;302
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/317.png;p317;nÃÂ£o spawna;317;;Swalot; Venenoso;100;73;83;73;83;55;467
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/318.png;p318;nÃÂ£o spawna;318;;Carvanha; Ãgua / Sombrio;45;90;20;65;20;65;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/319.png;p319;nÃÂ£o spawna;319;;Sharpedo; Ãgua / Sombrio;70;120;40;95;40;95;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/320.png;p320;nÃÂ£o spawna;320;;Wailmer; Ãgua;130;70;35;70;35;60;400
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/321.png;p321;nÃÂ£o spawna;321;;Wailord; Ãgua;170;90;45;90;45;60;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/322.png;p322;nÃÂ£o spawna;322;;Numel; Fogo / Terrestre;60;60;40;65;45;35;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/323.png;p323;nÃÂ£o spawna;323;;Camerupt; Fogo / Terrestre;70;100;70;105;75;40;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png;p324;nÃÂ£o spawna;324;;Torkoal; Fogo;70;85;140;85;70;20;470
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/325.png;p325;nÃÂ£o spawna;325;;Spoink; PsÃ­quico;60;25;35;70;80;60;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/326.png;p326;nÃÂ£o spawna;326;;Grumpig; PsÃ­quico;80;45;65;90;110;80;470
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png;p327;nÃÂ£o spawna;327;;Spinda; Normal;60;60;60;60;60;60;360
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/328.png;p328;mesa;328;;Trapinch; Terrestre;45;100;45;45;45;10;290
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/329.png;p329;mesa;329;;Vibrava; Terrestre / DragÃ£o;50;70;50;50;50;70;340
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png;p330;nÃÂ£o spawna;330;;Flygon; Terrestre / DragÃ£o;80;100;80;80;80;100;520
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/331.png;p331;nÃÂ£o spawna;331;;Cacnea; Grama;50;85;40;85;40;35;335
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/332.png;p332;nÃÂ£o spawna;332;;Cacturne; Grama / Sombrio;70;115;60;115;60;55;475
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/333.png;p333;ocean;333;;Swablu; Normal / Voador;45;40;60;40;75;50;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png;p334;nÃÂ£o spawna;334;;Altaria; DragÃ£o / Voador;75;70;90;70;105;80;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/335.png;p335;nÃÂ£o spawna;335;;Zangoose; Normal;73;115;60;60;60;90;458
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/336.png;p336;nÃÂ£o spawna;336;;Seviper; Venenoso;73;100;60;100;60;65;458
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/337.png;p337;nÃÂ£o spawna;337;;Lunatone; Pedra / PsÃ­quico;90;55;65;95;85;70;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/338.png;p338;nÃÂ£o spawna;338;;Solrock; Pedra / PsÃ­quico;90;95;85;55;65;70;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/339.png;p339;nÃÂ£o spawna;339;;Barboach; Ãgua / Terrestre;50;48;43;46;41;60;288
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/340.png;p340;nÃÂ£o spawna;340;;Whiscash; Ãgua / Terrestre;110;78;76;60;76;71;468
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/341.png;p341;nÃÂ£o spawna;341;;Corphish; Ãgua;43;80;65;50;35;35;308
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/342.png;p342;nÃÂ£o spawna;342;;Crawdaunt; Ãgua / Sombrio;63;120;85;90;55;55;468
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/343.png;p343;nÃÂ£o spawna;343;;Baltoy; Terrestre / PsÃ­quico;40;40;55;40;70;55;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/344.png;p344;nÃÂ£o spawna;344;;Claydol; Terrestre / PsÃ­quico;60;70;105;70;120;75;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/345.png;p345;nÃÂ£o spawna;345;;Lileep; Pedra / Grama;66;41;77;61;87;23;355
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/346.png;p346;nÃÂ£o spawna;346;;Cradily; Pedra / Grama;86;81;97;81;107;43;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/347.png;p347;nÃÂ£o spawna;347;;Anorith; Pedra / Inseto;45;95;50;40;50;75;355
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/348.png;p348;nÃÂ£o spawna;348;;Armaldo; Pedra / Inseto;75;125;100;70;80;45;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/349.png;p349;ocean;349;;Feebas; Ãgua;20;15;20;10;55;80;200
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png;p350;nÃÂ£o spawna;350;;Milotic; Ãgua;95;60;79;100;125;81;540
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/351.png;p351;nÃÂ£o spawna;351;;Castform; Normal;70;70;70;70;70;70;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/352.png;p352;nÃÂ£o spawna;352;;Kecleon; Normal;60;90;70;60;120;40;440
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/353.png;p353;monster;353;;Shuppet; Fantasma;44;75;35;63;33;45;295
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png;p354;monster;354;;Banette; Fantasma;64;115;65;83;63;65;455
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/355.png;p355;nÃÂ£o spawna;355;;Duskull; Fantasma;20;40;90;30;90;25;295
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/356.png;p356;nÃÂ£o spawna;356;;Dusclops; Fantasma;40;70;130;60;130;25;455
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/357.png;p357;nÃÂ£o spawna;357;;Tropius; Grama / Voador;99;68;83;72;87;51;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/358.png;p358;nÃÂ£o spawna;358;;Chimecho; PsÃ­quico;75;50;89;95;90;65;464
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png;p359;plains;359;;Absol; Sombrio;65;130;60;75;60;75;465
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/360.png;p360;nÃÂ£o spawna;360;;Wynaut; PsÃ­quico;95;23;48;23;48;23;260
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/361.png;p361;nÃÂ£o spawna;361;;Snorunt; Gelo;50;50;50;50;50;50;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/362.png;p362;nÃÂ£o spawna;362;;Glalie; Gelo;80;80;80;80;80;80;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/363.png;p363;nÃÂ£o spawna;363;;Spheal; Ãgua / Gelo;70;40;50;55;50;25;290
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/364.png;p364;nÃÂ£o spawna;364;;Sealeo; Ãgua / Gelo;90;60;70;75;70;45;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/365.png;p365;nÃÂ£o spawna;365;;Walrein; Ãgua / Gelo;110;80;90;95;90;65;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/366.png;p366;nÃÂ£o spawna;366;;Clamperl; Ãgua;35;64;85;74;55;32;345
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/367.png;p367;nÃÂ£o spawna;367;;Huntail; Ãgua;55;104;105;94;75;52;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/368.png;p368;nÃÂ£o spawna;368;;Gorebyss; Ãgua;55;84;105;114;75;52;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/369.png;p369;nÃÂ£o spawna;369;;Relicanth; Ãgua / Pedra;100;90;130;45;65;55;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/370.png;p370;nÃÂ£o spawna;370;;Luvdisc; Ãgua;43;30;55;40;65;97;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/371.png;p371;mesa;371;;Bagon; DragÃ£o;45;75;60;40;30;50;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/372.png;p372;monster;372;;Shelgon; DragÃ£o;65;95;100;60;50;50;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/373.png;p373;nÃÂ£o spawna;373;;Salamence; DragÃ£o / Voador;95;135;80;110;80;100;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/374.png;p374;the_end;374;;Beldum; AÃ§o / PsÃ­quico;40;55;80;35;60;30;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/375.png;p375;nÃÂ£o spawna;375;;Metang; AÃ§o / PsÃ­quico;60;75;100;55;80;50;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/376.png;p376;nÃÂ£o spawna;376;;Metagross; AÃ§o / PsÃ­quico;80;135;130;95;90;70;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/377.png;p377;nÃÂ£o spawna;377;;Regirock; Pedra;80;100;200;50;100;50;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png;p378;nÃÂ£o spawna;378;;Regice; Gelo;80;50;100;100;200;50;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png;p379;nÃÂ£o spawna;379;;Registeel; AÃ§o;80;75;150;75;150;50;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/380.png;p380;nÃÂ£o spawna;380;;Latias; DragÃ£o / PsÃ­quico;80;80;90;110;130;110;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/381.png;p381;nÃÂ£o spawna;381;;Latios; DragÃ£o / PsÃ­quico;80;90;80;130;110;110;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png;p382;river;382;;Kyogre; Ãgua;100;100;90;150;140;90;670
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png;p383;desert;383;;Groudon; Terrestre;100;150;140;100;90;90;670
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png;p384;montain;384;;Rayquaza; DragÃ£o / Voador;105;150;90;150;90;95;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png;p385;plains;385;;Jirachi; AÃ§o / PsÃ­quico;100;100;100;100;100;100;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png;p386;the_end;386;;Deoxys; PsÃ­quico;50;150;50;150;50;150;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png;p387;roofed;387;;Turtwig; Grama;55;68;64;45;55;31;318
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png;p388;nÃÂ£o spawna;388;;Grotle; Grama;75;89;85;55;65;36;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png;p389;nÃÂ£o spawna;389;;Torterra; Grama / Terrestre;95;109;105;75;85;56;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png;p390;mesa;390;;Chimchar; Fogo;44;58;44;58;44;61;309
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/391.png;p391;nÃÂ£o spawna;391;;Monferno; Fogo / Lutador;64;78;52;78;52;81;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png;p392;nÃÂ£o spawna;392;;Infernape; Fogo / Lutador;76;104;71;104;71;108;534
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png;p393;frozen;393;;Piplup; Ãgua;53;51;53;61;56;40;314
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/394.png;p394;nÃÂ£o spawna;394;;Prinplup; Ãgua;64;66;68;81;76;50;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/395.png;p395;nÃÂ£o spawna;395;;Empoleon; Ãgua / AÃ§o;84;86;88;111;101;60;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/396.png;p396;ocean;396;;Starly; Normal / Voador;40;55;30;30;30;60;245
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/397.png;p397;ocean;397;;Staravia; Normal / Voador;55;75;50;40;40;80;340
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/398.png;p398;ocean;398;;Staraptor; Normal / Voador;85;120;70;50;60;100;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/399.png;p399;monster;399;;Bidoof; Normal;59;45;40;35;40;31;250
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/400.png;p400;monster;400;;Bibarel; Normal / Ãgua;79;85;60;60;71;55;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/401.png;p401;nÃÂ£o spawna;401;;Kricketot; Inseto;37;25;41;25;41;25;194
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/402.png;p402;nÃÂ£o spawna;402;;Kricketune; Inseto;77;85;51;55;51;65;384
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/403.png;p403;plains;403;;Shinx; ElÃ©trico;45;65;34;40;34;45;263
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/404.png;p404;plains;404;;Luxio; ElÃ©trico;60;85;49;60;49;60;363
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png;p405;nÃÂ£o spawna;405;;Luxray; ElÃ©trico;80;120;79;95;79;70;523
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/406.png;p406;nÃÂ£o spawna;406;;Budew; Grama / Venenoso;40;30;35;50;70;55;280
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png;p407;nÃÂ£o spawna;407;;Roserade; Grama / Venenoso;60;70;65;125;105;90;515
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png;p408;nÃÂ£o spawna;408;;Cranidos; Pedra;67;125;40;30;30;58;350
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/409.png;p409;nÃÂ£o spawna;409;;Rampardos; Pedra;97;165;60;65;50;58;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/410.png;p410;nÃÂ£o spawna;410;;Shieldon; Pedra / AÃ§o;30;42;118;30;42;88;350
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/411.png;p411;nÃÂ£o spawna;411;;Bastiodon; Pedra / AÃ§o;60;52;168;47;138;30;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412.png;p412;nÃÂ£o spawna;412;;Burmy; Inseto;40;29;45;29;45;36;224
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413.png;p413;nÃÂ£o spawna;413;;Wormadam; Inseto / Grama;60;59;85;79;105;36;424
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/414.png;p414;nÃÂ£o spawna;414;;Mothim; Inseto / Voador;70;94;50;94;50;66;424
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/415.png;p415;nÃÂ£o spawna;415;;Combee; Inseto / Voador;30;30;42;30;42;70;244
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png;p416;nÃÂ£o spawna;416;;Vespiquen; Inseto / Voador;70;80;102;80;102;40;474
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png;p417;forest;417;;Pachirisu; ElÃ©trico;60;45;70;45;90;95;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/418.png;p418;nÃÂ£o spawna;418;;Buizel; Ãgua;55;65;35;60;30;85;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/419.png;p419;nÃÂ£o spawna;419;;Floatzel; Ãgua;85;105;55;85;50;115;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/420.png;p420;nÃÂ£o spawna;420;;Cherubi; Grama;45;35;45;62;53;35;275
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421.png;p421;nÃÂ£o spawna;421;;Cherrim; Grama;70;60;70;87;78;85;450
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422.png;p422;nÃÂ£o spawna;422;;Shellos; Ãgua;76;48;48;57;62;34;325
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png;p423;nÃÂ£o spawna;423;;Gastrodon; Ãgua / Terrestre;111;83;68;92;82;39;475
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/424.png;p424;nÃÂ£o spawna;424;;Ambipom; Normal;75;100;66;60;66;115;482
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png;p425;nÃÂ£o spawna;425;;Drifloon; Fantasma / Voador;90;50;34;60;44;70;348
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png;p426;nÃÂ£o spawna;426;;Drifblim; Fantasma / Voador;150;80;44;90;54;80;498
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/427.png;p427;nÃÂ£o spawna;427;;Buneary; Normal;55;66;44;44;56;85;350
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png;p428;nÃÂ£o spawna;428;;Lopunny; Normal;65;76;84;54;96;105;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png;p429;nÃÂ£o spawna;429;;Mismagius; Fantasma;60;60;60;105;105;105;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png;p430;nÃÂ£o spawna;430;;Honchkrow; Sombrio / Voador;100;125;52;105;52;71;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/431.png;p431;monster;431;;Glameow; Normal;49;55;42;42;37;85;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/432.png;p432;monster;432;;Purugly; Normal;71;82;64;64;59;112;452
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/433.png;p433;nÃÂ£o spawna;433;;Chingling; PsÃ­quico;45;30;50;65;50;45;285
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/434.png;p434;nÃÂ£o spawna;434;;Stunky; Venenoso / Sombrio;63;63;47;41;41;74;329
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/435.png;p435;nÃÂ£o spawna;435;;Skuntank; Venenoso / Sombrio;103;93;67;71;61;84;479
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/436.png;p436;nÃÂ£o spawna;436;;Bronzor; AÃ§o / PsÃ­quico;57;24;86;24;86;23;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/437.png;p437;nÃÂ£o spawna;437;;Bronzong; AÃ§o / PsÃ­quico;67;89;116;79;116;33;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png;p438;plains;438;;Bonsly; Pedra;50;80;95;10;45;10;290
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/439.png;p439;cherry_grove;439;;Mime Jr.; PsÃ­quico / Fada;20;25;45;70;90;60;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png;p440;nÃÂ£o spawna;440;;Happiny; Normal;100;5;5;15;65;30;220
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/441.png;p441;nÃÂ£o spawna;441;;Chatot; Normal / Voador;76;65;45;92;42;91;411
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png;p442;taiga+plains;442;;Spiritomb; Fantasma / Sombrio;50;92;108;92;108;35;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/443.png;p443;desert;443;;Gible; DragÃ£o / Terrestre;58;70;45;40;45;42;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/444.png;p444;desert;444;;Gabite; DragÃ£o / Terrestre;68;90;65;50;55;82;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png;p445;nÃÂ£o spawna;445;;Garchomp; DragÃ£o / Terrestre;108;130;95;80;85;102;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/446.png;p446;nÃÂ£o spawna;446;;Munchlax; Normal;135;85;40;40;85;5;390
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png;p447;egg;447;;Riolu; Lutador;40;70;40;35;40;60;285
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png;p448;nÃÂ£o spawna;448;;Lucario; Lutador / AÃ§o;70;110;70;115;70;90;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/449.png;p449;nÃÂ£o spawna;449;;Hippopotas; Terrestre;68;72;78;38;42;32;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png;p450;nÃÂ£o spawna;450;;Hippowdon; Terrestre;108;112;118;68;72;47;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/451.png;p451;nÃÂ£o spawna;451;;Skorupi; Venenoso / Inseto;40;50;90;30;55;65;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/452.png;p452;nÃÂ£o spawna;452;;Drapion; Sombrio / Venenoso;70;90;110;60;75;95;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/453.png;p453;nÃÂ£o spawna;453;;Croagunk; Venenoso / Lutador;48;61;40;61;40;50;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png;p454;nÃÂ£o spawna;454;;Toxicroak; Venenoso / Lutador;83;106;65;86;65;85;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/455.png;p455;nÃÂ£o spawna;455;;Carnivine; Grama;74;100;72;90;72;46;454
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png;p456;nÃÂ£o spawna;456;;Finneon; Ãgua;49;49;56;49;61;66;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png;p457;nÃÂ£o spawna;457;;Lumineon; Ãgua;69;69;76;69;86;91;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png;p458;nÃÂ£o spawna;458;;Mantyke; Ãgua / Voador;45;20;50;60;120;50;345
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/459.png;p459;nÃÂ£o spawna;459;;Snover; Grama / Gelo;60;62;50;62;60;40;334
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/460.png;p460;nÃÂ£o spawna;460;;Abomasnow; Grama / Gelo;90;92;75;92;85;60;494
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/461.png;p461;ice_plains;461;;Weavile; Sombrio / Gelo;70;120;65;45;85;125;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png;p462;nÃÂ£o spawna;462;;Magnezone; ElÃ©trico / AÃ§o;70;70;115;130;90;60;535
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/463.png;p463;nÃÂ£o spawna;463;;Lickilicky; Normal;110;85;95;80;95;50;515
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png;p464;nÃÂ£o spawna;464;;Rhyperior; Terrestre / Pedra;115;140;130;55;55;40;535
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png;p465;nÃÂ£o spawna;465;;Tangrowth; Grama;100;100;125;110;50;50;535
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png;p466;nÃÂ£o spawna;466;;Electivire; ElÃ©trico;75;123;67;95;85;95;540
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png;p467;nÃÂ£o spawna;467;;Magmortar; Fogo;75;95;67;125;95;83;540
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png;p468;nÃÂ£o spawna;468;;Togekiss; Fada / Voador;85;50;95;120;115;80;545
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png;p469;nÃÂ£o spawna;469;;Yanmega; Inseto / Voador;86;76;86;95;116;56;515
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png;p470;nÃÂ£o spawna;470;;Leafeon; Grama;65;110;130;60;65;95;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png;p471;nÃÂ£o spawna;471;;Glaceon; Gelo;65;60;110;130;95;65;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png;p472;nÃÂ£o spawna;472;;Gliscor; Terrestre / Voador;75;95;125;45;75;95;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png;p473;nÃÂ£o spawna;473;;Mamoswine; Gelo / Terrestre;110;130;80;70;60;80;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/474.png;p474;nÃÂ£o spawna;474;;Porygon-Z; Normal;85;80;70;135;75;90;535
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png;p475;nÃÂ£o spawna;475;;Gallade; PsÃ­quico / Lutador;68;125;65;65;115;80;518
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/476.png;p476;nÃÂ£o spawna;476;;Probopass; Pedra / AÃ§o;60;55;145;75;150;40;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png;p477;nÃÂ£o spawna;477;;Dusknoir; Fantasma;45;100;135;65;135;45;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png;p478;nÃÂ£o spawna;478;;Froslass; Gelo / Fantasma;70;80;70;80;70;110;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png;p479;nÃÂ£o spawna;479;;Rotom; ElÃ©trico / Fantasma;50;50;77;95;77;91;440
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png;p480;nÃÂ£o spawna;480;;Uxie; PsÃ­quico;75;75;130;75;130;95;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/481.png;p481;nÃÂ£o spawna;481;;Mesprit; PsÃ­quico;80;105;105;105;105;80;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/482.png;p482;nÃÂ£o spawna;482;;Azelf; PsÃ­quico;75;125;70;125;70;115;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png;p483;the_end;483;;Dialga; AÃ§o / DragÃ£o;100;120;120;150;100;90;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png;p484;the_end;484;;Palkia; Ãgua / DragÃ£o;90;120;100;150;120;100;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png;p485;nÃÂ£o spawna;485;;Heatran; Fogo / AÃ§o;91;90;106;130;106;77;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png;p486;deep_dark;486;;Regigigas; Normal;110;160;110;80;110;100;670
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png;p487;the_end;487;;Giratina; Fantasma / DragÃ£o;150;100;120;100;120;90;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png;p488;nÃÂ£o spawna;488;;Cresselia; PsÃ­quico;120;70;110;75;120;85;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/489.png;p489;nÃÂ£o spawna;489;;Phione; Ãgua;80;80;80;80;80;80;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png;p490;nÃÂ£o spawna;490;;Manaphy; Ãgua;100;100;100;100;100;100;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png;p491;roofed;491;;Darkrai; Sombrio;70;90;90;135;90;125;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png;p492;nÃÂ£o spawna;492;;Shaymin; Grama;100;100;100;100;100;100;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png;p493;pokemon do Shiro;493;;Arceus; Normal;120;120;120;120;120;120;720
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/494.png;p494;nÃÂ£o spawna;494;;Victini; PsÃ­quico / Fogo;100;100;100;100;100;100;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/495.png;p495;forest;495;;Snivy; Grama;45;45;55;45;55;63;308
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/496.png;p496;nÃÂ£o spawna;496;;Servine; Grama;60;60;75;60;75;83;413
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/497.png;p497;nÃÂ£o spawna;497;;Serperior; Grama;75;75;95;75;95;113;528
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/498.png;p498;mesa;498;;Tepig; Fogo;65;63;45;45;45;45;308
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/499.png;p499;nÃÂ£o spawna;499;;Pignite; Fogo / Lutador;90;93;55;70;55;55;418
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/500.png;p500;nÃÂ£o spawna;500;;Emboar; Fogo / Lutador;110;123;65;100;65;65;528
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/501.png;p501;beach;501;;Oshawott; Ãgua;55;55;45;63;45;45;308
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/502.png;p502;nÃÂ£o spawna;502;;Dewott; Ãgua;75;75;60;83;60;60;413
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/503.png;p503;nÃÂ£o spawna;503;;Samurott; Ãgua;95;100;85;108;70;70;528
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/504.png;p504;nÃÂ£o spawna;504;;Patrat; Normal;45;55;39;35;39;42;255
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/505.png;p505;nÃÂ£o spawna;505;;Watchog; Normal;60;85;69;60;69;77;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/506.png;p506;nÃÂ£o spawna;506;;Lillipup; Normal;45;60;45;25;45;55;275
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/507.png;p507;nÃÂ£o spawna;507;;Herdier; Normal;65;80;65;35;65;60;370
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/508.png;p508;nÃÂ£o spawna;508;;Stoutland; Normal;85;110;90;45;90;80;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/509.png;p509;nÃÂ£o spawna;509;;Purrloin; Sombrio;41;50;37;50;37;66;281
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/510.png;p510;nÃÂ£o spawna;510;;Liepard; Sombrio;64;88;50;88;50;106;446
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/511.png;p511;nÃÂ£o spawna;511;;Pansage; Grama;50;53;48;53;48;64;316
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/512.png;p512;nÃÂ£o spawna;512;;Simisage; Grama;75;98;63;98;63;101;498
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/513.png;p513;nÃÂ£o spawna;513;;Pansear; Fogo;50;53;48;53;48;64;316
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/514.png;p514;nÃÂ£o spawna;514;;Simisear; Fogo;75;98;63;98;63;101;498
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/515.png;p515;nÃÂ£o spawna;515;;Panpour; Ãgua;50;53;48;53;48;64;316
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/516.png;p516;nÃÂ£o spawna;516;;Simipour; Ãgua;75;98;63;98;63;101;498
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/517.png;p517;nÃÂ£o spawna;517;;Munna; PsÃ­quico;76;25;45;67;55;24;292
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/518.png;p518;nÃÂ£o spawna;518;;Musharna; PsÃ­quico;116;55;85;107;95;29;487
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/519.png;p519;nÃÂ£o spawna;519;;Pidove; Normal / Voador;50;55;50;36;30;43;264
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/520.png;p520;nÃÂ£o spawna;520;;Tranquill; Normal / Voador;62;77;62;50;42;65;358
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/521.png;p521;nÃÂ£o spawna;521;;Unfezant; Normal / Voador;80;115;80;65;55;93;488
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/522.png;p522;nÃÂ£o spawna;522;;Blitzle; ElÃ©trico;45;60;32;50;32;76;295
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/523.png;p523;nÃÂ£o spawna;523;;Zebstrika; ElÃ©trico;75;100;63;80;63;116;497
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/524.png;p524;nÃÂ£o spawna;524;;Roggenrola; Pedra;55;75;85;25;25;15;280
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/525.png;p525;nÃÂ£o spawna;525;;Boldore; Pedra;70;105;105;50;40;20;390
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/526.png;p526;caves;526;;Gigalith; Pedra;85;135;130;60;80;25;515
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/527.png;p527;nÃÂ£o spawna;527;;Woobat; PsÃ­quico / Voador;65;45;43;55;43;72;323
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/528.png;p528;nÃÂ£o spawna;528;;Swoobat; PsÃ­quico / Voador;67;57;55;77;55;114;425
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/529.png;p529;monster;529;;Drilbur; Terrestre;60;85;40;30;45;68;328
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png;p530;nÃÂ£o spawna;530;;Excadrill; Terrestre / AÃ§o;110;135;60;50;65;88;508
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/531.png;p531;nÃÂ£o spawna;531;;Audino; Normal;103;60;86;60;86;50;445
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/532.png;p532;nÃÂ£o spawna;532;;Timburr; Lutador;75;80;55;25;35;35;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/533.png;p533;nÃÂ£o spawna;533;;Gurdurr; Lutador;85;105;85;40;50;40;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/534.png;p534;nÃÂ£o spawna;534;;Conkeldurr; Lutador;105;140;95;55;65;45;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/535.png;p535;nÃÂ£o spawna;535;;Tympole; Ãgua;50;50;40;50;40;64;294
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/536.png;p536;nÃÂ£o spawna;536;;Palpitoad; Ãgua / Terrestre;75;65;55;65;55;69;384
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/537.png;p537;nÃÂ£o spawna;537;;Seismitoad; Ãgua / Terrestre;105;95;75;85;75;74;509
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/538.png;p538;nÃÂ£o spawna;538;;Throh; Lutador;120;100;85;30;85;45;465
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/539.png;p539;nÃÂ£o spawna;539;;Sawk; Lutador;75;125;75;30;75;85;465
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/540.png;p540;nÃÂ£o spawna;540;;Sewaddle; Inseto / Grama;45;53;70;40;60;42;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/541.png;p541;nÃÂ£o spawna;541;;Swadloon; Inseto / Grama;55;63;90;50;80;42;380
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/542.png;p542;nÃÂ£o spawna;542;;Leavanny; Inseto / Grama;75;103;80;70;80;92;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/543.png;p543;nÃÂ£o spawna;543;;Venipede; Inseto / Venenoso;30;45;59;30;39;57;260
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/544.png;p544;nÃÂ£o spawna;544;;Whirlipede; Inseto / Venenoso;40;55;99;40;79;47;360
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/545.png;p545;nÃÂ£o spawna;545;;Scolipede; Inseto / Venenoso;60;100;89;55;69;112;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/546.png;p546;nÃÂ£o spawna;546;;Cottonee; Grama / Fada;40;27;60;37;50;66;280
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/547.png;p547;nÃÂ£o spawna;547;;Whimsicott; Grama / Fada;60;67;85;77;75;116;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/548.png;p548;nÃÂ£o spawna;548;;Petilil; Grama;45;35;50;70;50;30;280
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png;p549;nÃÂ£o spawna;549;;Lilligant; Grama;70;60;75;110;75;90;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/550.png;p550;nÃÂ£o spawna;550;;Basculin; Ãgua;70;92;65;80;55;98;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/551.png;p551;desert;551;;Sandile; Terrestre / Sombrio;50;72;35;35;35;65;292
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/552.png;p552;nÃÂ£o spawna;552;;Krokorok; Terrestre / Sombrio;60;82;45;45;45;74;351
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/553.png;p553;nÃÂ£o spawna;553;;Krookodile; Terrestre / Sombrio;95;117;80;65;70;92;519
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/554.png;p554;nÃÂ£o spawna;554;;Darumaka; Fogo;70;90;45;15;45;50;315
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png;p555;nÃÂ£o spawna;555;;Darmanitan; Fogo;105;140;55;30;55;95;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/556.png;p556;nÃÂ£o spawna;556;;Maractus; Grama;75;86;67;106;67;60;461
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/557.png;p557;nÃÂ£o spawna;557;;Dwebble; Inseto / Pedra;50;65;85;35;35;55;325
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/558.png;p558;nÃÂ£o spawna;558;;Crustle; Inseto / Pedra;70;105;125;65;75;45;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/559.png;p559;nÃÂ£o spawna;559;;Scraggy; Sombrio / Lutador;50;75;70;35;70;48;348
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png;p560;nÃÂ£o spawna;560;;Scrafty; Sombrio / Lutador;65;90;115;45;115;58;488
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/561.png;p561;nÃÂ£o spawna;561;;Sigilyph; PsÃ­quico / Voador;72;58;80;103;80;97;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/562.png;p562;nÃÂ£o spawna;562;;Yamask; Fantasma;38;30;85;55;65;30;303
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/563.png;p563;nÃÂ£o spawna;563;;Cofagrigus; Fantasma;58;50;145;95;105;30;483
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/564.png;p564;nÃÂ£o spawna;564;;Tirtouga; Ãgua / Pedra;54;78;103;53;45;22;355
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/565.png;p565;nÃÂ£o spawna;565;;Carracosta; Ãgua / Pedra;74;108;133;83;65;32;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/566.png;p566;nÃÂ£o spawna;566;;Archen; Pedra / Voador;55;112;45;74;45;70;401
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/567.png;p567;nÃÂ£o spawna;567;;Archeops; Pedra / Voador;75;140;65;112;65;110;567
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/568.png;p568;nÃÂ£o spawna;568;;Trubbish; Venenoso;50;50;62;40;62;65;329
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/569.png;p569;nÃÂ£o spawna;569;;Garbodor; Venenoso;80;95;92;60;82;75;484
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/570.png;p570;roofed;570;;Zorua; Sombrio;40;65;40;80;40;65;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png;p571;nÃÂ£o spawna;571;;Zoroark; Sombrio;60;105;60;120;60;105;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/572.png;p572;nÃÂ£o spawna;572;;Minccino; Normal;55;50;40;40;40;75;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png;p573;nÃÂ£o spawna;573;;Cinccino; Normal;75;95;60;65;60;115;470
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/574.png;p574;nÃÂ£o spawna;574;;Gothita; PsÃ­quico;45;30;50;55;65;45;290
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/575.png;p575;nÃÂ£o spawna;575;;Gothorita; PsÃ­quico;60;45;70;75;85;55;390
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/576.png;p576;nÃÂ£o spawna;576;;Gothitelle; PsÃ­quico;70;55;95;95;110;65;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/577.png;p577;nÃÂ£o spawna;577;;Solosis; PsÃ­quico;45;30;40;105;50;20;290
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/578.png;p578;nÃÂ£o spawna;578;;Duosion; PsÃ­quico;65;40;50;125;60;30;370
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/579.png;p579;nÃÂ£o spawna;579;;Reuniclus; PsÃ­quico;110;65;75;125;85;30;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/580.png;p580;nÃÂ£o spawna;580;;Ducklett; Ãgua / Voador;62;44;50;44;50;55;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/581.png;p581;nÃÂ£o spawna;581;;Swanna; Ãgua / Voador;75;87;63;87;63;98;473
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/582.png;p582;nÃÂ£o spawna;582;;Vanillite; Gelo;36;50;50;65;60;44;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/583.png;p583;nÃÂ£o spawna;583;;Vanillish; Gelo;51;65;65;80;75;59;395
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/584.png;p584;nÃÂ£o spawna;584;;Vanilluxe; Gelo;71;95;85;110;95;79;535
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/585.png;p585;nÃÂ£o spawna;585;;Deerling; Normal / Grama;60;60;50;40;50;75;335
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/586.png;p586;nÃÂ£o spawna;586;;Sawsbuck; Normal / Grama;80;100;70;60;70;95;475
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/587.png;p587;nÃÂ£o spawna;587;;Emolga; ElÃ©trico / Voador;55;75;60;75;60;103;428
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/588.png;p588;nÃÂ£o spawna;588;;Karrablast; Inseto;50;75;45;40;45;60;315
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/589.png;p589;nÃÂ£o spawna;589;;Escavalier; Inseto / AÃ§o;70;135;105;60;105;20;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/590.png;p590;roofed;590;;Foongus; Grama / Venenoso;69;55;45;55;55;15;294
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/591.png;p591;nÃÂ£o spawna;591;;Amoonguss; Grama / Venenoso;114;85;70;85;80;30;464
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/592.png;p592;nÃÂ£o spawna;592;;Frillish; Ãgua / Fantasma;55;40;50;65;85;40;335
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png;p593;nÃÂ£o spawna;593;;Jellicent; Ãgua / Fantasma;100;60;70;85;105;60;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/594.png;p594;nÃÂ£o spawna;594;;Alomomola; Ãgua;165;75;80;40;45;65;470
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/595.png;p595;nÃÂ£o spawna;595;;Joltik; Inseto / ElÃ©trico;50;47;50;57;50;65;319
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/596.png;p596;nÃÂ£o spawna;596;;Galvantula; Inseto / ElÃ©trico;70;77;60;97;60;108;472
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/597.png;p597;forest;597;;Ferroseed; Grama / AÃ§o;44;50;91;24;86;10;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/598.png;p598;nÃÂ£o spawna;598;;Ferrothorn; Grama / AÃ§o;74;94;131;54;116;20;489
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/599.png;p599;nÃÂ£o spawna;599;;Klink; AÃ§o;40;55;70;45;60;30;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/600.png;p600;nÃÂ£o spawna;600;;Klang; AÃ§o;60;80;95;70;85;50;440
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/601.png;p601;nÃÂ£o spawna;601;;Klinklang; AÃ§o;60;100;115;70;85;90;520
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/602.png;p602;nÃÂ£o spawna;602;;Tynamo; ElÃ©trico;35;55;40;45;40;60;275
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/603.png;p603;nÃÂ£o spawna;603;;Eelektrik; ElÃ©trico;65;85;70;75;70;40;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/604.png;p604;nÃÂ£o spawna;604;;Eelektross; ElÃ©trico;85;115;80;105;80;50;515
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/605.png;p605;nÃÂ£o spawna;605;;Elgyem; PsÃ­quico;55;55;55;85;55;30;335
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/606.png;p606;nÃÂ£o spawna;606;;Beheeyem; PsÃ­quico;75;75;75;125;95;40;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/607.png;p607;monster;607;;Litwick; Fantasma / Fogo;50;30;55;65;55;20;275
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/608.png;p608;nÃÂ£o spawna;608;;Lampent; Fantasma / Fogo;60;40;60;95;60;55;370
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png;p609;nÃÂ£o spawna;609;;Chandelure; Fantasma / Fogo;60;55;90;145;90;80;520
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/610.png;p610;deep_dark;610;;Axew; DragÃ£o;46;87;60;30;40;57;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/611.png;p611;nÃÂ£o spawna;611;;Fraxure; DragÃ£o;66;117;70;40;50;67;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png;p612;nÃÂ£o spawna;612;;Haxorus; DragÃ£o;76;147;90;60;70;97;540
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/613.png;p613;nÃÂ£o spawna;613;;Cubchoo; Gelo;55;70;40;60;40;40;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/614.png;p614;nÃÂ£o spawna;614;;Beartic; Gelo;95;130;80;70;80;50;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/615.png;p615;nÃÂ£o spawna;615;;Cryogonal; Gelo;80;50;50;95;135;105;515
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/616.png;p616;nÃÂ£o spawna;616;;Shelmet; Inseto;50;40;85;40;65;25;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/617.png;p617;nÃÂ£o spawna;617;;Accelgor; Inseto;80;70;40;100;60;145;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/618.png;p618;nÃÂ£o spawna;618;;Stunfisk; ElÃ©trico / Terrestre;109;66;84;81;99;32;471
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/619.png;p619;nÃÂ£o spawna;619;;Mienfoo; Lutador;45;85;50;55;50;65;350
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/620.png;p620;nÃÂ£o spawna;620;;Mienshao; Lutador;65;125;60;95;60;105;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/621.png;p621;nÃÂ£o spawna;621;;Druddigon; DragÃ£o;77;120;90;60;90;48;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/622.png;p622;nÃÂ£o spawna;622;;Golett; Terrestre / Fantasma;59;74;50;35;50;35;303
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/623.png;p623;nÃÂ£o spawna;623;;Golurk; Terrestre / Fantasma;89;124;80;55;80;55;483
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/624.png;p624;monster;624;;Pawniard; Sombrio / AÃ§o;45;85;70;40;40;60;340
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/625.png;p625;nÃÂ£o spawna;625;;Bisharp; Sombrio / AÃ§o;65;125;100;60;70;70;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/626.png;p626;nÃÂ£o spawna;626;;Bouffalant; Normal;95;110;95;40;95;55;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/627.png;p627;nÃÂ£o spawna;627;;Rufflet; Normal / Voador;70;83;50;37;50;60;350
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png;p628;nÃÂ£o spawna;628;;Braviary; Normal / Voador;100;123;75;57;75;80;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/629.png;p629;nÃÂ£o spawna;629;;Vullaby; Sombrio / Voador;70;55;75;45;65;60;370
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/630.png;p630;nÃÂ£o spawna;630;;Mandibuzz; Sombrio / Voador;110;65;105;55;95;80;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/631.png;p631;nÃÂ£o spawna;631;;Heatmor; Fogo;85;97;66;105;66;65;484
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/632.png;p632;nÃÂ£o spawna;632;;Durant; Inseto / AÃ§o;58;109;112;48;48;109;484
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/633.png;p633;extreme_hills;633;;Deino; Sombrio / DragÃ£o;52;65;50;45;50;38;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/634.png;p634;nÃÂ£o spawna;634;;Zweilous; Sombrio / DragÃ£o;72;85;70;65;70;58;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/635.png;p635;nÃÂ£o spawna;635;;Hydreigon; Sombrio / DragÃ£o;92;105;90;125;90;98;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/636.png;p636;desert;636;;Larvesta; Inseto / Fogo;55;85;55;50;55;60;360
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/637.png;p637;nÃÂ£o spawna;637;;Volcarona; Inseto / Fogo;85;60;65;135;105;100;550
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/638.png;p638;nÃÂ£o spawna;638;;Cobalion; AÃ§o / Lutador;91;90;129;90;72;108;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/639.png;p639;nÃÂ£o spawna;639;;Terrakion; Pedra / Lutador;91;129;90;72;90;108;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/640.png;p640;nÃÂ£o spawna;640;;Virizion; Grama / Lutador;91;90;72;90;129;108;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png;p641;nÃÂ£o spawna;641;;Tornadus; Voador;79;115;70;111;125;80;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png;p642;nÃÂ£o spawna;642;;Thundurus; ElÃ©trico / Voador;79;115;70;111;125;80;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/643.png;p643;taiga;643;;Reshiram; DragÃ£o / Fogo;100;120;100;150;120;90;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/644.png;p644;taiga;644;;Zekrom; DragÃ£o / ElÃ©trico;100;150;120;120;100;90;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png;p645;nÃÂ£o spawna;645;;Landorus; Terrestre / Voador;89;125;90;101;115;80;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/646.png;p646;nÃÂ£o spawna;646;;Kyurem; DragÃ£o / Gelo;125;130;90;130;90;95;660
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/647.png;p647;nÃÂ£o spawna;647;;Keldeo; Ãgua / Lutador;91;72;90;129;90;108;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png;p648;nÃÂ£o spawna;648;;Meloetta; Normal / PsÃ­quico;100;77;77;128;128;90;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/649.png;p649;nÃÂ£o spawna;649;;Genesect; Inseto / AÃ§o;71;120;95;120;95;99;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/650.png;p650;forest;650;;Chespin; Grama;56;61;65;48;45;38;313
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/651.png;p651;nÃÂ£o spawna;651;;Quilladin; Grama;61;78;95;56;58;57;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/652.png;p652;nÃÂ£o spawna;652;;Chesnaught; Grama / Lutador;88;107;122;74;75;64;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/653.png;p653;forest;653;;Fennekin; Fogo;40;45;40;62;60;60;307
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/654.png;p654;nÃÂ£o spawna;654;;Braixen; Fogo;59;59;58;90;70;73;409
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png;p655;nÃÂ£o spawna;655;;Delphox; Fogo / PsÃ­quico;75;69;72;114;100;104;534
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/656.png;p656;swamp;656;;Froakie; Ãgua;41;56;40;62;44;71;314
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/657.png;p657;swamp;657;;Frogadier; Ãgua;54;63;52;83;56;97;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png;p658;nÃÂ£o spawna;658;;Greninja; Ãgua / Sombrio;72;95;67;103;71;122;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/659.png;p659;nÃÂ£o spawna;659;;Bunnelby; Normal;38;36;38;32;36;57;237
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/660.png;p660;nÃÂ£o spawna;660;;Diggersby; Normal / Terrestre;85;56;77;50;77;78;423
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/661.png;p661;plains;661;;Fletchling; Normal / Voador;45;50;43;40;38;62;278
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/662.png;p662;nÃÂ£o spawna;662;;Fletchinder; Fogo / Voador;62;73;55;56;52;84;382
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/663.png;p663;nÃÂ£o spawna;663;;Talonflame; Fogo / Voador;78;81;71;74;69;126;499
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/664.png;p664;nÃÂ£o spawna;664;;Scatterbug; Inseto;38;35;40;27;25;35;200
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/665.png;p665;nÃÂ£o spawna;665;;Spewpa; Inseto;45;22;60;27;30;29;213
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png;p666;nÃÂ£o spawna;666;;Vivillon; Inseto / Voador;80;52;50;90;50;89;411
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/667.png;p667;nÃÂ£o spawna;667;;Litleo; Fogo / Normal;62;50;58;73;54;72;369
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668.png;p668;nÃÂ£o spawna;668;;Pyroar; Fogo / Normal;86;68;72;109;66;106;507
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png;p669;nÃÂ£o spawna;669;;FlabÃÂ©bÃÂ©; Fada;44;38;39;61;79;42;303
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670.png;p670;nÃÂ£o spawna;670;;Floette; Fada;54;45;47;75;98;52;371
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png;p671;nÃÂ£o spawna;671;;Florges; Fada;78;65;68;112;154;75;552
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/672.png;p672;nÃÂ£o spawna;672;;Skiddo; Grama;66;65;48;62;57;52;350
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/673.png;p673;nÃÂ£o spawna;673;;Gogoat; Grama;123;100;62;97;81;68;531
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/674.png;p674;jungle;674;;Pancham; Lutador;67;82;62;46;48;43;348
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/675.png;p675;nÃÂ£o spawna;675;;Pangoro; Lutador / Sombrio;95;124;78;69;71;58;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676.png;p676;nÃÂ£o spawna;676;;Furfrou; Normal;75;80;60;65;90;102;472
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/677.png;p677;nÃÂ£o spawna;677;;Espurr; PsÃ­quico;62;48;54;63;60;68;355
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png;p678;nÃÂ£o spawna;678;;Meowstic; PsÃ­quico;74;48;76;83;81;104;466
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/679.png;p679;pale_garden;679;;Honedge; AÃ§o / Fantasma;45;80;100;35;37;28;325
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/680.png;p680;nÃÂ£o spawna;680;;Doublade; AÃ§o / Fantasma;59;110;150;35;45;49;448
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png;p681;nÃÂ£o spawna;681;;Aegislash; AÃ§o / Fantasma;60;50;140;60;50;140;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/682.png;p682;nÃÂ£o spawna;682;;Spritzee; Fada;78;52;60;63;65;23;341
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/683.png;p683;nÃÂ£o spawna;683;;Aromatisse; Fada;101;72;72;99;89;29;462
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/684.png;p684;nÃÂ£o spawna;684;;Swirlix; Fada;62;48;66;59;57;49;341
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/685.png;p685;nÃÂ£o spawna;685;;Slurpuff; Fada;82;80;86;85;75;72;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/686.png;p686;nÃÂ£o spawna;686;;Inkay; Sombrio / PsÃ­quico;53;54;53;37;46;45;288
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/687.png;p687;nÃÂ£o spawna;687;;Malamar; Sombrio / PsÃ­quico;86;92;88;68;75;73;482
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/688.png;p688;nÃÂ£o spawna;688;;Binacle; Pedra / Ãgua;42;52;67;39;56;50;306
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/689.png;p689;nÃÂ£o spawna;689;;Barbaracle; Pedra / Ãgua;72;105;115;54;86;68;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/690.png;p690;swamp;690;;Skrelp; Venenoso / Ãgua;50;60;60;60;60;30;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/691.png;p691;nÃÂ£o spawna;691;;Dragalge; Venenoso / DragÃ£o;65;75;90;97;123;44;494
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/692.png;p692;nÃÂ£o spawna;692;;Clauncher; Ãgua;50;53;62;58;63;44;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/693.png;p693;nÃÂ£o spawna;693;;Clawitzer; Ãgua;71;73;88;120;89;59;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/694.png;p694;nÃÂ£o spawna;694;;Helioptile; ElÃ©trico / Normal;44;38;33;61;43;70;289
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/695.png;p695;nÃÂ£o spawna;695;;Heliolisk; ElÃ©trico / Normal;62;55;52;109;94;109;481
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/696.png;p696;nÃÂ£o spawna;696;;Tyrunt; Pedra / DragÃ£o;58;89;77;45;45;48;362
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/697.png;p697;nÃÂ£o spawna;697;;Tyrantrum; Pedra / DragÃ£o;82;121;119;69;59;71;521
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/698.png;p698;nÃÂ£o spawna;698;;Amaura; Pedra / Gelo;77;59;50;67;63;46;362
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/699.png;p699;nÃÂ£o spawna;699;;Aurorus; Pedra / Gelo;123;77;72;99;92;58;521
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png;p700;nÃÂ£o spawna;700;;Sylveon; Fada;95;65;65;110;130;60;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/701.png;p701;savanna;701;;Hawlucha; Lutador / Voador;78;92;75;74;63;118;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/702.png;p702;nÃÂ£o spawna;702;;Dedenne; ElÃ©trico / Fada;67;58;57;81;67;101;431
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/703.png;p703;nÃÂ£o spawna;703;;Carbink; Pedra / Fada;50;50;150;50;150;50;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/704.png;p704;swamp;704;;Goomy; DragÃ£o;45;50;35;55;75;40;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/705.png;p705;nÃÂ£o spawna;705;;Sliggoo; DragÃ£o;68;75;53;83;113;60;452
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/706.png;p706;nÃÂ£o spawna;706;;Goodra; DragÃ£o;90;100;70;110;150;80;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/707.png;p707;nÃÂ£o spawna;707;;Klefki; AÃ§o / Fada;57;80;91;80;87;75;470
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/708.png;p708;nÃÂ£o spawna;708;;Phantump; Fantasma / Grama;43;70;48;50;60;38;309
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/709.png;p709;nÃÂ£o spawna;709;;Trevenant; Fantasma / Grama;85;110;76;65;82;56;474
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png;p710;nÃÂ£o spawna;710;;Pumpkaboo; Fantasma / Grama;44;66;70;44;55;56;335
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png;p711;nÃÂ£o spawna;711;;Gourgeist; Fantasma / Grama;55;85;122;58;75;99;494
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/712.png;p712;nÃÂ£o spawna;712;;Bergmite; Gelo;55;69;85;32;35;28;304
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/713.png;p713;nÃÂ£o spawna;713;;Avalugg; Gelo;95;117;184;44;46;28;514
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/714.png;p714;deep_dark;714;;Noibat; Voador / DragÃ£o;40;30;35;45;40;55;245
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/715.png;p715;nÃÂ£o spawna;715;;Noivern; Voador / DragÃ£o;85;70;80;97;80;123;535
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716.png;p716;nÃÂ£o spawna;716;;Xerneas; Fada;126;131;95;131;98;99;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png;p717;roofed;717;;Yveltal; Sombrio / Voador;126;131;95;131;98;99;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png;p718;monster;718;;Zygarde; DragÃ£o / Terrestre;108;100;121;81;95;95;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png;p719;nÃÂ£o spawna;719;;Diancie; Pedra / Fada;50;100;150;100;150;50;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png;p720;nÃÂ£o spawna;720;;Hoopa; PsÃ­quico / Fantasma;80;110;60;150;130;70;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/721.png;p721;nÃÂ£o spawna;721;;Volcanion; Fogo / Ãgua;80;110;120;130;90;70;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png;p722;forest;722;;Rowlet; Grama / Voador;68;55;55;50;50;42;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/723.png;p723;nÃÂ£o spawna;723;;Dartrix; Grama / Voador;78;75;75;70;70;52;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png;p724;nÃÂ£o spawna;724;;Decidueye; Grama / Fantasma;78;107;75;100;100;70;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/725.png;p725;mesa;725;;Litten; Fogo;45;65;40;60;40;70;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/726.png;p726;nÃÂ£o spawna;726;;Torracat; Fogo;65;85;50;80;50;90;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png;p727;nÃÂ£o spawna;727;;Incineroar; Fogo / Sombrio;95;115;90;80;90;60;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/728.png;p728;beach;728;;Popplio; Ãgua;50;54;54;66;56;40;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/729.png;p729;nÃÂ£o spawna;729;;Brionne; Ãgua;60;69;69;91;81;50;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png;p730;nÃÂ£o spawna;730;;Primarina; Ãgua / Fada;80;74;74;126;116;60;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png;p731;ocean;731;;Pikipek; Normal / Voador;35;75;30;30;30;65;265
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png;p732;ocean;732;;Trumbeak; Normal / Voador;55;85;50;40;50;75;355
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/733.png;p733;ocean;733;;Toucannon; Normal / Voador;80;120;75;75;75;60;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png;p734;plains;734;;Yungoos; Normal;48;70;30;30;30;45;253
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png;p735;nÃÂ£o spawna;735;;Gumshoos; Normal;88;110;60;55;60;45;418
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png;p736;forest;736;;Grubbin; Inseto;47;62;45;55;45;46;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/737.png;p737;plains;737;;Charjabug; Inseto / ElÃ©trico;57;82;95;55;75;36;400
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/738.png;p738;nÃÂ£o spawna;738;;Vikavolt; Inseto / ElÃ©trico;77;70;90;145;75;43;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/739.png;p739;beach;739;;Crabrawler; Lutador;47;82;57;42;47;63;338
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/740.png;p740;nÃÂ£o spawna;740;;Crabominable; Lutador / Gelo;97;132;77;62;67;43;478
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png;p741;nÃÂ£o spawna;741;;Oricorio; Fogo / Voador   (forma padrÃ£o);75;70;70;98;70;93;476
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/742.png;p742;forest;742;;Cutiefly; Inseto / Fada;40;45;40;55;40;84;304
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/743.png;p743;nÃÂ£o spawna;743;;Ribombee; Inseto / Fada;60;55;60;95;70;124;464
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png;p744;forest;744;;Rockruff; Pedra;45;65;40;30;40;60;280
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png;p745;nÃÂ£o spawna;745;;Lycanroc; Pedra  (forma padrÃ£o);75;115;65;55;65;112;487
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746.png;p746;ocean;746;;Wishiwashi; Ãgua;45;20;20;40;25;25;175
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/747.png;p747;beach;747;;Mareanie; Venenoso / Ãgua;50;53;62;43;52;45;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/748.png;p748;ocean;748;;Toxapex; Venenoso / Ãgua;50;63;152;53;142;35;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png;p749;plains;749;;Mudbray; Terrestre;70;100;70;45;55;45;385
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/750.png;p750;plains;750;;Mudsdale; Terrestre;100;125;100;55;85;35;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/751.png;p751;beach;751;;Dewpider; Ãgua / Inseto;38;40;52;40;72;27;269
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/752.png;p752;nÃÂ£o spawna;752;;Araquanid; Ãgua / Inseto;68;70;92;50;132;42;454
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/753.png;p753;savanna;753;;Fomantis; Grama;40;55;35;50;35;35;250
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/754.png;p754;forest;754;;Lurantis; Grama;70;105;90;80;90;45;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/755.png;p755;savanna;755;;Morelull; Grama / Fada;40;35;55;65;75;15;285
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/756.png;p756;nÃÂ£o spawna;756;;Shiinotic; Grama / Fada;60;45;80;90;100;30;405
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/757.png;p757;savanna;757;;Salandit; Venenoso / Fogo;48;44;40;71;40;77;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png;p758;nÃÂ£o spawna;758;;Salazzle; Venenoso / Fogo;68;64;60;111;60;117;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/759.png;p759;plains;759;;Stufful; Normal / Lutador;70;75;50;45;50;50;340
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/760.png;p760;nÃÂ£o spawna;760;;Bewear; Normal / Lutador;120;125;80;55;60;60;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/761.png;p761;forest;761;;Bounsweet; Grama;42;30;38;30;38;32;210
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/762.png;p762;nÃÂ£o spawna;762;;Steenee; Grama;52;40;48;40;48;62;290
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png;p763;nÃÂ£o spawna;763;;Tsareena; Grama;72;120;98;50;98;72;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/764.png;p764;forest;764;;Comfey; Fada;51;52;90;82;110;100;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/765.png;p765;plains;765;;Oranguru; Normal / PsÃ­quico;90;60;80;90;110;60;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/766.png;p766;plains;766;;Passimian; Lutador;100;120;90;40;60;80;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/767.png;p767;beach;767;;Wimpod; Inseto / Ãgua;25;35;40;20;30;80;230
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/768.png;p768;nÃÂ£o spawna;768;;Golisopod; Inseto / Ãgua;75;125;140;60;90;40;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/769.png;p769;monster;769;;Sandygast; Fantasma / Terrestre;55;55;80;70;45;15;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/770.png;p770;monster;770;;Palossand; Fantasma / Terrestre;85;75;110;100;75;35;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/771.png;p771;ocean;771;;Pyukumuku; Ãgua;55;60;130;30;130;5;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/772.png;p772;nÃÂ£o spawna;772;;Type: Null; Normal;95;95;95;95;95;59;534
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773.png;p773;nÃÂ£o spawna;773;;Silvally; Normal;95;95;95;95;95;95;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png;p774;the_end;774;;Minior; Pedra / Voador;60;60;100;60;100;60;440
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/775.png;p775;nÃÂ£o spawna;775;;Komala; Normal;65;115;65;75;95;65;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/776.png;p776;mesa;776;;Turtonator; Fogo / DragÃ£o;60;78;135;91;85;36;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/777.png;p777;nÃÂ£o spawna;777;;Togedemaru; ElÃ©trico / AÃ§o;65;98;63;40;73;96;435
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png;p778;pale garden;778;;Mimikyu; Fantasma / Fada;55;90;80;50;105;96;476
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png;p779;ocean;779;;Bruxish; Ãgua / PsÃ­quico;68;105;70;70;70;92;475
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/780.png;p780;monster;780;;Drampa; Normal / DragÃ£o;78;60;85;135;91;36;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/781.png;p781;nÃÂ£o spawna;781;;Dhelmise; Fantasma / Grama;70;131;100;86;90;40;517
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/782.png;p782;monster;782;;Jangmo-o; DragÃ£o;45;55;65;45;45;45;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/783.png;p783;nÃÂ£o spawna;783;;Hakamo-o; DragÃ£o / Lutador;55;75;90;65;70;65;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png;p784;nÃÂ£o spawna;784;;Kommo-o; DragÃ£o / Lutador;75;110;125;100;105;85;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/785.png;p785;roofed;785;;Tapu Koko; ElÃ©trico / Fada;70;115;85;95;75;130;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/786.png;p786;roofed;786;;Tapu Lele; PsÃ­quico / Fada;70;85;75;130;115;95;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/787.png;p787;forest;787;;Tapu Bulu; Grama / Fada;70;130;115;85;95;75;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png;p788;ocean;788;;Tapu Fini; Ãgua / Fada;70;75;115;95;130;85;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/789.png;p789;the_end;789;;Cosmog; PsÃ­quico;43;29;31;29;31;37;200
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/790.png;p790;nÃÂ£o spawna;790;;Cosmoem; PsÃ­quico;43;29;131;29;131;37;400
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/791.png;p791;nÃÂ£o spawna;791;;Solgaleo; PsÃ­quico / AÃ§o;137;137;107;113;89;97;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/792.png;p792;nÃÂ£o spawna;792;;Lunala; PsÃ­quico / Fantasma;137;113;89;137;107;97;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/793.png;p793;the_end;793;;Nihilego; Pedra / Venenoso;109;53;47;127;131;103;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/794.png;p794;the_end;794;;Buzzwole; Inseto / Lutador;107;139;139;53;53;79;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/795.png;p795;the_end;795;;Pheromosa; Inseto / Lutador;71;137;37;137;37;151;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/796.png;p796;the_end;796;;Xurkitree; ElÃ©trico;83;89;71;173;71;83;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/797.png;p797;the_end;797;;Celesteela; AÃ§o / Voador;97;101;103;107;101;61;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/798.png;p798;the_end;798;;Kartana; Grama / AÃ§o;59;181;131;59;31;109;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/799.png;p799;the_end;799;;Guzzlord; Sombrio / DragÃ£o;223;101;53;97;53;43;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/800.png;p800;roofed;800;;Necrozma; PsÃ­quico;97;107;101;127;89;79;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/801.png;p801;nÃÂ£o spawna;801;;Magearna; AÃ§o / Fada;80;95;115;130;115;65;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/802.png;p802;pale garden;802;;Marshadow; Lutador / Fantasma;90;125;80;125;90;90;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/803.png;p803;the_end;803;;Poipole; Venenoso;67;73;67;73;67;73;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/804.png;p804;nÃÂ£o spawna;804;;Naganadel; Venenoso / DragÃ£o;73;73;73;127;73;121;540
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/805.png;p805;the_end;805;;Stakataka; Pedra / AÃ§o;61;131;211;53;101;13;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/806.png;p806;the_end;806;;Blacephalon; Fogo / Fantasma;53;127;53;151;79;107;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/807.png;p807;nÃÂ£o spawna;807;;Zeraora; ElÃ©trico;88;112;75;102;80;143;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/808.png;p808;nÃÂ£o spawna;808;;Meltan; AÃ§o;46;65;65;55;35;34;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/809.png;p809;mesa;809;;Melmetal; AÃ§o;135;143;143;80;65;34;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/810.png;p810;forest;810;;Grookey; Grama;50;65;50;40;40;65;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/811.png;p811;nÃÂ£o spawna;811;;Thwackey; Grama;70;85;70;55;60;80;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png;p812;nÃÂ£o spawna;812;;Rillaboom; Grama;100;125;90;60;70;85;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/813.png;p813;forest;813;;Scorbunny; Fogo;50;71;40;40;40;69;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/814.png;p814;nÃÂ£o spawna;814;;Raboot; Fogo;65;86;60;55;60;94;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png;p815;nÃÂ£o spawna;815;;Cinderace; Fogo;80;116;75;65;75;119;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/816.png;p816;swamp;816;;Sobble; Ãgua;50;40;40;70;40;70;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/817.png;p817;nÃÂ£o spawna;817;;Drizzile; Ãgua;65;60;55;95;55;90;420
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png;p818;nÃÂ£o spawna;818;;Inteleon; Ãgua;70;85;65;125;65;120;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/819.png;p819;nÃÂ£o spawna;819;;Skwovet; Normal;70;55;55;35;35;25;275
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/820.png;p820;nÃÂ£o spawna;820;;Greedent; Normal;120;95;95;55;75;20;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/821.png;p821;monster;821;;Rookidee; Voador;38;47;35;33;35;57;245
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/822.png;p822;monster;822;;Corvisquire; Voador;68;67;55;43;55;77;365
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/823.png;p823;nÃÂ£o spawna;823;;Corviknight; Voador / AÃ§o;98;87;105;53;85;67;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/824.png;p824;nÃÂ£o spawna;824;;Blipbug; Inseto;25;20;20;25;45;45;180
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/825.png;p825;nÃÂ£o spawna;825;;Dottler; Inseto / PsÃ­quico;50;35;80;50;90;30;335
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/826.png;p826;nÃÂ£o spawna;826;;Orbeetle; Inseto / PsÃ­quico;60;45;110;80;120;90;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/827.png;p827;nÃÂ£o spawna;827;;Nickit; Sombrio;40;28;28;47;52;50;245
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/828.png;p828;nÃÂ£o spawna;828;;Thievul; Sombrio;70;58;58;87;92;90;455
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/829.png;p829;nÃÂ£o spawna;829;;Gossifleur; Grama;40;40;60;40;60;10;250
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/830.png;p830;nÃÂ£o spawna;830;;Eldegoss; Grama;60;50;90;80;120;60;460
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/831.png;p831;nÃÂ£o spawna;831;;Wooloo; Normal;42;40;55;40;45;48;270
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png;p832;nÃÂ£o spawna;832;;Dubwool; Normal;72;80;100;60;90;88;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/833.png;p833;nÃÂ£o spawna;833;;Chewtle; Ãgua;50;64;50;38;38;44;284
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/834.png;p834;nÃÂ£o spawna;834;;Drednaw; Ãgua / Pedra;90;115;90;48;68;74;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/835.png;p835;plains;835;;Yamper; ElÃ©trico;59;45;50;40;50;26;270
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/836.png;p836;nÃÂ£o spawna;836;;Boltund; ElÃ©trico;69;90;60;90;60;121;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/837.png;p837;nÃÂ£o spawna;837;;Rolycoly; Pedra;30;40;50;40;50;30;240
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/838.png;p838;nÃÂ£o spawna;838;;Carkol; Pedra / Fogo;80;60;90;60;70;50;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/839.png;p839;nÃÂ£o spawna;839;;Coalossal; Pedra / Fogo;110;80;120;80;90;30;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/840.png;p840;nÃÂ£o spawna;840;;Applin; Grama / DragÃ£o;40;40;80;40;40;20;260
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/841.png;p841;nÃÂ£o spawna;841;;Flapple; Grama / DragÃ£o;70;110;80;95;60;70;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/842.png;p842;nÃÂ£o spawna;842;;Appletun; Grama / DragÃ£o;110;85;80;100;80;30;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/843.png;p843;nÃÂ£o spawna;843;;Silicobra; Terrestre;52;57;75;35;50;46;315
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/844.png;p844;nÃÂ£o spawna;844;;Sandaconda; Terrestre;72;107;125;65;70;71;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png;p845;nÃÂ£o spawna;845;;Cramorant; Ãgua / Voador;70;85;55;85;95;85;475
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/846.png;p846;nÃÂ£o spawna;846;;Arrokuda; Ãgua;41;63;40;40;30;66;280
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/847.png;p847;nÃÂ£o spawna;847;;Barraskewda; Ãgua;61;123;60;60;50;136;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/848.png;p848;swamp;848;;Toxel; ElÃ©trico / Venenoso;40;38;35;54;35;40;242
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/849.png;p849;nÃÂ£o spawna;849;;Toxtricity; ElÃ©trico / Venenoso;75;98;70;114;70;75;502
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/850.png;p850;nÃÂ£o spawna;850;;Sizzlipede; Fogo / Inseto;50;65;45;50;50;45;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/851.png;p851;nÃÂ£o spawna;851;;Centiskorch; Fogo / Inseto;100;115;65;90;90;65;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/852.png;p852;nÃÂ£o spawna;852;;Clobbopus; Lutador;50;68;60;50;50;32;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/853.png;p853;nÃÂ£o spawna;853;;Grapploct; Lutador;80;118;90;70;80;42;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/854.png;p854;nÃÂ£o spawna;854;;Sinistea; Fantasma;40;45;45;74;54;50;308
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/855.png;p855;nÃÂ£o spawna;855;;Polteageist; Fantasma;60;65;65;134;114;70;508
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/856.png;p856;cherry_grove;856;;Hatenna; PsÃ­quico;42;30;45;56;53;39;265
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/857.png;p857;cherry_grove;857;;Hattrem; PsÃ­quico;57;40;65;86;73;49;370
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/858.png;p858;nÃÂ£o spawna;858;;Hatterene; PsÃ­quico / Fada;57;90;95;136;103;29;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/859.png;p859;deep_dark;859;;Impidimp; Sombrio / Fada;45;45;30;55;40;50;265
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/860.png;p860;pale_garden;860;;Morgrem; Sombrio / Fada;65;60;45;75;55;70;370
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/861.png;p861;pale garden;861;;Grimmsnarl; Sombrio / Fada;95;120;65;95;75;60;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/862.png;p862;nÃÂ£o spawna;862;;Obstagoon; Sombrio / Normal;93;90;101;60;81;95;520
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/863.png;p863;nÃÂ£o spawna;863;;Perrserker; AÃ§o;70;110;100;50;60;50;440
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/864.png;p864;nÃÂ£o spawna;864;;Cursola; Fantasma;60;95;50;145;130;30;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/865.png;p865;nÃÂ£o spawna;865;;Sirfetchd; Lutador;62;135;95;68;82;65;507
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/866.png;p866;nÃÂ£o spawna;866;;Mr. Rime; Gelo / PsÃ­quico;80;85;75;110;100;70;520
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/867.png;p867;nÃÂ£o spawna;867;;Runerigus; Terrestre / Fantasma;58;95;145;50;105;30;483
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/868.png;p868;nÃÂ£o spawna;868;;Milcery; Fada;45;40;40;50;61;34;270
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/869.png;p869;nÃÂ£o spawna;869;;Alcremie; Fada;65;60;75;110;121;64;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/870.png;p870;nÃÂ£o spawna;870;;Falinks; Lutador;65;100;100;70;60;75;470
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/871.png;p871;nÃÂ£o spawna;871;;Pincurchin; ElÃ©trico;48;101;95;91;85;15;435
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/872.png;p872;nÃÂ£o spawna;872;;Snom; Gelo / Inseto;30;25;35;45;30;20;185
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/873.png;p873;nÃÂ£o spawna;873;;Frosmoth; Gelo / Inseto;70;65;60;125;90;65;475
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/874.png;p874;nÃÂ£o spawna;874;;Stonjourner; Pedra;100;125;135;20;20;70;470
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/875.png;p875;nÃÂ£o spawna;875;;Eiscue; Gelo;75;80;110;65;90;50;470
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png;p876;nÃÂ£o spawna;876;;Indeedee; PsÃ­quico / Normal;60;65;55;105;95;95;475
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/877.png;p877;forest;877;;Morpeko; ElÃ©trico / Sombrio;58;95;58;70;58;97;436
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/878.png;p878;nÃÂ£o spawna;878;;Cufant; AÃ§o;72;80;49;40;49;40;330
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/879.png;p879;nÃÂ£o spawna;879;;Copperajah; AÃ§o;122;130;69;80;69;30;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/880.png;p880;nÃÂ£o spawna;880;;Dracozolt; ElÃ©trico / DragÃ£o;90;100;90;80;70;75;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/881.png;p881;nÃÂ£o spawna;881;;Arctozolt; ElÃ©trico / Gelo;90;100;90;90;80;55;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/882.png;p882;nÃÂ£o spawna;882;;Dracovish; Ãgua / DragÃ£o;90;90;100;70;80;75;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/883.png;p883;nÃÂ£o spawna;883;;Arctovish; Ãgua / Gelo;90;90;100;80;90;55;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/884.png;p884;montains;884;;Duraludon; AÃ§o / DragÃ£o;70;95;115;120;50;85;535
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/885.png;p885;pale_garden;885;;Dreepy; DragÃ£o / Fantasma;28;60;30;40;30;82;270
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/886.png;p886;pale_garden;886;;Drakloak; DragÃ£o / Fantasma;68;80;50;60;50;102;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/887.png;p887;nÃÂ£o spawna;887;;Dragapult; DragÃ£o / Fantasma;88;120;75;100;75;142;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/888.png;p888;nÃÂ£o spawna;888;;Zacian; Fada / AÃ§o;92;120;115;80;115;138;660
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/889.png;p889;nÃÂ£o spawna;889;;Zamazenta; Lutador / AÃ§o;92;120;115;80;115;138;660
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png;p890;pokemon do Shiro;890;;Eternatus; Venenoso / DragÃ£o;140;85;95;145;95;130;690
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png;p891;roofed;891;;Kubfu; Lutador;60;90;60;53;50;72;385
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png;p892;nÃÂ£o spawna;892;;Urshifu; Lutador / Sombrio;100;130;100;63;60;97;550
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/893.png;p893;nÃÂ£o spawna;893;;Zarude; Sombrio / Grama;105;120;105;70;95;105;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png;p894;nÃÂ£o spawna;894;;Regieleki; ElÃ©trico;80;100;50;100;50;200;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png;p895;nÃÂ£o spawna;895;;Regidrago; DragÃ£o;200;100;50;100;50;80;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/896.png;p896;ice_plains;896;;Glastrier; Gelo;100;145;130;65;110;30;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/897.png;p897;nÃÂ£o spawna;897;;Spectrier; Fantasma;100;65;60;145;80;130;580
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/898.png;p898;nÃÂ£o spawna;898;;Calyrex; PsÃ­quico / Grama;100;80;80;80;80;80;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/899.png;p899;nÃÂ£o spawna;899;;Wyrdeer; Normal / PsÃ­quico;100;165;150;85;130;50;680
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/900.png;p900;savanna;900;;Kleavor; Inseto / Pedra;103;105;72;105;75;65;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/901.png;p901;nÃÂ£o spawna;901;;Ursaluna; Terrestre / Normal;70;130;95;45;75;85;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/902.png;p902;nÃÂ£o spawna;902;;Basculegion; Ãgua / Fantasma;130;140;105;45;80;50;550
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/903.png;p903;nÃÂ£o spawna;903;;Sneasler; Lutador / Venenoso;120;112;65;80;75;78;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/904.png;p904;nÃÂ£o spawna;904;;Overqwil; Sombrio / Venenoso;80;130;60;40;80;120;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png;p905;nÃÂ£o spawna;905;;Enamorus; Fada / Voador;85;115;95;65;65;85;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/906.png;p906;nÃÂ£o spawna;906;;Sprigatito; Grama;40;61;54;45;45;65;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/907.png;p907;nÃÂ£o spawna;907;;Floragato; Grama;61;80;63;60;63;83;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png;p908;nÃÂ£o spawna;908;;Meowscarada; Grama / Sombrio;76;110;70;81;70;123;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/909.png;p909;swamp;909;;Fuecoco; Fogo;67;45;59;63;40;36;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/910.png;p910;nÃÂ£o spawna;910;;Crocalor; Fogo;81;55;78;90;58;49;411
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/911.png;p911;nÃÂ£o spawna;911;;Skeledirge; Fogo / Fantasma;104;75;100;110;75;66;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png;p912;ocean;912;;Quaxly; Ãgua;55;65;45;50;45;50;310
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/913.png;p913;nÃÂ£o spawna;913;;Quaxwell; Ãgua;70;85;65;65;60;65;410
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/914.png;p914;nÃÂ£o spawna;914;;Quaquaval; Ãgua / Lutador;85;120;80;85;75;85;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/915.png;p915;nÃÂ£o spawna;915;;Lechonk; Normal;54;45;40;35;45;35;254
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/916.png;p916;nÃÂ£o spawna;916;;Oinkologne; Normal;110;100;75;59;80;65;489
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/917.png;p917;nÃÂ£o spawna;917;;Tarountula; Inseto;35;41;45;29;40;20;210
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/918.png;p918;nÃÂ£o spawna;918;;Spidops; Inseto;60;79;92;52;86;35;404
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/919.png;p919;nÃÂ£o spawna;919;;Nymble; Inseto;33;46;40;21;25;45;210
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/920.png;p920;nÃÂ£o spawna;920;;Lokix; Inseto / Sombrio;71;102;78;52;55;92;450
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/921.png;p921;forest;921;;Pawmi; ElÃ©trico;45;50;20;40;25;60;240
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/922.png;p922;nÃÂ£o spawna;922;;Pawmo; ElÃ©trico / Lutador;60;75;40;50;40;85;350
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/923.png;p923;nÃÂ£o spawna;923;;Pawmot; ElÃ©trico / Lutador;70;115;70;70;60;105;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/924.png;p924;jungle;924;;Tandemaus; Normal;50;50;45;40;45;75;305
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/925.png;p925;nÃÂ£o spawna;925;;Maushold; Normal;74;75;70;65;75;111;470
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/926.png;p926;nÃÂ£o spawna;926;;Fidough; Fada;37;55;70;30;55;65;312
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/927.png;p927;nÃÂ£o spawna;927;;Dachsbun; Fada;57;80;115;50;80;95;477
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/928.png;p928;nÃÂ£o spawna;928;;Smoliv; Grama / Normal;41;35;45;58;51;30;260
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/929.png;p929;nÃÂ£o spawna;929;;Dolliv; Grama / Normal;52;53;60;78;78;33;354
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/930.png;p930;nÃÂ£o spawna;930;;Arboliva; Grama / Normal;78;69;90;125;109;39;510
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/931.png;p931;nÃÂ£o spawna;931;;Squawkabilly; Normal / Voador;82;96;51;45;51;92;417
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/932.png;p932;nÃÂ£o spawna;932;;Nacli; Pedra;55;55;75;35;35;25;280
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/933.png;p933;nÃÂ£o spawna;933;;Naclstack; Pedra;60;60;100;35;65;35;355
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/934.png;p934;nÃÂ£o spawna;934;;Garganacl; Pedra;100;100;130;45;90;35;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/935.png;p935;plains;935;;Charcadet; Fogo;40;50;40;50;40;35;255
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/936.png;p936;nÃÂ£o spawna;936;;Armarouge; Fogo / PsÃ­quico;85;60;100;125;80;75;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/937.png;p937;nÃÂ£o spawna;937;;Ceruledge; Fogo / Fantasma;75;125;80;60;100;85;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/938.png;p938;nÃÂ£o spawna;938;;Tadbulb; ElÃ©trico;61;31;41;59;35;45;272
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/939.png;p939;nÃÂ£o spawna;939;;Bellibolt; ElÃ©trico;109;64;91;103;83;45;495
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/940.png;p940;nÃÂ£o spawna;940;;Wattrel; ElÃ©trico;40;40;35;55;40;70;280
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/941.png;p941;nÃÂ£o spawna;941;;Kilowattrel; ElÃ©trico;70;70;60;105;60;125;490
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/942.png;p942;nÃÂ£o spawna;942;;Marshif; Sombrio;60;78;60;40;51;51;340
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/943.png;p943;nÃÂ£o spawna;943;;Mabosstiff; Sombrio;80;120;90;60;70;85;505
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/944.png;p944;nÃÂ£o spawna;944;;Shroodle; Venenoso / Normal;40;65;35;40;35;75;290
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/945.png;p945;nÃÂ£o spawna;945;;Grafaiai; Venenoso / Normal;63;95;65;80;72;110;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/946.png;p946;nÃÂ£o spawna;946;;Bramblin; Grama / Fantasma;40;65;30;45;35;60;275
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/947.png;p947;nÃÂ£o spawna;947;;Brambleghast; Grama / Fantasma;55;115;70;80;70;90;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/948.png;p948;nÃÂ£o spawna;948;;Toedscool; Terrestre / Grama;40;40;35;50;100;70;335
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/949.png;p949;nÃÂ£o spawna;949;;Toedscruel; Terrestre / Grama;80;70;65;80;120;100;515
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/950.png;p950;nÃÂ£o spawna;950;;Klawf; Pedra;70;100;115;35;55;75;450
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/951.png;p951;nÃÂ£o spawna;951;;Capsakid; Grama;50;62;40;62;40;50;304
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png;p952;nÃÂ£o spawna;952;;Scovillain; Grama / Fogo;65;108;65;108;65;75;486
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/953.png;p953;nÃÂ£o spawna;953;;Rellor; Inseto;41;50;60;31;58;30;270
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/954.png;p954;nÃÂ£o spawna;954;;Rabsca; Inseto / PsÃ­quico;75;50;85;115;100;45;470
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/955.png;p955;nÃÂ£o spawna;955;;Flittle; PsÃ­quico;30;35;30;55;30;75;255
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/956.png;p956;nÃÂ£o spawna;956;;Espathra; PsÃ­quico;95;60;60;101;60;105;481
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/957.png;p957;cherry_grove;957;;Tinkatink; Fada / AÃ§o;50;45;45;35;64;58;297
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/958.png;p958;cherry_grove;958;;Tinkatuff; Fada / AÃ§o;65;55;55;45;82;78;380
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/959.png;p959;nÃÂ£o spawna;959;;Tinkaton; Fada / AÃ§o;85;75;77;70;105;94;506
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/960.png;p960;nÃÂ£o spawna;960;;Wiglett; Ãgua;10;55;25;35;25;95;245
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/961.png;p961;nÃÂ£o spawna;961;;Wugtrio; Ãgua;35;100;50;50;70;120;425
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/962.png;p962;nÃÂ£o spawna;962;;Bombirdier; Sombrio / Voador;70;103;85;60;85;82;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/963.png;p963;nÃÂ£o spawna;963;;Finizen; Ãgua;70;45;40;45;40;75;315
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/964.png;p964;nÃÂ£o spawna;964;;Palafin; Ãgua;100;70;72;53;62;100;457
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/965.png;p965;nÃÂ£o spawna;965;;Varoom;AÃ§o/Venenoso;45;70;63;30;45;47;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/966.png;p966;nÃÂ£o spawna;966;;Revavroom;AÃ§o/Venenoso;80;119;90;54;67;90;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/967.png;p967;nÃÂ£o spawna;967;;Cyclizar; DragÃ£o / Normal;70;95;65;85;65;121;501
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/968.png;p968;nÃÂ£o spawna;968;;Orthworm; AÃ§o;70;85;145;60;55;65;480
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/969.png;p969;nÃÂ£o spawna;969;;Glimmet; Pedra / Venenoso;48;35;42;105;60;60;350
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/970.png;p970;nÃÂ£o spawna;970;;Glimmora; Pedra / Venenoso;83;55;90;130;81;86;525
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/971.png;p971;pale garden;971;;Greavard; Fantasma;50;61;60;30;55;34;290
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/972.png;p972;nÃÂ£o spawna;972;;Houndstone; Fantasma;72;101;100;50;97;68;488
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/973.png;p973;nÃÂ£o spawna;973;;Flamigo; Normal / Voador;82;115;74;75;64;90;500
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/974.png;p974;nÃÂ£o spawna;974;;Cetoddle; Gelo;108;68;45;30;40;43;334
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/975.png;p975;nÃÂ£o spawna;975;;Cetitan; Gelo;170;113;65;45;55;73;521
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/976.png;p976;nÃÂ£o spawna;976;;Veluza; Ãgua / PsÃ­quico;90;102;73;78;65;70;478
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/977.png;p977;nÃÂ£o spawna;977;;Dondozo; Ãgua;150;100;115;65;65;35;530
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/978.png;p978;nÃÂ£o spawna;978;;Tatsugiri; DragÃ£o / Ãgua;68;50;60;120;95;82;475
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/979.png;p979;nÃÂ£o spawna;979;;Annihilape; Lutador / Fantasma;110;115;80;50;90;90;535
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/980.png;p980;nÃÂ£o spawna;980;;Clodsire; Venenoso / Terrestre;130;75;60;45;100;20;430
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/981.png;p981;nÃÂ£o spawna;981;;Farigiraf; Normal / PsÃ­quico;120;90;70;110;70;60;520
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/982.png;p982;nÃÂ£o spawna;982;;Dudunsparce; Normal;125;100;80;85;75;55;520
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/983.png;p983;nÃÂ£o spawna;983;;Kingambit; Sombrio / AÃ§o;100;135;120;60;85;50;550
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/984.png;p984;nÃÂ£o spawna;984;;Great Tusk; Terrestre / Lutador;115;131;131;53;53;87;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/985.png;p985;nÃÂ£o spawna;985;;Scream Tail;Fada/ Psiquico;115;65;99;65;115;111;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/986.png;p986;nÃÂ£o spawna;986;;Brute Bonnet; Grama / Sombrio;111;127;99;79;99;55;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/987.png;p987;nÃÂ£o spawna;987;;Flutter Mane; Fantasma / Fada;55;55;55;135;135;135;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/988.png;p988;nÃÂ£o spawna;988;;Slither Wing; Inseto / Lutador;85;135;79;85;105;81;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/989.png;p989;nÃÂ£o spawna;989;;Sandy Shocks; ElÃ©trico / Terrestre;85;81;97;121;85;101;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/990.png;p990;nÃÂ£o spawna;990;;Iron Treads; Terrestre / AÃ§o;90;112;120;72;70;106;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/991.png;p991;nÃÂ£o spawna;991;;Iron Bundle; Gelo / Ãgua;56;80;114;124;60;136;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/992.png;p992;nÃÂ£o spawna;992;;Iron Hands; Lutador / ElÃ©trico;154;140;108;50;68;50;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/993.png;p993;nÃÂ£o spawna;993;;Iron Jugulis; Sombrio / Voador;94;80;86;122;80;108;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/994.png;p994;nÃÂ£o spawna;994;;Iron Moth; Fogo / Venenoso;80;70;60;140;110;110;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/995.png;p995;nÃÂ£o spawna;995;;Iron Thorns; Pedra / ElÃ©trico;100;134;110;70;84;72;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/996.png;p996;frozen;996;;Frigibax; Gelo / DragÃ£o;65;75;45;35;45;55;320
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/997.png;p997;nÃÂ£o spawna;997;;Arctibax; Gelo / DragÃ£o;90;95;66;45;65;62;423
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/998.png;p998;nÃÂ£o spawna;998;;Baxcalibur; Gelo / DragÃ£o;115;145;92;75;86;87;600
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/999.png;p999;mountain;999;;Gimmighoul; Fantasma;45;30;70;75;70;10;300
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1000.png;p1000;nÃÂ£o spawna;1000;;Gholdengo; Fantasma / AÃ§o;87;60;95;133;91;84;550
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1001.png;p1001;pale_garden;1001;;Wo-Chien; Sombrio / Grama;85;85;100;95;135;70;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1002.png;p1002;frozen;1002;;Chien-Pao; Sombrio / Gelo;80;120;80;90;65;135;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1003.png;p1003;nÃÂ£o spawna;1003;;Ting-Lu; Sombrio / Terrestre;155;110;125;55;80;45;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1004.png;p1004;desert;1004;;Chi-Yu; Sombrio / Fogo;55;80;80;135;120;100;570
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1005.png;p1005;nÃÂ£o spawna;1005;;Roaring Moon; Sombrio / DragÃ£o;105;139;71;55;101;119;590
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1006.png;p1006;nÃÂ£o spawna;1006;;Iron Valiant; Fada / Lutador;74;130;90;120;60;116;590
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png;p1007;the_end;1007;;Koraidon; Lutador / DragÃ£o;100;135;115;85;100;135;670
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png;p1008;the_end;1008;;Miraidon; ElÃ©trico / DragÃ£o;100;85;100;135;115;135;670
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1009.png;p1009;the_end;1009;;Walking Wake; DragÃ£o / Ãgua;99;83;91;109;125;83;590
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1010.png;p1010;nÃÂ£o spawna;1010;;Iron Leaves; Planta / PsÃ­quico;90;130;88;104;70;108;590
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1011.png;p1011;nÃÂ£o spawna;1011;;Dipplin; Grama / DragÃ£o;80;80;110;40;95;80;485
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1012.png;p1012;nÃÂ£o spawna;1012;;; Grama / DragÃ£o;;;;;;;
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1013.png;p1013;nÃÂ£o spawna;1013;;;;;;;;;;
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1014.png;p1014;nÃÂ£o spawna;1014;;;;;;;;;;
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1015.png;p1015;nÃÂ£o spawna;1015;;;;;;;;;;
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1016.png;p1016;nÃÂ£o spawna;1016;;;;;;;;;;
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1017.png;p1017;nÃÂ£o spawna;1017;;;;;;;;;;
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1018.png;p1018;nÃÂ£o spawna;1018;;;;;;;;;;
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1019.png;p1019;nÃÂ£o spawna;1019;;Hydrapple;;106;80;110;44;120;80;540
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1020.png;p1020;nÃÂ£o spawna;1020;;;;;;;;;;
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1021.png;p1021;nÃÂ£o spawna;1021;;;;;;;;;;
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1022.png;p1022;nÃÂ£o spawna;1022;;;;;;;;;;
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1023.png;p1023;nÃÂ£o spawna;1023;;;;;;;;;;
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1024.png;p1024;nÃÂ£o spawna;1024;;;;;;;;;;
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1025.png;p1025;nÃÂ£o spawna;1025;;;;;;;;;;
