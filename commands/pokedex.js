@@ -16,7 +16,11 @@ function normalizeText(text) {
 
 // ================= LEITURA CSV =================
 function readCSV() {
-  const raw = fs.readFileSync(CSV_PATH, "utf8");
+  let raw = fs.readFileSync(CSV_PATH, "utf8");
+
+  // remove BOM se existir
+  raw = raw.replace(/^\uFEFF/, '');
+
   const linhas = raw.split("\n").map(l => l.trim()).filter(Boolean);
 
   // normaliza os headers
@@ -193,7 +197,7 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setColor(embedColor)
       .setTitle(`📖 #${id} • ${found.name}`)
-      .setDescription(`**Tipo:** ${icons} ${found.type}`) // mostra com acentos do CSV
+      .setDescription(`**Tipo:** ${icons} ${found.type}`) // mantém acento do CSV
       .addFields(
         { name: "🌍 Bioma de Spawn", value: `\`${biome}\`` },
 
