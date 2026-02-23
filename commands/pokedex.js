@@ -6,15 +6,24 @@ const CSV_PATH = path.join(__dirname, "..", "pokedex1.1.csv");
 const JSON_PATH = path.join(__dirname, "..", "pokemon.json");
 
 // ================= CSV =================
+function normalizeText(text) {
+  return text
+    .normalize("NFD")                 // separa os acentos
+    .replace(/[\u0300-\u036f]/g, "") // remove os acentos
+    .trim();
+}
+
 function readCSV() {
   const raw = fs.readFileSync(CSV_PATH, "utf8");
   const linhas = raw.split("\n").map(l => l.trim()).filter(Boolean);
 
-  const header = linhas[0].split(";").map(h => h.trim());
+  // normaliza os headers
+  const header = linhas[0].split(";").map(h => normalizeText(h).toLowerCase());
+
   const rows = [];
 
   for (let i = 1; i < linhas.length; i++) {
-    const cols = linhas[i].split(";").map(c => c.trim());
+    const cols = linhas[i].split(";").map(c => normalizeText(c));
     const obj = {};
     header.forEach((h, idx) => obj[h] = cols[idx] || "");
     rows.push(obj);
@@ -113,20 +122,11 @@ const TYPE_COLORS = {
   inseto: "#AEEA00"
 };
 
-function normalize(text) {
-  return text
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .trim();
-}
-
 function iconsFromType(type) {
   if (!type) return "";
-
   return type
     .split(/[\/|,]/)
-    .map(t => normalize(t))
+    .map(t => normalizeText(t.toLowerCase()))
     .map(key => TYPE_EMOJIS[key] || "")
     .join(" ");
 }
@@ -161,9 +161,8 @@ module.exports = {
     if (numero) {
       found = pokedex.find(p => Number(p.dex_number) === numero);
     } else if (nome) {
-      found = pokedex.find(p =>
-        p.name.toLowerCase().includes(nome.toLowerCase())
-      );
+      const nomeNormalized = normalizeText(nome).toLowerCase();
+      found = pokedex.find(p => normalizeText(p.name).toLowerCase().includes(nomeNormalized));
     }
 
     if (!found) {
@@ -174,11 +173,11 @@ module.exports = {
     const biome = acharBiome(id);
     const icons = iconsFromType(found.type);
 
-    const mainType = normalize(found.type.split("/")[0]);
+    const mainType = normalizeText(found.type.split("/")[0]);
     const embedColor = TYPE_COLORS[mainType] || "#00E5FF";
 
     // ===== STATS =====
-    const hp  = Number(found.HP || 0);
+    const hp  = Number(found.hp || found.HP || 0);
     const atk = Number(found.attack || 0);
     const def = Number(found.defense || 0);
     const spa = Number(found.special_attack || 0);
