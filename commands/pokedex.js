@@ -15,32 +15,35 @@ function normalizeText(text) {
     .trim();
 }
 
-// ================= LEITURA CSV (ANTI COLUNA VAZIA) =================
+// ================= LEITURA CSV SUPER ROBUSTA =================
 function readCSV() {
   let raw = fs.readFileSync(CSV_PATH, "utf8");
   raw = raw.replace(/^\uFEFF/, "");
 
   const linhas = raw.split("\n").map(l => l.trim()).filter(Boolean);
-
   const rawHeader = linhas[0].split(";");
 
   const rows = [];
 
   for (let i = 1; i < linhas.length; i++) {
     const cols = linhas[i].split(";");
-
     const obj = {};
 
     for (let j = 0; j < rawHeader.length; j++) {
-      let key = normalizeText(rawHeader[j]);
-
-      // Ignora coluna vazia
+      let key = rawHeader[j];
       if (!key) continue;
 
-      // Corrige nÂº bugado
-      if (key === "nº" || key === "nÂº") {
-        key = "dex_number";
-      }
+      key = key
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, "_");
+
+      if (!key) continue;
+
+      if (key.includes("dex")) key = "dex_number";
+      if (key === "nº" || key === "nÂº") key = "dex_number";
 
       obj[key] = cols[j]?.trim() || "";
     }
@@ -58,7 +61,6 @@ const spawns = JSON.parse(fs.readFileSync(JSON_PATH, "utf8"));
 
 function extractBiome(filter) {
   if (!filter) return [];
-
   if (filter.value) return [filter.value];
 
   let result = [];
@@ -89,7 +91,7 @@ function acharBiome(id) {
 
       if (t.entity_type === `pokemon:p${id}`) {
         const biomes = extractBiome(c["minecraft:biome_filter"]);
-        if (biomes.length === 0) return "Unknown";
+        if (!biomes.length) return "Unknown";
         return [...new Set(biomes)].join(" OR ");
       }
     }
@@ -172,9 +174,10 @@ module.exports = {
     let found = null;
 
     if (numero) {
-      found = pokedex.find(p =>
-        Number(p.dex_number) == numero
-      );
+      found = pokedex.find(p => {
+        const dex = p.dex_number?.replace(/^0+/, "").trim();
+        return Number(dex) == numero;
+      });
     } else if (nome) {
       found = pokedex.find(p =>
         normalizeText(p.name).includes(normalizeText(nome))
@@ -185,14 +188,14 @@ module.exports = {
       return interaction.editReply("❌ Pokémon not found.");
     }
 
-    const id = found.dex_number;
+    const id = found.dex_number.replace(/^0+/, "");
     const biome = acharBiome(id);
     const icons = iconsFromType(found.type);
 
     const mainType = normalizeText(found.type.split(/[\/|,]/)[0]);
     const embedColor = TYPE_COLORS[mainType] || "#00E5FF";
 
-    const hp  = Number(found.hp ?? found.HP ?? 0);
+    const hp  = Number(found.hp ?? 0);
     const atk = Number(found.attack ?? 0);
     const def = Number(found.defense ?? 0);
     const spa = Number(found.special_attack ?? 0);
