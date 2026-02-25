@@ -5,27 +5,24 @@ const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 const CSV_PATH = path.join(__dirname, "..", "pokedex1.1.csv");
 const JSON_PATH = path.join(__dirname, "..", "pokemon.json");
 
-// ================= FUNÇÃO DE NORMALIZAÇÃO =================
+// ================= NORMALIZAÇÃO =================
 function normalizeText(text) {
+  if (!text) return "";
   return text
-    .normalize("NFD")                 // separa os acentos
-    .replace(/[\u0300-\u036f]/g, "") // remove os acentos
-    .toLowerCase()                    // transforma em minúsculo
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
     .trim();
 }
 
 // ================= LEITURA CSV =================
 function readCSV() {
   let raw = fs.readFileSync(CSV_PATH, "utf8");
-
-  // remove BOM se existir
-  raw = raw.replace(/^\uFEFF/, '');
+  raw = raw.replace(/^\uFEFF/, "");
 
   const linhas = raw.split("\n").map(l => l.trim()).filter(Boolean);
 
-  // normaliza os headers
   const header = linhas[0].split(";").map(h => normalizeText(h));
-
   const rows = [];
 
   for (let i = 1; i < linhas.length; i++) {
@@ -78,61 +75,61 @@ function acharBiome(id) {
 
       if (t.entity_type === `pokemon:p${id}`) {
         const biomes = extractBiome(c["minecraft:biome_filter"]);
-        if (biomes.length === 0) return "Desconhecido";
-        return [...new Set(biomes)].join(" OU ");
+        if (biomes.length === 0) return "Unknown";
+        return [...new Set(biomes)].join(" OR ");
       }
     }
   }
 
-  return "Não spawna";
+  return "Does not spawn";
 }
 
-// ================= EMOJIS =================
+// ================= EMOJIS (ENGLISH TYPES) =================
 const TYPE_EMOJIS = {
-  grama: "<:grass:1445236750988611655>",
-  venenoso: "<:poison:1445236883079565413>",
-  fogo: "<:fire:1445236710408454346>",
-  agua: "<:water:1445238162690408509>",
-  inseto: "<:bug:1445236474898288745>",
-  dragao: "<:dragon:1445236597158313984>",
-  sombrio: "<:dark:1445236564429901935>",
-  eletrico: "<:electric:1445236615407599644>",
-  fada: "<:fairy:1445236630771339284>",
-  lutador: "<:fighting:1445236652434784336>",
-  voador: "<:flying:1445236723981226074>",
-  fantasma: "<:ghost:1445236735574540298>",
-  pedra: "<:rock:1445236925014343901>",
-  aco: "<:steel:1445236950289219707>",
-  gelo: "<:ice:1445236799747391602>",
+  grass: "<:grass:1445236750988611655>",
+  poison: "<:poison:1445236883079565413>",
+  fire: "<:fire:1445236710408454346>",
+  water: "<:water:1445238162690408509>",
+  bug: "<:bug:1445236474898288745>",
+  dragon: "<:dragon:1445236597158313984>",
+  dark: "<:dark:1445236564429901935>",
+  electric: "<:electric:1445236615407599644>",
+  fairy: "<:fairy:1445236630771339284>",
+  fighting: "<:fighting:1445236652434784336>",
+  flying: "<:flying:1445236723981226074>",
+  ghost: "<:ghost:1445236735574540298>",
+  rock: "<:rock:1445236925014343901>",
+  steel: "<:steel:1445236950289219707>",
+  ice: "<:ice:1445236799747391602>",
   normal: "<:normal:1445236814142115963>",
-  psiquico: "<:psychic:1445236903350763551>",
-  terrestre: "<:ground:1445236765874065631>"
+  psychic: "<:psychic:1445236903350763551>",
+  ground: "<:ground:1445236765874065631>"
 };
 
 const TYPE_COLORS = {
-  fogo: "#FF6A00",
-  agua: "#0099FF",
-  grama: "#00C853",
-  eletrico: "#FFD600",
-  lutador: "#D32F2F",
-  dragao: "#7C4DFF",
-  gelo: "#00E5FF",
+  fire: "#FF6A00",
+  water: "#0099FF",
+  grass: "#00C853",
+  electric: "#FFD600",
+  fighting: "#D32F2F",
+  dragon: "#7C4DFF",
+  ice: "#00E5FF",
   normal: "#BDBDBD",
-  sombrio: "#424242",
-  fada: "#FF80AB",
-  psiquico: "#E040FB",
-  terrestre: "#8D6E63",
-  pedra: "#795548",
-  aco: "#90A4AE",
-  venenoso: "#AA00FF",
-  fantasma: "#5C6BC0",
-  voador: "#81D4FA",
-  inseto: "#AEEA00"
+  dark: "#424242",
+  fairy: "#FF80AB",
+  psychic: "#E040FB",
+  ground: "#8D6E63",
+  rock: "#795548",
+  steel: "#90A4AE",
+  poison: "#AA00FF",
+  ghost: "#5C6BC0",
+  flying: "#81D4FA",
+  bug: "#AEEA00"
 };
 
-// ================= FUNÇÕES =================
 function iconsFromType(type) {
   if (!type) return "";
+
   return type
     .split(/[\/|,]/)
     .map(t => normalizeText(t))
@@ -140,80 +137,75 @@ function iconsFromType(type) {
     .join(" ");
 }
 
-function bar(value) {
-  const max = 200;
-  const size = 8;
-  const filled = Math.round((Number(value) / max) * size);
-  return "█".repeat(filled) + "░".repeat(size - filled);
-}
-
 // ================= COMANDO =================
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("pokedex")
-    .setDescription("Consulta um Pokémon")
+    .setDescription("Consult a Pokémon")
     .addIntegerOption(o =>
-      o.setName("numero").setDescription("Número da Pokédex")
+      o.setName("number").setDescription("Pokédex number")
     )
     .addStringOption(o =>
-      o.setName("nome").setDescription("Nome do Pokémon")
+      o.setName("name").setDescription("Pokémon name")
     ),
 
   async execute(interaction) {
     await interaction.deferReply();
 
-    const numero = interaction.options.getInteger("numero");
-    const nome = interaction.options.getString("nome");
+    const numero = interaction.options.getInteger("number");
+    const nome = interaction.options.getString("name");
 
     let found = null;
 
     if (numero) {
       found = pokedex.find(p => Number(p.dex_number) === numero);
     } else if (nome) {
-      const nomeNormalized = normalizeText(nome);
-      found = pokedex.find(p => normalizeText(p.name).includes(nomeNormalized));
+      found = pokedex.find(p =>
+        normalizeText(p.name).includes(normalizeText(nome))
+      );
     }
 
     if (!found) {
-      return interaction.editReply("❌ Pokémon não encontrado.");
+      return interaction.editReply("❌ Pokémon not found.");
     }
 
     const id = found.dex_number;
     const biome = acharBiome(id);
     const icons = iconsFromType(found.type);
 
-    const mainType = normalizeText(found.type.split("/")[0]);
+    const mainType = normalizeText(found.type.split(/[\/|,]/)[0]);
     const embedColor = TYPE_COLORS[mainType] || "#00E5FF";
 
-    // ===== STATS =====
-    const hp  = Number(found.hp || found.HP || 0);
-    const atk = Number(found.attack || 0);
-    const def = Number(found.defense || 0);
-    const spa = Number(found.special_attack || 0);
-    const spd = Number(found.special_defense || 0);
-    const spe = Number(found.speed || 0);
-    const total = Number(found.total || (hp + atk + def + spa + spd + spe));
+    // Stats (anti-crash)
+    const hp  = Number(found.hp ?? 0);
+    const atk = Number(found.attack ?? 0);
+    const def = Number(found.defense ?? 0);
+    const spa = Number(found.special_attack ?? 0);
+    const spd = Number(found.special_defense ?? 0);
+    const spe = Number(found.speed ?? 0);
+    const total = Number(found.total ?? (hp + atk + def + spa + spd + spe));
 
     const embed = new EmbedBuilder()
       .setColor(embedColor)
       .setTitle(`📖 #${id} • ${found.name}`)
-      .setDescription(`**Tipo:** ${icons} ${found.type}`) // mantém acento do CSV
+      .setDescription(`**Type:** ${icons} ${found.type}`)
       .addFields(
-        { name: "🌍 Bioma de Spawn", value: `\`${biome}\`` },
-
-        { name: "❤️ HP", value: `${bar(hp)} ${hp}`, inline: true },
-        { name: "⚔️ ATK", value: `${bar(atk)} ${atk}`, inline: true },
-        { name: "🛡️ DEF", value: `${bar(def)} ${def}`, inline: true },
-
-        { name: "✨ SPA", value: `${bar(spa)} ${spa}`, inline: true },
-        { name: "🔮 SPD", value: `${bar(spd)} ${spd}`, inline: true },
-        { name: "⚡ SPE", value: `${bar(spe)} ${spe}`, inline: true },
-
-        { name: "📊 TOTAL", value: `**${total}**`, inline: false }
+        { name: "🌍 Spawn Biome", value: `\`${biome}\`` },
+        {
+          name: "📊 Base Stats",
+          value:
+            `HP: **${hp}**\n` +
+            `Attack: **${atk}**\n` +
+            `Defense: **${def}**\n` +
+            `Sp. Atk: **${spa}**\n` +
+            `Sp. Def: **${spd}**\n` +
+            `Speed: **${spe}**\n` +
+            `Total: **${total}**`
+        }
       )
       .setImage(found.sprite)
       .setFooter({
-        text: "CobbleGhost Pokédex • Sistema Oficial",
+        text: "CobbleGhost Pokédex • Official System",
         iconURL: found.sprite
       })
       .setTimestamp();
