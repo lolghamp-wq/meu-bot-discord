@@ -15,22 +15,36 @@ function normalizeText(text) {
     .trim();
 }
 
-// ================= LEITURA CSV =================
+// ================= LEITURA CSV (ANTI COLUNA VAZIA) =================
 function readCSV() {
   let raw = fs.readFileSync(CSV_PATH, "utf8");
   raw = raw.replace(/^\uFEFF/, "");
 
   const linhas = raw.split("\n").map(l => l.trim()).filter(Boolean);
 
-  const header = linhas[0].split(";").map(h => normalizeText(h));
+  const rawHeader = linhas[0].split(";");
+
   const rows = [];
 
   for (let i = 1; i < linhas.length; i++) {
-    const cols = linhas[i].split(";").map(c => c.trim());
+    const cols = linhas[i].split(";");
+
     const obj = {};
-    header.forEach((h, idx) => {
-      obj[h] = cols[idx] || "";
-    });
+
+    for (let j = 0; j < rawHeader.length; j++) {
+      let key = normalizeText(rawHeader[j]);
+
+      // Ignora coluna vazia
+      if (!key) continue;
+
+      // Corrige nÂº bugado
+      if (key === "nº" || key === "nÂº") {
+        key = "dex_number";
+      }
+
+      obj[key] = cols[j]?.trim() || "";
+    }
+
     rows.push(obj);
   }
 
@@ -84,7 +98,7 @@ function acharBiome(id) {
   return "Does not spawn";
 }
 
-// ================= EMOJIS (ENGLISH TYPES) =================
+// ================= EMOJIS =================
 const TYPE_EMOJIS = {
   grass: "<:grass:1445236750988611655>",
   poison: "<:poison:1445236883079565413>",
@@ -158,7 +172,9 @@ module.exports = {
     let found = null;
 
     if (numero) {
-      found = pokedex.find(p => Number(p.dex_number) === numero);
+      found = pokedex.find(p =>
+        Number(p.dex_number) == numero
+      );
     } else if (nome) {
       found = pokedex.find(p =>
         normalizeText(p.name).includes(normalizeText(nome))
@@ -176,8 +192,7 @@ module.exports = {
     const mainType = normalizeText(found.type.split(/[\/|,]/)[0]);
     const embedColor = TYPE_COLORS[mainType] || "#00E5FF";
 
-    // Stats (anti-crash)
-    const hp  = Number(found.hp ?? 0);
+    const hp  = Number(found.hp ?? found.HP ?? 0);
     const atk = Number(found.attack ?? 0);
     const def = Number(found.defense ?? 0);
     const spa = Number(found.special_attack ?? 0);
