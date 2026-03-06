@@ -5,7 +5,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 const CSV_PATH = path.join(__dirname, "..", "pokedex1.1.csv");
 const JSON_PATH = path.join(__dirname, "..", "pokemon.json");
 
-// ================= NORMALIZAR TEXTO =================
+// NORMALIZAR TEXTO
 function normalize(text) {
   if (!text) return "";
   return text
@@ -21,17 +21,15 @@ function readCSV() {
   const raw = fs.readFileSync(CSV_PATH, "utf8").replace(/^\uFEFF/, "");
   const linhas = raw.split(/\r?\n/).filter(Boolean);
 
-  const sep = linhas[0].includes(";") ? ";" : ",";
-
   const headers = linhas[0]
-    .split(sep)
-    .map(h => normalize(h).replace(/\s+/g, "_"))
-    .filter(h => h !== "");
+    .split(";")
+    .map(h => normalize(h).replace(/\s+/g, "_"));
 
   const rows = [];
 
   for (let i = 1; i < linhas.length; i++) {
-    const cols = linhas[i].split(sep);
+    const cols = linhas[i].split(";");
+
     const obj = {};
 
     headers.forEach((h, idx) => {
@@ -46,7 +44,7 @@ function readCSV() {
 
 const pokedex = readCSV();
 
-// ================= SPAWNS =================
+// ================= SPAWN JSON =================
 let spawns = {};
 try {
   spawns = JSON.parse(fs.readFileSync(JSON_PATH, "utf8"));
@@ -113,8 +111,9 @@ const TYPE_EMOJIS = {
 
 function typeIcons(type) {
   if (!type) return "";
+
   return type
-    .split(/[\/|,]/)
+    .split("/")
     .map(t => TYPE_EMOJIS[normalize(t)] || "")
     .join(" ");
 }
@@ -123,12 +122,12 @@ function typeIcons(type) {
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("pokedex")
-    .setDescription("Consult a Pokémon")
+    .setDescription("Consultar um Pokémon")
     .addIntegerOption(o =>
-      o.setName("number").setDescription("Pokédex number")
+      o.setName("number").setDescription("Número da Pokédex")
     )
     .addStringOption(o =>
-      o.setName("name").setDescription("Pokémon name")
+      o.setName("name").setDescription("Nome do Pokémon")
     ),
 
   async execute(interaction) {
@@ -148,7 +147,7 @@ module.exports = {
     }
 
     if (!found) {
-      return interaction.editReply("❌ Pokémon not found.");
+      return interaction.editReply("❌ Pokémon não encontrado.");
     }
 
     const id = found.dex_number;
@@ -165,9 +164,9 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setColor("#00E5FF")
       .setTitle(`#${id} • ${found.name}`)
-      .setDescription(`**Type:** ${typeIcons(found.type)} ${found.type}`)
+      .setDescription(`**Tipo:** ${typeIcons(found.type)} ${found.type}`)
       .addFields(
-        { name: "🌍 Spawn Biome", value: biome },
+        { name: "🌍 Bioma", value: found.spawn_biome || biome },
         {
           name: "📊 Base Stats",
           value:
