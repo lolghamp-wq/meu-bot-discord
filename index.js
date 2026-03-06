@@ -19,6 +19,7 @@ const commandsPath = path.join(__dirname, "commands");
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith(".js"));
 
 const commandsArray = [];
+
 for (const file of commandFiles) {
   const command = require(`./commands/${file}`);
   client.commands.set(command.data.name, command);
@@ -41,19 +42,60 @@ const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
   }
 })();
 
-// Listener dos comandos
+// Listener de interações
 client.on("interactionCreate", async interaction => {
-  if (!interaction.isChatInputCommand()) return;
 
-  const command = client.commands.get(interaction.commandName);
-  if (!command) return;
+  // ================= SLASH COMMAND =================
+  if (interaction.isChatInputCommand()) {
 
-  try {
-    await command.execute(interaction);
-  } catch (error) {
-    console.error(error);
-    await interaction.reply({ content: "❌ Erro ao executar o comando.", ephemeral: true });
+    const command = client.commands.get(interaction.commandName);
+    if (!command) return;
+
+    try {
+      await command.execute(interaction);
+    } catch (error) {
+      console.error(error);
+      await interaction.reply({
+        content: "❌ Erro ao executar o comando.",
+        ephemeral: true
+      });
+    }
+
   }
+
+  // ================= BOTÕES =================
+  if (interaction.isButton()) {
+
+    const [action,id] = interaction.customId.split("_")
+
+    let nextId = Number(id)
+
+    if(action === "next") nextId++
+    if(action === "prev") nextId--
+
+    // botão shiny
+    if(action === "shiny"){
+
+      const sprite =
+      `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${id}.png`
+
+      const embed = interaction.message.embeds[0].data
+      embed.image = { url: sprite }
+
+      return interaction.update({embeds:[embed]})
+    }
+
+    const command = client.commands.get("pokedex")
+
+    interaction.options = {
+      getInteger: () => nextId,
+      getString: () => null
+    }
+
+    await command.execute(interaction)
+
+  }
+
 });
 
 client.once("ready", () => {
@@ -61,4 +103,3 @@ client.once("ready", () => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
-
