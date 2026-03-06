@@ -1,9 +1,16 @@
 const fs = require("fs");
 const path = require("path");
-const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 
-const CSV_PATH = path.join(__dirname, "..", "pokedex1.1.csv");
-const JSON_PATH = path.join(__dirname, "..", "pokemon.json");
+const {
+SlashCommandBuilder,
+EmbedBuilder,
+ActionRowBuilder,
+ButtonBuilder,
+ButtonStyle
+} = require("discord.js");
+
+const CSV_PATH = path.join(__dirname,"..","pokedex1.1.csv");
+const JSON_PATH = path.join(__dirname,"..","pokemon.json");
 
 function normalize(text){
 if(!text) return ""
@@ -24,7 +31,6 @@ const rows=[]
 for(let i=1;i<linhas.length;i++){
 
 const cols = linhas[i].split(";")
-
 const obj={}
 
 header.forEach((h,idx)=>{
@@ -114,28 +120,6 @@ psychic:"<:psychic:1445236903350763551>",
 ground:"<:ground:1445236765874065631>"
 }
 
-const TYPE_COLORS = {
-
-grass:"#4CAF50",
-poison:"#9C27B0",
-fire:"#FF5722",
-water:"#2196F3",
-bug:"#8BC34A",
-dragon:"#673AB7",
-dark:"#424242",
-electric:"#FFC107",
-fairy:"#FF80AB",
-fighting:"#E53935",
-flying:"#81D4FA",
-ghost:"#7E57C2",
-rock:"#8D6E63",
-steel:"#90A4AE",
-ice:"#00BCD4",
-normal:"#BDBDBD",
-psychic:"#EC407A",
-ground:"#A1887F"
-}
-
 function iconsFromType(type){
 
 if(!type) return ""
@@ -145,13 +129,15 @@ return type
 .map(t=>normalize(t))
 .map(key=>TYPE_EMOJIS[key] || "")
 .join(" ")
+
 }
 
-function statColorBar(value){
+function statBar(value){
 
-const max = 255
-const size = 6
-const filled = Math.round((value/max)*size)
+const max=255
+const size=6
+
+const filled=Math.round((value/max)*size)
 
 let emoji="🟩"
 
@@ -163,7 +149,7 @@ else emoji="🟥"
 return emoji.repeat(filled)+"⬜".repeat(size-filled)
 }
 
-module.exports = {
+module.exports={
 
 data:new SlashCommandBuilder()
 .setName("pokedex")
@@ -175,74 +161,102 @@ async execute(interaction){
 
 await interaction.deferReply()
 
-const numero = interaction.options.getInteger("numero")
-const nome = interaction.options.getString("nome")
+const numero=interaction.options.getInteger("numero")
+const nome=interaction.options.getString("nome")
 
 let found=null
 
 if(numero){
-
-found = pokedex.find(p=>Number(p.dex_number)===numero)
-
+found=pokedex.find(p=>Number(p.dex_number)===numero)
 }else if(nome){
-
-found = pokedex.find(p=>normalize(p.name).includes(normalize(nome)))
-
+found=pokedex.find(p=>normalize(p.name).includes(normalize(nome)))
 }
 
 if(!found){
 return interaction.editReply("❌ Pokémon not found.")
 }
 
-const id = found.dex_number
+const id = Number(found.dex_number)
 
-const hp = Number(found.hp || found.HP || 0)
-const atk = Number(found.attack || 0)
-const def = Number(found.defense || 0)
-const spa = Number(found.special_attack || 0)
-const spd = Number(found.special_defense || 0)
-const spe = Number(found.speed || 0)
+const spriteNormal =
+`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
 
-const total = Number(found.total || (hp+atk+def+spa+spd+spe))
+const spriteShiny =
+`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${id}.png`
 
-const biome = acharBiome(id)
+const hp=Number(found.hp||0)
+const atk=Number(found.attack||0)
+const def=Number(found.defense||0)
+const spa=Number(found.special_attack||0)
+const spd=Number(found.special_defense||0)
+const spe=Number(found.speed||0)
 
-const mainType = normalize(found.type.split("/")[0])
-const embedColor = TYPE_COLORS[mainType] || "#00E5FF"
+const total=Number(found.total||hp+atk+def+spa+spd+spe)
 
-const embed = new EmbedBuilder()
-.setColor(embedColor)
+const biome=acharBiome(id)
+
+const embed=new EmbedBuilder()
+
+.setColor("#00E5FF")
 .setTitle(`📖 #${id} • ${found.name}`)
 .setDescription(`**Type:** ${iconsFromType(found.type)} ${found.type}`)
+
 .addFields(
+
 {
 name:"🌍 Spawn Biome",
 value:`\`${biome}\``
 },
+
 {
 name:"📊 Base Stats",
 value:
 "```"+
-`HP      ${statColorBar(hp)} ${hp}
+`HP      ${statBar(hp)} ${hp}
 
-ATK     ${statColorBar(atk)} ${atk}
+ATK     ${statBar(atk)} ${atk}
 
-DEF     ${statColorBar(def)} ${def}
+DEF     ${statBar(def)} ${def}
 
-SPATK   ${statColorBar(spa)} ${spa}
+SPATK   ${statBar(spa)} ${spa}
 
-SPDEF   ${statColorBar(spd)} ${spd}
+SPDEF   ${statBar(spd)} ${spd}
 
-SPEED   ${statColorBar(spe)} ${spe}
+SPEED   ${statBar(spe)} ${spe}
 
 TOTAL   ${total}`
 +"```"
 }
-)
-.setImage(found.sprite)
-.setFooter({text:"CobbleGhost Pokédex"})
 
-await interaction.editReply({embeds:[embed]})
+)
+
+.setImage(spriteNormal)
+
+const row = new ActionRowBuilder()
+
+.addComponents(
+
+new ButtonBuilder()
+.setCustomId(`prev_${id}`)
+.setLabel("⬅️ Previous")
+.setStyle(ButtonStyle.Secondary),
+
+new ButtonBuilder()
+.setCustomId(`shiny_${id}`)
+.setLabel("✨ Shiny")
+.setStyle(ButtonStyle.Success),
+
+new ButtonBuilder()
+.setCustomId(`next_${id}`)
+.setLabel("➡️ Next")
+.setStyle(ButtonStyle.Secondary)
+
+)
+
+await interaction.editReply({
+embeds:[embed],
+components:[row]
+})
 
 }
 
