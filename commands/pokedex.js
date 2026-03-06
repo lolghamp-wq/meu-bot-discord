@@ -5,7 +5,6 @@ const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 const CSV_PATH = path.join(__dirname, "..", "pokedex1.1.csv");
 const JSON_PATH = path.join(__dirname, "..", "pokemon.json");
 
-// NORMALIZAR TEXTO
 function normalize(text) {
   if (!text) return "";
   return text
@@ -16,27 +15,29 @@ function normalize(text) {
     .trim();
 }
 
-// ================= LER CSV =================
 function readCSV() {
-  const raw = fs.readFileSync(CSV_PATH, "utf8").replace(/^\uFEFF/, "");
-  const linhas = raw.split(/\r?\n/).filter(Boolean);
 
-  const headers = linhas[0]
-    .split(";")
-    .map(h => normalize(h).replace(/\s+/g, "_"));
+  let raw = fs.readFileSync(CSV_PATH, "utf8");
+  raw = raw.replace(/^\uFEFF/, "");
+
+  const linhas = raw.split("\n").map(l => l.trim()).filter(Boolean);
+
+  const header = linhas[0].split(";").map(h => normalize(h));
 
   const rows = [];
 
   for (let i = 1; i < linhas.length; i++) {
+
     const cols = linhas[i].split(";");
 
     const obj = {};
 
-    headers.forEach((h, idx) => {
-      obj[h] = cols[idx] ? cols[idx].trim() : "";
+    header.forEach((h, idx) => {
+      obj[h] = cols[idx] || "";
     });
 
     rows.push(obj);
+
   }
 
   return rows;
@@ -44,51 +45,61 @@ function readCSV() {
 
 const pokedex = readCSV();
 
-// ================= SPAWN JSON =================
-let spawns = {};
-try {
-  spawns = JSON.parse(fs.readFileSync(JSON_PATH, "utf8"));
-} catch {
-  spawns = {};
-}
+const spawns = JSON.parse(fs.readFileSync(JSON_PATH, "utf8"));
 
 function extractBiome(filter) {
+
   if (!filter) return [];
 
   if (filter.value) return [filter.value];
 
-  let res = [];
+  let result = [];
 
   if (Array.isArray(filter.any_of)) {
-    filter.any_of.forEach(f => res.push(...extractBiome(f)));
+    for (const f of filter.any_of) {
+      result = result.concat(extractBiome(f));
+    }
   }
 
   if (Array.isArray(filter.all_of)) {
-    filter.all_of.forEach(f => res.push(...extractBiome(f)));
+    for (const f of filter.all_of) {
+      result = result.concat(extractBiome(f));
+    }
   }
 
-  return res;
+  return result;
 }
 
 function acharBiome(id) {
-  const conditions = spawns?.["minecraft:spawn_rules"]?.conditions || [];
+
+  const conditions = spawns["minecraft:spawn_rules"]?.conditions || [];
 
   for (const c of conditions) {
+
     if (!c["minecraft:permute_type"]) continue;
 
     for (const t of c["minecraft:permute_type"]) {
+
+      if (!t.entity_type) continue;
+
       if (t.entity_type === `pokemon:p${id}`) {
+
         const biomes = extractBiome(c["minecraft:biome_filter"]);
-        return biomes.length ? [...new Set(biomes)].join(" OR ") : "Unknown";
+
+        if (biomes.length === 0) return "Unknown";
+
+        return [...new Set(biomes)].join(" OR ");
+
       }
     }
   }
 
   return "Does not spawn";
+
 }
 
-// ================= EMOJIS =================
 const TYPE_EMOJIS = {
+
   grass: "<:grass:1445236750988611655>",
   poison: "<:poison:1445236883079565413>",
   fire: "<:fire:1445236710408454346>",
@@ -107,81 +118,112 @@ const TYPE_EMOJIS = {
   normal: "<:normal:1445236814142115963>",
   psychic: "<:psychic:1445236903350763551>",
   ground: "<:ground:1445236765874065631>"
+
 };
 
-function typeIcons(type) {
+function iconsFromType(type) {
+
   if (!type) return "";
 
   return type
-    .split("/")
-    .map(t => TYPE_EMOJIS[normalize(t)] || "")
+    .split(/[\/|,]/)
+    .map(t => normalize(t))
+    .map(key => TYPE_EMOJIS[key] || "")
     .join(" ");
+
 }
 
-// ================= COMANDO =================
+function statBar(value) {
+
+  const max = 255;
+  const size = 18;
+
+  const filled = Math.round((value / max) * size);
+
+  return "█".repeat(filled) + "░".repeat(size - filled);
+
+}
+
 module.exports = {
+
   data: new SlashCommandBuilder()
     .setName("pokedex")
-    .setDescription("Consultar um Pokémon")
+    .setDescription("Consulta um Pokémon")
     .addIntegerOption(o =>
-      o.setName("number").setDescription("Número da Pokédex")
+      o.setName("numero").setDescription("Número da Pokédex")
     )
     .addStringOption(o =>
-      o.setName("name").setDescription("Nome do Pokémon")
+      o.setName("nome").setDescription("Nome do Pokémon")
     ),
 
   async execute(interaction) {
+
     await interaction.deferReply();
 
-    const number = interaction.options.getInteger("number");
-    const name = interaction.options.getString("name");
+    const numero = interaction.options.getInteger("numero");
+    const nome = interaction.options.getString("nome");
 
     let found = null;
 
-    if (number) {
-      found = pokedex.find(p => Number(p.dex_number) == number);
-    } else if (name) {
+    if (numero) {
+
       found = pokedex.find(p =>
-        normalize(p.name).includes(normalize(name))
+        Number(p.dex_number) === numero
       );
+
+    } else if (nome) {
+
+      found = pokedex.find(p =>
+        normalize(p.name).includes(normalize(nome))
+      );
+
     }
 
     if (!found) {
-      return interaction.editReply("❌ Pokémon não encontrado.");
+      return interaction.editReply("❌ Pokémon not found.");
     }
 
     const id = found.dex_number;
-    const biome = acharBiome(id);
 
-    const hp = Number(found.hp || 0);
+    const hp = Number(found.hp || found.HP || 0);
     const atk = Number(found.attack || 0);
     const def = Number(found.defense || 0);
     const spa = Number(found.special_attack || 0);
     const spd = Number(found.special_defense || 0);
     const spe = Number(found.speed || 0);
-    const total = Number(found.total || hp + atk + def + spa + spd + spe);
+    const total = Number(found.total || (hp+atk+def+spa+spd+spe));
+
+    const biome = acharBiome(id);
 
     const embed = new EmbedBuilder()
       .setColor("#00E5FF")
-      .setTitle(`#${id} • ${found.name}`)
-      .setDescription(`**Tipo:** ${typeIcons(found.type)} ${found.type}`)
+      .setTitle(`📖 #${id} • ${found.name}`)
+      .setDescription(`**Type:** ${iconsFromType(found.type)} ${found.type}`)
       .addFields(
-        { name: "🌍 Bioma", value: found.spawn_biome || biome },
+        {
+          name: "🌍 Spawn Biome",
+          value: `\`${biome}\``
+        },
         {
           name: "📊 Base Stats",
           value:
-            `HP: ${hp}\n` +
-            `Attack: ${atk}\n` +
-            `Defense: ${def}\n` +
-            `SpA: ${spa}\n` +
-            `SpD: ${spd}\n` +
-            `Speed: ${spe}\n` +
-            `Total: ${total}`
+`HP        ${statBar(hp)} **${hp}**
+Attack    ${statBar(atk)} **${atk}**
+Defense   ${statBar(def)} **${def}**
+Sp.Atk    ${statBar(spa)} **${spa}**
+Sp.Def    ${statBar(spd)} **${spd}**
+Speed     ${statBar(spe)} **${spe}**
+
+Total: **${total}**`
         }
       )
       .setImage(found.sprite)
-      .setFooter({ text: "CobbleGhost Pokédex" });
+      .setFooter({
+        text: "CobbleGhost Pokédex"
+      });
 
     await interaction.editReply({ embeds: [embed] });
+
   }
+
 };
