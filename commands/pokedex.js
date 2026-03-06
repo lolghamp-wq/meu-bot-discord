@@ -7,12 +7,7 @@ const JSON_PATH = path.join(__dirname, "..", "pokemon.json");
 
 function normalize(text){
 if(!text) return ""
-return text
-.toString()
-.normalize("NFD")
-.replace(/[\u0300-\u036f]/g,"")
-.toLowerCase()
-.trim()
+return text.toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim()
 }
 
 function readCSV(){
@@ -24,13 +19,13 @@ const linhas = raw.split("\n").map(l=>l.trim()).filter(Boolean)
 
 const header = linhas[0].split(";").map(h=>normalize(h))
 
-const rows = []
+const rows=[]
 
 for(let i=1;i<linhas.length;i++){
 
 const cols = linhas[i].split(";")
 
-const obj = {}
+const obj={}
 
 header.forEach((h,idx)=>{
 obj[h] = cols[idx] || ""
@@ -41,7 +36,6 @@ rows.push(obj)
 }
 
 return rows
-
 }
 
 const pokedex = readCSV()
@@ -69,7 +63,6 @@ result=result.concat(extractBiome(f))
 }
 
 return result
-
 }
 
 function acharBiome(id){
@@ -93,13 +86,10 @@ if(biomes.length===0) return "Unknown"
 return [...new Set(biomes)].join(" OR ")
 
 }
-
 }
-
 }
 
 return "Does not spawn"
-
 }
 
 const TYPE_EMOJIS = {
@@ -122,7 +112,6 @@ ice:"<:ice:1445236799747391602>",
 normal:"<:normal:1445236814142115963>",
 psychic:"<:psychic:1445236903350763551>",
 ground:"<:ground:1445236765874065631>"
-
 }
 
 const TYPE_COLORS = {
@@ -145,7 +134,6 @@ ice:"#00BCD4",
 normal:"#BDBDBD",
 psychic:"#EC407A",
 ground:"#A1887F"
-
 }
 
 function iconsFromType(type){
@@ -157,18 +145,22 @@ return type
 .map(t=>normalize(t))
 .map(key=>TYPE_EMOJIS[key] || "")
 .join(" ")
-
 }
 
-function statBar(value){
+function statColorBar(value){
 
-const maxStat = 255
+const max = 255
 const size = 6
+const filled = Math.round((value/max)*size)
 
-const filled = Math.round((value/maxStat)*size)
+let emoji="🟩"
 
-return "🟩".repeat(filled)+"⬜".repeat(size-filled)
+if(value>=150) emoji="🟧"
+else if(value>=100) emoji="🟨"
+else if(value>=50) emoji="🟩"
+else emoji="🟥"
 
+return emoji.repeat(filled)+"⬜".repeat(size-filled)
 }
 
 module.exports = {
@@ -176,12 +168,8 @@ module.exports = {
 data:new SlashCommandBuilder()
 .setName("pokedex")
 .setDescription("Consulta um Pokémon")
-.addIntegerOption(o=>
-o.setName("numero").setDescription("Número da Pokédex")
-)
-.addStringOption(o=>
-o.setName("nome").setDescription("Nome do Pokémon")
-),
+.addIntegerOption(o=>o.setName("numero").setDescription("Número da Pokédex"))
+.addStringOption(o=>o.setName("nome").setDescription("Nome do Pokémon")),
 
 async execute(interaction){
 
@@ -198,9 +186,7 @@ found = pokedex.find(p=>Number(p.dex_number)===numero)
 
 }else if(nome){
 
-found = pokedex.find(p=>
-normalize(p.name).includes(normalize(nome))
-)
+found = pokedex.find(p=>normalize(p.name).includes(normalize(nome)))
 
 }
 
@@ -222,7 +208,6 @@ const total = Number(found.total || (hp+atk+def+spa+spd+spe))
 const biome = acharBiome(id)
 
 const mainType = normalize(found.type.split("/")[0])
-
 const embedColor = TYPE_COLORS[mainType] || "#00E5FF"
 
 const embed = new EmbedBuilder()
@@ -237,20 +222,25 @@ value:`\`${biome}\``
 {
 name:"📊 Base Stats",
 value:
-`HP       ${statBar(hp)} **${hp}**
-Attack   ${statBar(atk)} **${atk}**
-Defense  ${statBar(def)} **${def}**
-Sp.Atk   ${statBar(spa)} **${spa}**
-Sp.Def   ${statBar(spd)} **${spd}**
-Speed    ${statBar(spe)} **${spe}**
+"```"+
+`HP      ${statColorBar(hp)} ${hp}
 
-Total: **${total}**`
+ATK     ${statColorBar(atk)} ${atk}
+
+DEF     ${statColorBar(def)} ${def}
+
+SPATK   ${statColorBar(spa)} ${spa}
+
+SPDEF   ${statColorBar(spd)} ${spd}
+
+SPEED   ${statColorBar(spe)} ${spe}
+
+TOTAL   ${total}`
++"```"
 }
 )
 .setImage(found.sprite)
-.setFooter({
-text:"CobbleGhost Pokédex"
-})
+.setFooter({text:"CobbleGhost Pokédex"})
 
 await interaction.editReply({embeds:[embed]})
 
