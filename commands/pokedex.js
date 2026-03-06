@@ -5,48 +5,38 @@ const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 const CSV_PATH = path.join(__dirname, "..", "pokedex1.1.csv");
 const JSON_PATH = path.join(__dirname, "..", "pokemon.json");
 
-// ================= NORMALIZAÇÃO =================
-function normalizeText(text) {
+// ================= NORMALIZAR TEXTO =================
+function normalize(text) {
   if (!text) return "";
   return text
+    .toString()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .trim();
 }
 
-// ================= LEITURA CSV SUPER ROBUSTA =================
+// ================= LER CSV =================
 function readCSV() {
-  let raw = fs.readFileSync(CSV_PATH, "utf8");
-  raw = raw.replace(/^\uFEFF/, "");
+  const raw = fs.readFileSync(CSV_PATH, "utf8").replace(/^\uFEFF/, "");
+  const linhas = raw.split(/\r?\n/).filter(Boolean);
 
-  const linhas = raw.split("\n").map(l => l.trim()).filter(Boolean);
-  const rawHeader = linhas[0].split(";");
+  const sep = linhas[0].includes(";") ? ";" : ",";
+
+  const headers = linhas[0]
+    .split(sep)
+    .map(h => normalize(h).replace(/\s+/g, "_"))
+    .filter(h => h !== "");
 
   const rows = [];
 
   for (let i = 1; i < linhas.length; i++) {
-    const cols = linhas[i].split(";");
+    const cols = linhas[i].split(sep);
     const obj = {};
 
-    for (let j = 0; j < rawHeader.length; j++) {
-      let key = rawHeader[j];
-      if (!key) continue;
-
-      key = key
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase()
-        .trim()
-        .replace(/\s+/g, "_");
-
-      if (!key) continue;
-
-      if (key.includes("dex")) key = "dex_number";
-      if (key === "nº" || key === "nÂº") key = "dex_number";
-
-      obj[key] = cols[j]?.trim() || "";
-    }
+    headers.forEach((h, idx) => {
+      obj[h] = cols[idx] ? cols[idx].trim() : "";
+    });
 
     rows.push(obj);
   }
@@ -56,43 +46,42 @@ function readCSV() {
 
 const pokedex = readCSV();
 
-// ================= JSON SPAWN =================
-const spawns = JSON.parse(fs.readFileSync(JSON_PATH, "utf8"));
+// ================= SPAWNS =================
+let spawns = {};
+try {
+  spawns = JSON.parse(fs.readFileSync(JSON_PATH, "utf8"));
+} catch {
+  spawns = {};
+}
 
 function extractBiome(filter) {
   if (!filter) return [];
+
   if (filter.value) return [filter.value];
 
-  let result = [];
+  let res = [];
 
   if (Array.isArray(filter.any_of)) {
-    for (const f of filter.any_of) {
-      result = result.concat(extractBiome(f));
-    }
+    filter.any_of.forEach(f => res.push(...extractBiome(f)));
   }
 
   if (Array.isArray(filter.all_of)) {
-    for (const f of filter.all_of) {
-      result = result.concat(extractBiome(f));
-    }
+    filter.all_of.forEach(f => res.push(...extractBiome(f)));
   }
 
-  return result;
+  return res;
 }
 
 function acharBiome(id) {
-  const conditions = spawns["minecraft:spawn_rules"]?.conditions || [];
+  const conditions = spawns?.["minecraft:spawn_rules"]?.conditions || [];
 
   for (const c of conditions) {
     if (!c["minecraft:permute_type"]) continue;
 
     for (const t of c["minecraft:permute_type"]) {
-      if (!t.entity_type) continue;
-
       if (t.entity_type === `pokemon:p${id}`) {
         const biomes = extractBiome(c["minecraft:biome_filter"]);
-        if (!biomes.length) return "Unknown";
-        return [...new Set(biomes)].join(" OR ");
+        return biomes.length ? [...new Set(biomes)].join(" OR ") : "Unknown";
       }
     }
   }
@@ -122,34 +111,11 @@ const TYPE_EMOJIS = {
   ground: "<:ground:1445236765874065631>"
 };
 
-const TYPE_COLORS = {
-  fire: "#FF6A00",
-  water: "#0099FF",
-  grass: "#00C853",
-  electric: "#FFD600",
-  fighting: "#D32F2F",
-  dragon: "#7C4DFF",
-  ice: "#00E5FF",
-  normal: "#BDBDBD",
-  dark: "#424242",
-  fairy: "#FF80AB",
-  psychic: "#E040FB",
-  ground: "#8D6E63",
-  rock: "#795548",
-  steel: "#90A4AE",
-  poison: "#AA00FF",
-  ghost: "#5C6BC0",
-  flying: "#81D4FA",
-  bug: "#AEEA00"
-};
-
-function iconsFromType(type) {
+function typeIcons(type) {
   if (!type) return "";
-
   return type
     .split(/[\/|,]/)
-    .map(t => normalizeText(t))
-    .map(key => TYPE_EMOJIS[key] || "")
+    .map(t => TYPE_EMOJIS[normalize(t)] || "")
     .join(" ");
 }
 
@@ -168,19 +134,16 @@ module.exports = {
   async execute(interaction) {
     await interaction.deferReply();
 
-    const numero = interaction.options.getInteger("number");
-    const nome = interaction.options.getString("name");
+    const number = interaction.options.getInteger("number");
+    const name = interaction.options.getString("name");
 
     let found = null;
 
-    if (numero) {
-      found = pokedex.find(p => {
-        const dex = p.dex_number?.replace(/^0+/, "").trim();
-        return Number(dex) == numero;
-      });
-    } else if (nome) {
+    if (number) {
+      found = pokedex.find(p => Number(p.dex_number) == number);
+    } else if (name) {
       found = pokedex.find(p =>
-        normalizeText(p.name).includes(normalizeText(nome))
+        normalize(p.name).includes(normalize(name))
       );
     }
 
@@ -188,45 +151,37 @@ module.exports = {
       return interaction.editReply("❌ Pokémon not found.");
     }
 
-    const id = found.dex_number.replace(/^0+/, "");
+    const id = found.dex_number;
     const biome = acharBiome(id);
-    const icons = iconsFromType(found.type);
 
-    const mainType = normalizeText(found.type.split(/[\/|,]/)[0]);
-    const embedColor = TYPE_COLORS[mainType] || "#00E5FF";
-
-    const hp  = Number(found.hp ?? 0);
-    const atk = Number(found.attack ?? 0);
-    const def = Number(found.defense ?? 0);
-    const spa = Number(found.special_attack ?? 0);
-    const spd = Number(found.special_defense ?? 0);
-    const spe = Number(found.speed ?? 0);
-    const total = Number(found.total ?? (hp + atk + def + spa + spd + spe));
+    const hp = Number(found.hp || 0);
+    const atk = Number(found.attack || 0);
+    const def = Number(found.defense || 0);
+    const spa = Number(found.special_attack || 0);
+    const spd = Number(found.special_defense || 0);
+    const spe = Number(found.speed || 0);
+    const total = Number(found.total || hp + atk + def + spa + spd + spe);
 
     const embed = new EmbedBuilder()
-      .setColor(embedColor)
-      .setTitle(`📖 #${id} • ${found.name}`)
-      .setDescription(`**Type:** ${icons} ${found.type}`)
+      .setColor("#00E5FF")
+      .setTitle(`#${id} • ${found.name}`)
+      .setDescription(`**Type:** ${typeIcons(found.type)} ${found.type}`)
       .addFields(
-        { name: "🌍 Spawn Biome", value: `\`${biome}\`` },
+        { name: "🌍 Spawn Biome", value: biome },
         {
           name: "📊 Base Stats",
           value:
-            `HP: **${hp}**\n` +
-            `Attack: **${atk}**\n` +
-            `Defense: **${def}**\n` +
-            `Sp. Atk: **${spa}**\n` +
-            `Sp. Def: **${spd}**\n` +
-            `Speed: **${spe}**\n` +
-            `Total: **${total}**`
+            `HP: ${hp}\n` +
+            `Attack: ${atk}\n` +
+            `Defense: ${def}\n` +
+            `SpA: ${spa}\n` +
+            `SpD: ${spd}\n` +
+            `Speed: ${spe}\n` +
+            `Total: ${total}`
         }
       )
       .setImage(found.sprite)
-      .setFooter({
-        text: "CobbleGhost Pokédex • Official System",
-        iconURL: found.sprite
-      })
-      .setTimestamp();
+      .setFooter({ text: "CobbleGhost Pokédex" });
 
     await interaction.editReply({ embeds: [embed] });
   }
