@@ -52,20 +52,26 @@ function extractBiome(filter){
 
 if(!filter) return []
 
-if(filter.value) return [filter.value]
-
 let result=[]
+
+if(filter.value){
+result.push(filter.value)
+}
 
 if(Array.isArray(filter.any_of)){
 for(const f of filter.any_of){
-result=result.concat(extractBiome(f))
+result = result.concat(extractBiome(f))
 }
 }
 
 if(Array.isArray(filter.all_of)){
 for(const f of filter.all_of){
-result=result.concat(extractBiome(f))
+result = result.concat(extractBiome(f))
 }
+}
+
+if(filter.test === "has_biome_tag" && filter.value){
+result.push(filter.value)
 }
 
 return result
@@ -89,7 +95,9 @@ const biomes = extractBiome(c["minecraft:biome_filter"])
 
 if(biomes.length===0) return "Unknown"
 
-return [...new Set(biomes)].join(" OR ")
+return [...new Set(biomes)]
+.map(b=>b.replace(/_/g," "))
+.join(" OR ")
 
 }
 }
