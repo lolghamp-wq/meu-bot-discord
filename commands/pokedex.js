@@ -12,11 +12,17 @@ ButtonStyle
 const CSV_PATH = path.join(__dirname,"..","pokedex1.1.csv");
 const JSON_PATH = path.join(__dirname,"..","pokemon.json");
 
+// NORMALIZA TEXTO
 function normalize(text){
 if(!text) return ""
-return text.toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim()
+return text.toString()
+.normalize("NFD")
+.replace(/[\u0300-\u036f]/g,"")
+.toLowerCase()
+.trim()
 }
 
+// LÊ CSV
 function readCSV(){
 
 let raw = fs.readFileSync(CSV_PATH,"utf8")
@@ -46,8 +52,10 @@ return rows
 
 const pokedex = readCSV()
 
+// LÊ JSON SPAWN
 const spawns = JSON.parse(fs.readFileSync(JSON_PATH,"utf8"))
 
+// EXTRAI BIOMAS
 function extractBiome(filter){
 
 if(!filter) return []
@@ -55,6 +63,10 @@ if(!filter) return []
 let result=[]
 
 if(filter.value){
+result.push(filter.value)
+}
+
+if(filter.test === "has_biome_tag" && filter.value){
 result.push(filter.value)
 }
 
@@ -70,42 +82,48 @@ result = result.concat(extractBiome(f))
 }
 }
 
-if(filter.test === "has_biome_tag" && filter.value){
-result.push(filter.value)
-}
-
 return result
+
 }
 
+// PROCURA BIOMA
 function acharBiome(id){
 
 const conditions = spawns["minecraft:spawn_rules"]?.conditions || []
 
+let biomes=[]
+
 for(const c of conditions){
 
-if(!c["minecraft:permute_type"]) continue
+const types = c["minecraft:permute_type"]
 
-for(const t of c["minecraft:permute_type"]){
+if(!types) continue
+
+for(const t of types){
 
 if(!t.entity_type) continue
 
-if(t.entity_type === `pokemon:p${id}`){
+if(t.entity_type.includes(`pokemon:p${id}`)){
 
-const biomes = extractBiome(c["minecraft:biome_filter"])
+const foundBiomes = extractBiome(c["minecraft:biome_filter"])
 
-if(biomes.length===0) return "Unknown"
+biomes = biomes.concat(foundBiomes)
+
+}
+
+}
+
+}
+
+if(biomes.length === 0) return "Does not spawn"
 
 return [...new Set(biomes)]
 .map(b=>b.replace(/_/g," "))
 .join(" OR ")
 
 }
-}
-}
 
-return "Does not spawn"
-}
-
+// EMOJIS DE TIPO
 const TYPE_EMOJIS = {
 
 grass:"<:grass:1445236750988611655>",
@@ -126,6 +144,7 @@ ice:"<:ice:1445236799747391602>",
 normal:"<:normal:1445236814142115963>",
 psychic:"<:psychic:1445236903350763551>",
 ground:"<:ground:1445236765874065631>"
+
 }
 
 function iconsFromType(type){
@@ -140,6 +159,7 @@ return type
 
 }
 
+// BARRA DE STATUS
 function statBar(value){
 
 const max=255
@@ -155,6 +175,7 @@ else if(value>=50) emoji="🟩"
 else emoji="🟥"
 
 return emoji.repeat(filled)+"⬜".repeat(size-filled)
+
 }
 
 module.exports={
