@@ -10,9 +10,7 @@ ButtonStyle
 } = require("discord.js");
 
 const CSV_PATH = path.join(__dirname,"..","pokedex1.1.csv");
-const JSON_PATH = path.join(__dirname,"..","pokemon.json");
 
-// NORMALIZA TEXTO
 function normalize(text){
 if(!text) return ""
 return text.toString()
@@ -22,7 +20,6 @@ return text.toString()
 .trim()
 }
 
-// LÊ CSV
 function readCSV(){
 
 let raw = fs.readFileSync(CSV_PATH,"utf8")
@@ -52,78 +49,6 @@ return rows
 
 const pokedex = readCSV()
 
-// LÊ JSON SPAWN
-const spawns = JSON.parse(fs.readFileSync(JSON_PATH,"utf8"))
-
-// EXTRAI BIOMAS
-function extractBiome(filter){
-
-if(!filter) return []
-
-let result=[]
-
-if(filter.value){
-result.push(filter.value)
-}
-
-if(filter.test === "has_biome_tag" && filter.value){
-result.push(filter.value)
-}
-
-if(Array.isArray(filter.any_of)){
-for(const f of filter.any_of){
-result = result.concat(extractBiome(f))
-}
-}
-
-if(Array.isArray(filter.all_of)){
-for(const f of filter.all_of){
-result = result.concat(extractBiome(f))
-}
-}
-
-return result
-
-}
-
-// PROCURA BIOMA
-function acharBiome(id){
-
-const conditions = spawns["minecraft:spawn_rules"]?.conditions || []
-
-let biomes=[]
-
-for(const c of conditions){
-
-const types = c["minecraft:permute_type"]
-
-if(!types) continue
-
-for(const t of types){
-
-if(!t.entity_type) continue
-
-if(t.entity_type.includes(`pokemon:p${id}`)){
-
-const foundBiomes = extractBiome(c["minecraft:biome_filter"])
-
-biomes = biomes.concat(foundBiomes)
-
-}
-
-}
-
-}
-
-if(biomes.length === 0) return "Does not spawn"
-
-return [...new Set(biomes)]
-.map(b=>b.replace(/_/g," "))
-.join(" OR ")
-
-}
-
-// EMOJIS DE TIPO
 const TYPE_EMOJIS = {
 
 grass:"<:grass:1445236750988611655>",
@@ -144,7 +69,6 @@ ice:"<:ice:1445236799747391602>",
 normal:"<:normal:1445236814142115963>",
 psychic:"<:psychic:1445236903350763551>",
 ground:"<:ground:1445236765874065631>"
-
 }
 
 function iconsFromType(type){
@@ -159,7 +83,6 @@ return type
 
 }
 
-// BARRA DE STATUS
 function statBar(value){
 
 const max=255
@@ -207,9 +130,7 @@ return interaction.editReply("❌ Pokémon not found.")
 
 const id = Number(found.dex_number)
 
-const spriteNormal =
-`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
-
+const spriteNormal = found.sprite
 const spriteShiny =
 `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${id}.png`
 
@@ -222,7 +143,7 @@ const spe=Number(found.speed||0)
 
 const total=Number(found.total||hp+atk+def+spa+spd+spe)
 
-const biome=acharBiome(id)
+const biome = found.spawn_biome || "Unknown"
 
 const embed=new EmbedBuilder()
 
