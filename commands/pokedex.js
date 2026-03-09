@@ -12,42 +12,48 @@ ButtonStyle
 const CSV_PATH = path.join(__dirname,"..","pokedex1.1.csv");
 
 function normalize(text){
-if(!text) return ""
+
+if(!text) return "";
+
 return text.toString()
 .normalize("NFD")
 .replace(/[\u0300-\u036f]/g,"")
 .toLowerCase()
-.trim()
+.trim();
+
 }
 
 function readCSV(){
 
-let raw = fs.readFileSync(CSV_PATH,"utf8")
-raw = raw.replace(/^\uFEFF/, "")
+let raw = fs.readFileSync(CSV_PATH,"utf8");
 
-const linhas = raw.split("\n").map(l=>l.trim()).filter(Boolean)
+raw = raw.replace(/^\uFEFF/, "");
 
-const header = linhas[0].split(";").map(h=>normalize(h))
+const linhas = raw.split("\n").map(l=>l.trim()).filter(Boolean);
 
-const rows=[]
+const header = linhas[0].split(";").map(h=>normalize(h));
+
+const rows=[];
 
 for(let i=1;i<linhas.length;i++){
 
-const cols = linhas[i].split(";")
-const obj={}
+const cols = linhas[i].split(";");
+
+const obj={};
 
 header.forEach((h,idx)=>{
-obj[h] = cols[idx] || ""
-})
+obj[h] = cols[idx] || "";
+});
 
-rows.push(obj)
+rows.push(obj);
 
 }
 
-return rows
+return rows;
+
 }
 
-const pokedex = readCSV()
+const pokedex = readCSV();
 
 const TYPE_EMOJIS = {
 
@@ -69,35 +75,36 @@ ice:"<:ice:1445236799747391602>",
 normal:"<:normal:1445236814142115963>",
 psychic:"<:psychic:1445236903350763551>",
 ground:"<:ground:1445236765874065631>"
-}
+
+};
 
 function iconsFromType(type){
 
-if(!type) return ""
+if(!type) return "";
 
 return type
 .split(/[\/|,]/)
 .map(t=>normalize(t))
 .map(key=>TYPE_EMOJIS[key] || "")
-.join(" ")
+.join(" ");
 
 }
 
 function statBar(value){
 
-const max=255
-const size=6
+const max=255;
+const size=6;
 
-const filled=Math.round((value/max)*size)
+const filled=Math.round((value/max)*size);
 
-let emoji="🟩"
+let emoji="🟩";
 
-if(value>=150) emoji="🟧"
-else if(value>=100) emoji="🟨"
-else if(value>=50) emoji="🟩"
-else emoji="🟥"
+if(value>=150) emoji="🟧";
+else if(value>=100) emoji="🟨";
+else if(value>=50) emoji="🟩";
+else emoji="🟥";
 
-return emoji.repeat(filled)+"⬜".repeat(size-filled)
+return emoji.repeat(filled)+"⬜".repeat(size-filled);
 
 }
 
@@ -111,39 +118,37 @@ data:new SlashCommandBuilder()
 
 async execute(interaction){
 
-await interaction.deferReply()
+await interaction.deferReply();
 
-const numero=interaction.options.getInteger("numero")
-const nome=interaction.options.getString("nome")
+const numero=interaction.options.getInteger("numero");
+const nome=interaction.options.getString("nome");
 
-let found=null
+let found=null;
 
 if(numero){
-found=pokedex.find(p=>Number(p.dex_number)===numero)
+found=pokedex.find(p=>Number(p.dex_number)===numero);
 }else if(nome){
-found=pokedex.find(p=>normalize(p.name).includes(normalize(nome)))
+found=pokedex.find(p=>normalize(p.name).includes(normalize(nome)));
 }
 
 if(!found){
-return interaction.editReply("❌ Pokémon not found.")
+return interaction.editReply("❌ Pokémon not found.");
 }
 
-const id = Number(found.dex_number)
+const id = Number(found.dex_number);
 
-const spriteNormal = found.sprite
-const spriteShiny =
-`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${id}.png`
+const sprite = found.sprite;
 
-const hp=Number(found.hp||0)
-const atk=Number(found.attack||0)
-const def=Number(found.defense||0)
-const spa=Number(found.special_attack||0)
-const spd=Number(found.special_defense||0)
-const spe=Number(found.speed||0)
+const hp=Number(found.hp||0);
+const atk=Number(found.attack||0);
+const def=Number(found.defense||0);
+const spa=Number(found.special_attack||0);
+const spd=Number(found.special_defense||0);
+const spe=Number(found.speed||0);
 
-const total=Number(found.total||hp+atk+def+spa+spd+spe)
+const total=Number(found.total||hp+atk+def+spa+spd+spe);
 
-const biome = found.spawn_biome || "Unknown"
+const biome = found.spawn_biome || "Unknown";
 
 const embed=new EmbedBuilder()
 
@@ -180,10 +185,9 @@ TOTAL   ${total}`
 
 )
 
-.setImage(spriteNormal)
+.setImage(sprite);
 
 const row = new ActionRowBuilder()
-
 .addComponents(
 
 new ButtonBuilder()
@@ -192,7 +196,7 @@ new ButtonBuilder()
 .setStyle(ButtonStyle.Secondary),
 
 new ButtonBuilder()
-.setCustomId(`shiny_${id}`)
+.setCustomId(`toggle_${id}`)
 .setLabel("✨ Shiny")
 .setStyle(ButtonStyle.Success),
 
@@ -201,13 +205,13 @@ new ButtonBuilder()
 .setLabel("➡️ Next")
 .setStyle(ButtonStyle.Secondary)
 
-)
+);
 
 await interaction.editReply({
 embeds:[embed],
 components:[row]
-})
+});
 
 }
 
-}
+};
