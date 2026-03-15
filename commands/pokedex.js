@@ -13,100 +13,108 @@ const CSV_PATH = path.join(__dirname,"..","pokedex1.1.csv");
 
 function normalize(text){
 
-if(!text) return "";
+if(!text) return ""
 
 return text.toString()
 .normalize("NFD")
 .replace(/[\u0300-\u036f]/g,"")
 .toLowerCase()
-.trim();
+.trim()
 
 }
 
 function readCSV(){
 
-let raw = fs.readFileSync(CSV_PATH,"utf8");
+let raw = fs.readFileSync(CSV_PATH,"utf8")
 
-raw = raw.replace(/^\uFEFF/, "");
+raw = raw.replace(/^\uFEFF/, "")
 
-const linhas = raw.split("\n").map(l=>l.trim()).filter(Boolean);
+const linhas = raw.split("\n").map(l=>l.trim()).filter(Boolean)
 
-const header = linhas[0].split(";").map(h=>normalize(h));
+const header = linhas[0].split(";").map(h=>normalize(h))
 
-const rows=[];
+const rows=[]
 
 for(let i=1;i<linhas.length;i++){
 
-const cols = linhas[i].split(";");
+const cols = linhas[i].split(";")
 
-const obj={};
+const obj={}
 
 header.forEach((h,idx)=>{
-obj[h] = cols[idx] || "";
-});
+obj[h] = cols[idx] || ""
+})
 
-rows.push(obj);
-
-}
-
-return rows;
+rows.push(obj)
 
 }
 
-const pokedex = readCSV();
+return rows
 
-const TYPE_EMOJIS = {
+}
 
-grass:"<:grass:1445236750988611655>",
-poison:"<:poison:1445236883079565413>",
-fire:"<:fire:1445236710408454346>",
-water:"<:water:1445238162690408509>",
-bug:"<:bug:1445236474898288745>",
-dragon:"<:dragon:1445236597158313984>",
-dark:"<:dark:1445236564429901935>",
-electric:"<:electric:1445236615407599644>",
-fairy:"<:fairy:1445236630771339284>",
-fighting:"<:fighting:1445236652434784336>",
-flying:"<:flying:1445236723981226074>",
-ghost:"<:ghost:1445236735574540298>",
-rock:"<:rock:1445236925014343901>",
-steel:"<:steel:1445236950289219707>",
-ice:"<:ice:1445236799747391602>",
-normal:"<:normal:1445236814142115963>",
-psychic:"<:psychic:1445236903350763551>",
-ground:"<:ground:1445236765874065631>"
+const pokedex = readCSV()
 
-};
+// ================= ICONES DE TIPO =================
+
+const TYPE_ICONS = {
+
+grass:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/grass.png",
+poison:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/poison.png",
+fire:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/fire.png",
+water:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/water.png",
+bug:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/bug.png",
+dragon:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/dragon.png",
+dark:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/dark.png",
+electric:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/electric.png",
+fairy:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/fairy.png",
+fighting:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/fighting.png",
+flying:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/flying.png",
+ghost:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/ghost.png",
+rock:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/rock.png",
+steel:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/steel.png",
+ice:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/ice.png",
+normal:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/normal.png",
+psychic:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/psychic.png",
+ground:"https://raw.githubusercontent.com/lolghamp-wq/meu-bot-discord/main/assets/types/ground.png"
+
+}
+
+// ================= ICONES NO TEXTO =================
 
 function iconsFromType(type){
 
-if(!type) return "";
+if(!type) return ""
 
 return type
 .split(/[\/|,]/)
 .map(t=>normalize(t))
-.map(key=>TYPE_EMOJIS[key] || "")
-.join(" ");
+.map(key=>TYPE_ICONS[key] ? `[‎](${TYPE_ICONS[key]})` : "")
+.join(" ")
 
 }
+
+// ================= BARRA DE STATUS =================
 
 function statBar(value){
 
-const max=255;
-const size=6;
+const max=255
+const size=6
 
-const filled=Math.round((value/max)*size);
+const filled=Math.round((value/max)*size)
 
-let emoji="🟩";
+let emoji="🟩"
 
-if(value>=150) emoji="🟧";
-else if(value>=100) emoji="🟨";
-else if(value>=50) emoji="🟩";
-else emoji="🟥";
+if(value>=150) emoji="🟧"
+else if(value>=100) emoji="🟨"
+else if(value>=50) emoji="🟩"
+else emoji="🟥"
 
-return emoji.repeat(filled)+"⬜".repeat(size-filled);
+return emoji.repeat(filled)+"⬜".repeat(size-filled)
 
 }
+
+// ================= COMANDO =================
 
 module.exports={
 
@@ -118,37 +126,44 @@ data:new SlashCommandBuilder()
 
 async execute(interaction){
 
-await interaction.deferReply();
+await interaction.deferReply()
 
-const numero=interaction.options.getInteger("numero");
-const nome=interaction.options.getString("nome");
+const numero=interaction.options.getInteger("numero")
+const nome=interaction.options.getString("nome")
 
-let found=null;
+let found=null
 
 if(numero){
-found=pokedex.find(p=>Number(p.dex_number)===numero);
+
+found=pokedex.find(p=>Number(p.dex_number)===numero)
+
 }else if(nome){
-found=pokedex.find(p=>normalize(p.name).includes(normalize(nome)));
+
+found=pokedex.find(p=>normalize(p.name).includes(normalize(nome)))
+
 }
 
 if(!found){
-return interaction.editReply("❌ Pokémon not found.");
+
+return interaction.editReply("❌ Pokémon not found.")
+
 }
 
-const id = Number(found.dex_number);
+const id = Number(found.dex_number)
 
-const sprite = found.sprite;
+const spriteNormal =
+`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
 
-const hp=Number(found.hp||0);
-const atk=Number(found.attack||0);
-const def=Number(found.defense||0);
-const spa=Number(found.special_attack||0);
-const spd=Number(found.special_defense||0);
-const spe=Number(found.speed||0);
+const hp=Number(found.hp||0)
+const atk=Number(found.attack||0)
+const def=Number(found.defense||0)
+const spa=Number(found.special_attack||0)
+const spd=Number(found.special_defense||0)
+const spe=Number(found.speed||0)
 
-const total=Number(found.total||hp+atk+def+spa+spd+spe);
+const total=Number(found.total||hp+atk+def+spa+spd+spe)
 
-const biome = found.spawn_biome || "Unknown";
+const biome = found.spawn_biome || "Unknown"
 
 const embed=new EmbedBuilder()
 
@@ -185,9 +200,10 @@ TOTAL   ${total}`
 
 )
 
-.setImage(sprite);
+.setImage(spriteNormal)
 
 const row = new ActionRowBuilder()
+
 .addComponents(
 
 new ButtonBuilder()
@@ -205,13 +221,13 @@ new ButtonBuilder()
 .setLabel("➡️ Next")
 .setStyle(ButtonStyle.Secondary)
 
-);
+)
 
 await interaction.editReply({
 embeds:[embed],
 components:[row]
-});
+})
 
 }
 
-};
+}
